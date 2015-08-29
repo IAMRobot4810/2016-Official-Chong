@@ -1,0 +1,2 @@
+# 2016-Official-Chong
+The Chong family of FRC code continues its legacy in 2016. Wucas is our savior, and Wick Woss is our god. Riding their majestic mammoths, they pass through the crowd of programming hopefuls everywhere, providing them love and inspiration. Our enemy is the Shrek Nation, the integuments of the horror they bring confusing us with poorly-written code riddled with while loops. Fortunately, nothing can stand up to the might of the deities Wucas and Wick Woss and the Maybach Music World.  
