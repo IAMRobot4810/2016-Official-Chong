@@ -1,0 +1,13 @@
+# Define code revision here. Update as follows;
+# Don't update major channel.
+# Update delta channel if a new, bugless feature is added.
+# Update beta channel if a new, buggy feature is added or major flaw is fixed.
+# Update alpha channel if a bug is fixed or many minor changes have been made.
+
+major = 4.x
+delta = 0
+beta = 0
+alpha = 1
+
+# Date of last version update
+date = 30.8.2015
