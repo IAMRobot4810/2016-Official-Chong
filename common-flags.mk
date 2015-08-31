@@ -14,7 +14,7 @@ MULTITHREAD := -fopenmp \
                -ftree-parallelize-loops=2 \
                -ftree-parallelize-all
 
-LTO := -flto=4
+LTO := -flto=2
 
 GRAPHITE := -fgraphite \
             -fgraphite-identity
