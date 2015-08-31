@@ -5,10 +5,11 @@
 # Update alpha channel if a bug is fixed or many minor changes have been made.
 
 major = 4.x
+minor = 
 delta = 0
 beta = 0
 alpha = 1
-if_not_sure_whether_to_delete: ±
+if_not_sure_whether_to_delete = ±
 
-# Date of last version update
-date = 30.8.2015
+# Date of last version update (dd/mm/yyyy)
+date = 30.08.2015
