@@ -17,8 +17,7 @@ MULTITHREAD := -fopenmp \
 LTO := -flto=2
 
 GRAPHITE := -fgraphite \
-            -fgraphite-identity \
-            -floop-optimize-isl
+            -fgraphite-identity 
 
 MEMLEAK := -fsanitize=leak
 
