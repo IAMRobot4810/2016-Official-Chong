@@ -31,9 +31,17 @@ DEBUG := -Og \
          -Wall \
          -Werror \
          -DDEBUG \
-         -std=gnu11
+         -std=gnu11 \
+         $(HARDWARE)
          
 RELEASE := -O3 \
            -g0 \
            -DNDEBUG \
-           -std=gnu11
+           -std=gnu11 \
+           $(WORKLOAD)\
+           $(MULTITHREAD) \
+           $(LTO) \
+           $(GRAPHITE) \
+           $(MEMLEAK) \
+           $(HARDWARE)
+           
