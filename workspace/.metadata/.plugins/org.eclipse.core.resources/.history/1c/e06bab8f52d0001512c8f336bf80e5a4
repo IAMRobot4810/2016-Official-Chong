@@ -1,0 +1,21 @@
+/*
+ * Shooter.h
+ *
+ *  Created on: Feb 9, 2016
+ *      Author: 1750800404
+ */
+
+#ifndef SRC_SHOOTER_H_
+#define SRC_SHOOTER_H_
+
+class Shooter{
+
+public:
+
+private:
+
+protected:
+
+};
+
+#endif /* SRC_SHOOTER_H_ */

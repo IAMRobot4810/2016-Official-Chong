@@ -1,0 +1,28 @@
+/*
+ * DriveSystem.h
+ *
+ *  Created on: Feb 7, 2016
+ *      Author: 1750800404
+ */
+
+#ifndef DRIVESYSTEM_H
+#define DRIVESYSTEM_H
+
+#include "CANTalon.h"
+#include "RobotDrive.h"
+
+
+class DriveSystem{
+
+public:
+	DriveSystem();
+	~DriveSystem();
+
+private:
+
+
+protected:
+
+};
+
+#endif /* SRC_DRIVESYSTEM_H_ */

@@ -1,0 +1,43 @@
+/*
+ * Shooter.h
+ *
+ *  Created on: Feb 9, 2016
+ *      Author: 1750800404
+ */
+
+#ifndef SHOOTER_H
+#define SHOOTER_H
+
+#include "CANTalon.h"
+#include "Solenoid.h"
+#include "Ultrasonic.h"
+
+class Shooter{
+
+public:
+
+	Shooter();
+	~Shooter();
+
+	void DetectBall();
+	void Pickup();
+	void Raise();
+	void Lower();
+	void Shoot(float left, float right);
+
+
+private:
+
+	CANTalon *raiseShoot;
+	CANTalon *lShooter;
+	CANTalon *rShooter;
+	CANTalon *picker;
+	Solenoid *shootSol;
+	Ultrasonic *ballSense;
+	AnalogPotentiometer *posSense;
+
+protected:
+
+};
+
+#endif /* SRC_SHOOTER_H_ */
