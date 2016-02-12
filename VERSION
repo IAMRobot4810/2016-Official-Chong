@@ -3,13 +3,11 @@
 # Update delta channel if a new, bugless feature is added.
 # Update beta channel if a new, buggy feature is added or major flaw is fixed.
 # Update alpha channel if a bug is fixed or many minor changes have been made.
-
-major = 4.
-minor = delta.beta.alpha-date
-delta = 0
 beta = 0
 alpha = 1
-if_not_sure_whether_to_delete = ±
 
 # Date of last version update (dd/mm/yyyy)
-date = 30.08.2015
+date = 12.2.2016
+
+major = 4.
+minor = $(delta).$(beta).$(alpha)-$(date)
