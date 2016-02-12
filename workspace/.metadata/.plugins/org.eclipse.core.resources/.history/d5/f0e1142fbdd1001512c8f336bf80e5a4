@@ -1,0 +1,41 @@
+/*
+ * Control.h
+ *
+ *  Created on: Feb 8, 2016
+ *      Author: 1750800404
+ */
+
+#ifndef CONTROL_H
+#define CONTROL_H
+
+#include "Joystick.h"
+#include "SmartDashboard/SmartDashboard.h"
+#include "DriveSystem.h"
+
+class Control{
+
+public:
+	Control();
+	~Control();
+
+	void StickDrive();
+	void ButtonControl();
+	void TriggerControl();
+
+private:
+
+	Joystick *lStick;
+	Joystick *rStick;
+	DriveSystem *drive;
+
+	float lStickIn;
+	float rStickIn;
+
+	float lStickScale;
+	float rStickScale;
+
+protected:
+
+};
+
+#endif /* SRC_CONTROL_H_ */

@@ -1,0 +1,37 @@
+10:08:47 **** Build of configuration Debug for project TestClone ****
+make all 
+Building file: ../src/Robot.cpp
+Invoking: Cross G++ Compiler
+arm-frc-linux-gnueabi-g++ -std=c++1y -I"C:\Users\1750800404/wpilib/cpp/current/include" -I"C:\Users\1750800404\Robotics\C++\workspace_C++\TestClone\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"src/Robot.d" -MT"src/Robot.o" -o "src/Robot.o" "../src/Robot.cpp"
+In file included from C:\Users\1750800404/wpilib/cpp/current/include/WPILib.h:46:0,
+                 from ../src/Robot.cpp:1:
+C:\Users\1750800404/wpilib/cpp/current/include/Counter.h:40:42: warning: 'deprecated' attribute directive ignored [-Wattributes]
+   explicit Counter(AnalogTrigger *trigger);
+                                          ^
+In file included from C:\Users\1750800404/wpilib/cpp/current/include/Task.h:53:0,
+                 from C:\Users\1750800404/wpilib/cpp/current/include/DriverStation.h:12,
+                 from C:\Users\1750800404/wpilib/cpp/current/include/WPILib.h:51,
+                 from ../src/Robot.cpp:1:
+C:\Users\1750800404/wpilib/cpp/current/include/Task.inc: In constructor 'Task::Task(const string&, Function&&, Args&& ...)':
+C:\Users\1750800404/wpilib/cpp/current/include/Task.inc:25:39: error: 'decay_t' is not a member of 'std'
+   m_thread = std::thread(std::forward<std::decay_t<Function>>(function),
+                                       ^
+C:\Users\1750800404/wpilib/cpp/current/include/Task.inc:25:39: error: 'decay_t' is not a member of 'std'
+C:\Users\1750800404/wpilib/cpp/current/include/Task.inc:25:31: error: parse error in template argument list
+   m_thread = std::thread(std::forward<std::decay_t<Function>>(function),
+                               ^
+In file included from C:\Users\1750800404/wpilib/cpp/current/include/WPILib.h:52:0,
+                 from ../src/Robot.cpp:1:
+C:\Users\1750800404/wpilib/cpp/current/include/Encoder.h: At global scope:
+C:\Users\1750800404/wpilib/cpp/current/include/Encoder.h:85:61: warning: 'deprecated' attribute directive ignored [-Wattributes]
+                       IndexingType type = kResetOnRisingEdge);
+                                                             ^
+In file included from C:\Users\1750800404/wpilib/cpp/current/include/WPILib.h:69:0,
+                 from ../src/Robot.cpp:1:
+C:\Users\1750800404/wpilib/cpp/current/include/Preferences.h:54:13: warning: 'deprecated' attribute directive ignored [-Wattributes]
+   void Save();
+             ^
+make: *** [src/Robot.o] Error 1
+
+10:08:49 Build Finished (took 2s.282ms)
+

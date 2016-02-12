@@ -1,0 +1,33 @@
+/*
+ * Shooter.h
+ *
+ *  Created on: Feb 9, 2016
+ *      Author: 1750800404
+ */
+
+#ifndef SRC_SHOOTER_H_
+#define SRC_SHOOTER_H_
+
+#include "Talon.h"
+
+class Shooter{
+
+public:
+
+	Shooter();
+	~Shooter();
+
+	void Shoot();
+	void
+
+private:
+
+	CANTalon raiseShoot;
+	CANTalon lShooter;
+	CANTalon rShooter;
+
+protected:
+
+};
+
+#endif /* SRC_SHOOTER_H_ */

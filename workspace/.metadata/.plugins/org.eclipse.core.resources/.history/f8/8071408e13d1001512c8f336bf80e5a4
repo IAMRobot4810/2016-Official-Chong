@@ -1,0 +1,54 @@
+/*
+ * Shooter.cpp
+ *
+ *  Created on: Feb 9, 2016
+ *      Author: 1750800404
+ */
+
+#include "Shooter.h"
+
+Shooter::Shooter(){
+
+	raiseShoot = new CANTalon(4);
+	lShooter = new CANTalon(5);
+	rShooter = new CANTalon (6);
+	picker = new CANTalon(7);
+	shootSol = new Solenoid(0, 1);
+
+}
+
+Shooter::~Shooter(){
+
+	delete raiseShoot;
+	delete lShooter;
+	delete rShooter;
+	delete picker;
+	delete shootSol;
+
+}
+
+void Shooter::DetectBall(){
+
+}
+
+void Shooter::Pickup(){
+
+}
+
+void Shooter::Raise(){
+
+}
+
+void Shooter::Lower(){
+
+	if()
+	raiseShoot->Set(-0.25);
+
+}
+
+void Shooter::Shoot(float left, float right){
+
+	lShooter->Set(left);
+	rShooter->Set(right);
+
+}

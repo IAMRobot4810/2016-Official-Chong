@@ -1,0 +1,9 @@
+16:17:48 **** Rebuild of configuration Debug for project LickBalls ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o LickBalls.o "..\\LickBalls.cpp" 
+g++ -o LickBalls LickBalls.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../libmingw32.a(main.o):(.text.startup+0xa7): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+
+16:17:53 Build Finished (took 4s.453ms)
+

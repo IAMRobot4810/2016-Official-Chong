@@ -1,0 +1,34 @@
+/*
+ * DriveSystem.cpp
+ *
+ *  Created on: Feb 7, 2016
+ *      Author: 1750800404
+ */
+
+#include "DriveSystem.h"
+
+DriveSystem::DriveSystem(){
+	flTal = new CANTalon(0);
+	rlTal = new CANTalon(1);
+	frTal = new CANTalon(2);
+	rrTal = new CANTalon(3);
+	roboDrive = new RobotDrive(flTal, rlTal, frTal, rrTal);
+}
+
+DriveSystem::~DriveSystem(){
+	delete flTal;
+	delete rlTal;
+	delete frTal;
+	delete rrTal;
+	delete roboDrive;
+
+}
+
+
+void DriveSystem::Drive(){
+
+	roboDrive->TankDrive()
+
+}
+
+
