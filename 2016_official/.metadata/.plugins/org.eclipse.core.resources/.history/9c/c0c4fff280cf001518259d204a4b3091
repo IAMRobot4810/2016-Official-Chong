@@ -1,0 +1,17 @@
+#ifndef ROBOTDRIVE_H
+#define ROBOTDRIVE_H
+
+class RobotDrive{
+private:
+	CANTalon* talon1;
+	CANTalon* talon2;
+public:
+	RobotDrive();
+	~RobotDrive();
+	void drive_mecanum();
+
+
+};
+
+
+#endif

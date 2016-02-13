@@ -1,0 +1,49 @@
+Auto::Auto(){
+	sys = new DriveSystem();
+	sho = new Shooter();
+
+	targetAcquired = false;
+
+}
+
+Auto::~Auto(){
+	delete sys;
+	delete sho;
+}
+
+void Auto::ArmWallCrosser(){
+
+
+}
+
+void Auto::TerrainCrosser(){
+
+
+}
+
+void Auto::SetUpToShoot(){
+	Wait(0.1);
+	sys->LowerCasters();
+
+	while(!targetAcquired){
+		if(mode == AutonPos::LEFT){
+			sys->Drive(0.0, 0.1);//sweep right
+			Vision(); //dummy vision
+
+		}else if(mode == AutonPos::RIGHT){
+			sys->Drive(0.1, 0.0);
+		}
+
+	}
+
+}
+
+void Auto::Shoot(){
+
+
+}
+
+void Auto::Vision(){
+
+
+}

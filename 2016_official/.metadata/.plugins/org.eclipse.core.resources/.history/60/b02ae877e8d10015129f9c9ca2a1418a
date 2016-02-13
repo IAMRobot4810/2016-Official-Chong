@@ -1,0 +1,22 @@
+void Auto::ArmWallCrosser(){
+
+
+}
+
+void Auto::TerrainCrosser(){
+
+
+}
+
+void Auto::SetUpToShoot(){
+	while(){
+
+
+	}
+
+}
+
+void Auto::Shoot(){
+
+
+}

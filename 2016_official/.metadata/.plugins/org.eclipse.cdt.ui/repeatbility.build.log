@@ -1,0 +1,7 @@
+16:52:29 **** Rebuild of configuration Debug for project repeatbility ****
+Info: Internal Builder is used for build
+g++ "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\robotics\\2016_official\\repeatbility\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+g++: error: unrecognized command line option '-std=c++14'
+
+16:52:31 Build Finished (took 1s.424ms)
+
