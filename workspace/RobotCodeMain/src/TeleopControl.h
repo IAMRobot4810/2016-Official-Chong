@@ -9,8 +9,10 @@
 #define TELEOPCONTROL_H
 
 #include "Joystick.h"
+#include "Buttons/JoystickButton.h"
 #include "SmartDashboard/SmartDashboard.h"
 #include "DriveSystem.h"
+#include "Shooter.h"
 
 class TeleopControl{
 
@@ -24,15 +26,24 @@ public:
 
 private:
 
-	Joystick *lStick;
-	Joystick *rStick;
+	Joystick *cont1;
+	Joystick *cont2;
+	JoystickButton *aButton;
+	JoystickButton *bButton;
+
+	JoystickButton *lStickButton;
+	JoystickButton *rStickButton;
+
 	DriveSystem *drive;
+	Shooter *shoot;
 
 	float lStickIn;
 	float rStickIn;
 
 	float lStickScale;
 	float rStickScale;
+
+	SmartDashboard *dash;
 
 protected:
 

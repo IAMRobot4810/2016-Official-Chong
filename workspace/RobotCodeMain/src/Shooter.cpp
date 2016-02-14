@@ -14,20 +14,21 @@ Shooter::Shooter(){
 	//Needs to be checked, documentation has relative and absolute with opposite descriptions
 
 	lShooter = new CANTalon(5);
-	lShooter->SetFeedbackDevice(CANTalon::CtreMagEncoder_Relative);
 	rShooter = new CANTalon (6);
-	rShooter->SetFeedbackDevice(CANTalon::CtreMagEncoder_Relative);
+	lBanner = new DigitalInput(1);
+	rBanner = new DigitalInput(2);
 
 	picker = new CANTalon(7);
 
 	shootSol = new Solenoid(0, 1);
 
-	usOut = new DigitalOutput(0);
-	usIn = new DigitalInput(1);
-	ballSense = new Ultrasonic(usOut, usIn, Ultrasonic::kInches);
+	ballSense = new DigitalInput(0);
 
-	shooterRestVal = 100;
-	shooterTopVal = 1000;
+	rpmTimerL = new Timer();
+	rpmTimerR = new Timer();
+
+	shooterRestLimit = 100;
+	shooterTopLimit = 1000;
 
 }
 
@@ -36,13 +37,17 @@ Shooter::~Shooter(){
 	delete raiseShoot;
 	delete lShooter;
 	delete rShooter;
+	delete lBanner;
+	delete rBanner;
+
 	delete picker;
 
 	delete shootSol;
 
-	delete usOut;
-	delete usIn;
 	delete ballSense;
+
+	delete rpmTimerL;
+	delete rpmTimerR;
 
 }
 
@@ -50,7 +55,7 @@ bool Shooter::DetectBall(){
 
 	bool ball;
 
-	if(ballSense->GetRangeInches() <= 1.0){
+	if(ballSense->Get()){
 		ball = true;
 	}
 
@@ -64,7 +69,7 @@ bool Shooter::DetectBall(){
 
 void Shooter::Pickup(){
 
-	if(raiseShoot->GetEncPosition() == shooterRestVal && DetectBall() == false){
+	if(raiseShoot->GetEncPosition() == shooterRestLimit && DetectBall() == false){
 		picker->Set(1.0);
 	}
 
@@ -78,7 +83,7 @@ void Shooter::Pickup(){
 
 void Shooter::Raise(float speed){
 
-	if(raiseShoot->GetEncPosition() < shooterTopVal){
+	if(raiseShoot->GetEncPosition() < shooterTopLimit){
 		raiseShoot->Set(speed);
 	}
 
@@ -90,7 +95,7 @@ void Shooter::Raise(float speed){
 
 void Shooter::Lower(float speed){
 
-	if(raiseShoot->GetEncPosition() > shooterRestVal){
+	if(raiseShoot->GetEncPosition() > shooterRestLimit){
 		raiseShoot->Set(-speed);
 	}
 
@@ -100,7 +105,53 @@ void Shooter::Lower(float speed){
 
 }
 
-void Shooter::Shoot(float leftRPM, float rightRPM){
+void Shooter::HighGoal(float speed, int encoVal){
+
+	if(raiseShoot->GetEncPosition() < encoVal){
+		raiseShoot->Set(speed);
+	}
+
+	else if (raiseShoot->GetEncPosition() > encoVal){
+		raiseShoot->Set(-speed);
+	}
+
+}
+
+void Shooter::LowGoal(float speed, int encoVal){
+
+	if(raiseShoot->GetEncPosition() < encoVal){
+		raiseShoot->Set(speed);
+	}
+
+	else if (raiseShoot->GetEncPosition() > encoVal){
+		raiseShoot->Set(-speed);
+	}
+
+}
+
+int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute){
+
+	Minute->Reset();
+	Minute->Start();
+
+	for(int x = 0; x < 3; ){
+
+		if(banner->Get()){
+			x = x + 1;
+		}
+
+	}
+
+	Minute->Stop();
+	double seconds = Minute->Get();
+
+	rpmReading = (1/seconds) * 60;
+
+	return rpmReading;
+
+}
+
+void Shooter::Shoot(int leftRPM, int rightRPM){
 
 	int lPow = 0.1;
 	int rPow = 0.1;
@@ -110,12 +161,12 @@ void Shooter::Shoot(float leftRPM, float rightRPM){
 		rightRPM = 5500;
 	}
 
-	while(lShooter->GetEncVel() < leftRPM){
+	while(ReadRPM(lBanner, rpmTimerL) < leftRPM){
 		lShooter->Set(lPow);
 		lPow += 0.05;
 	}
 
-	while(rShooter->GetEncVel() < rightRPM){
+	while(ReadRPM(rBanner, rpmTimerR) < rightRPM){
 		rShooter->Set(rPow);
 		rPow += 0.05;
 	}
