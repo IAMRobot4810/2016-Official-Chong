@@ -22,6 +22,8 @@ public:
 	void LowerCasters();
 	void RaiseCasters();
 
+	bool casterLow;
+
 
 private:
 
@@ -32,8 +34,6 @@ private:
 	RobotDrive *roboDrive;
 
 	Solenoid *caster;
-
-	bool casterLow;
 
 protected:
 

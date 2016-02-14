@@ -1,12 +1,13 @@
-14:22:02 **** Rebuild of configuration Debug for project RobotCodeMain ****
+20:22:13 **** Incremental Build of configuration Debug for project RobotCodeMain ****
 Info: Internal Builder is used for build
 arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\DriveSystem.o" "..\\src\\DriveSystem.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Defense.o" "..\\src\\Defense.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int)':
+..\src\Auto.cpp:18:7: error: invalid conversion from 'int' to 'Auto::AutonMode' [-fpermissive]
+  mode = mode_;
+       ^
+..\src\Auto.cpp:19:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
 
-14:22:15 Build Finished (took 13s.380ms)
+20:22:14 Build Finished (took 1s.57ms)
 

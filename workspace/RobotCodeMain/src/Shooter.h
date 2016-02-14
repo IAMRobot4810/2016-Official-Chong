@@ -10,9 +10,7 @@
 
 #include "CANTalon.h"
 #include "Solenoid.h"
-#include "DigitalOutput.h"
 #include "DigitalInput.h"
-#include "Ultrasonic.h"
 #include "Timer.h"
 
 class Shooter{
@@ -26,7 +24,10 @@ public:
 	void Pickup();
 	void Raise(float speed);
 	void Lower(float speed);
-	void Shoot(float leftRPM, float rightRPM);
+	void HighGoal(float speed, int encoVal);
+	void LowGoal(float speed, int encoVal);
+	int ReadRPM(DigitalInput *banner, Timer *Minute);
+	void Shoot(int leftRPM, int rightRPM);
 
 
 private:
@@ -36,14 +37,20 @@ private:
 	CANTalon *rShooter;
 	CANTalon *picker;
 
+	DigitalInput *lBanner;
+	DigitalInput *rBanner;
+
 	Solenoid *shootSol;
 
-	DigitalOutput *usOut;
-	DigitalInput *usIn;
-	Ultrasonic *ballSense;
+	DigitalInput *ballSense;
 
-	int shooterRestVal;
-	int shooterTopVal;
+	Timer *rpmTimerL;
+	Timer *rpmTimerR;
+
+	int shooterRestLimit;
+	int shooterTopLimit;
+
+	int rpmReading;
 
 protected:
 
