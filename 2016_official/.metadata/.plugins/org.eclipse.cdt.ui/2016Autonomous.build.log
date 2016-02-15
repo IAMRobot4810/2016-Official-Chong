@@ -1,7 +1,15 @@
-18:23:06 **** Rebuild of configuration Debug for project 2016Autonomous ****
+20:58:16 **** Incremental Build of configuration Debug for project 2016Autonomous ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\robotics\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::UltrasonicChecker()':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:51: undefined reference to `Ultrasonic::m_sensors'
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::Initialize()':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:80: undefined reference to `Ultrasonic::m_sensors'
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::~Ultrasonic()':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:184: undefined reference to `Ultrasonic::m_sensors'
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::SetAutomaticMode(bool)':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:229: undefined reference to `Ultrasonic::m_sensors'
+collect2.exe: error: ld returned 1 exit status
 
-18:23:12 Build Finished (took 6s.98ms)
+20:58:20 Build Finished (took 4s.218ms)
 

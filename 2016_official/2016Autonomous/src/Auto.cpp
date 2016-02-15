@@ -1,9 +1,11 @@
+#include "Auto.h"
+
 Auto::Auto(){
 	sys = new DriveSystem();
 	sho = new Shooter();
 
 	pos = AutonPos::NONE;
-	mode = AutonMode::NONE;
+	mode = AutonMode::NONE_;
 
 	targetAcquired = false;
 
@@ -13,8 +15,8 @@ Auto::Auto(int mode_, int pos_){
 	sys = new DriveSystem();
 	sho = new Shooter();
 
-	mode = mode_;
-	pos = pos_;
+	mode = static_cast<AutonMode>(mode_);
+	pos = static_cast<AutonPos>(pos_);
 
 
 
@@ -72,7 +74,7 @@ void Auto::SetUpToShoot(){
 	}else{
 		Wait(10.0); //wait for teleop. you've done goofed up
 	}
-	if(pos == AutonPos::NULL_){
+	if(pos == AutonPos::NONE){
 		Wait(10.0); //you've done goofed up
 	}
 	sho->Raise(0.25);

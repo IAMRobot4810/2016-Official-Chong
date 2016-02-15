@@ -42,3 +42,190 @@ arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-
 Info: Internal Builder is used for build
 arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\robotics\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
 arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
+20:50:21 **** Incremental Build of configuration Debug for project 2016Autonomous ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Defense.o" "..\\src\\Defense.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\DriveSystem.o" "..\\src\\DriveSystem.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+..\src\Auto.cpp:1:1: error: 'Auto' does not name a type
+ Auto::Auto(){
+ ^
+..\src\Auto.cpp:12:1: error: 'Auto' does not name a type
+ Auto::Auto(int mode_, int pos_){
+ ^
+..\src\Auto.cpp:26:1: error: 'Auto' does not name a type
+ Auto::~Auto(){
+ ^
+..\src\Auto.cpp:31:6: error: 'Auto' has not been declared
+ void Auto::InternalAutonChooser(){
+      ^
+..\src\Auto.cpp: In function 'void InternalAutonChooser()':
+..\src\Auto.cpp:32:5: error: 'mode' was not declared in this scope
+  if(mode == AutonMode::ARM){
+     ^
+..\src\Auto.cpp:32:13: error: 'AutonMode' has not been declared
+  if(mode == AutonMode::ARM){
+             ^
+..\src\Auto.cpp:33:18: error: 'ArmWallCrosser' was not declared in this scope
+   ArmWallCrosser();
+                  ^
+..\src\Auto.cpp:34:19: error: 'AutonMode' has not been declared
+  }else if(mode == AutonMode::TERRAIN){
+                   ^
+..\src\Auto.cpp:35:18: error: 'TerrainCrosser' was not declared in this scope
+   TerrainCrosser();
+                  ^
+..\src\Auto.cpp:37:12: error: 'Wait' was not declared in this scope
+   Wait(15.0); //you've done goofed up
+            ^
+..\src\Auto.cpp: At global scope:
+..\src\Auto.cpp:42:6: error: 'Auto' has not been declared
+ void Auto::ArmWallCrosser(){
+      ^
+..\src\Auto.cpp:47:6: error: 'Auto' has not been declared
+ void Auto::TerrainCrosser(){
+      ^
+..\src\Auto.cpp:52:6: error: 'Auto' has not been declared
+ void Auto::SetUpToShoot(){
+      ^
+..\src\Auto.cpp: In function 'void SetUpToShoot()':
+..\src\Auto.cpp:53:10: error: 'Wait' was not declared in this scope
+  Wait(0.1);
+          ^
+..\src\Auto.cpp:54:2: error: 'sys' was not declared in this scope
+  sys->LowerCasters();
+  ^
+..\src\Auto.cpp:56:5: error: 'sho' was not declared in this scope
+  if(sho->DetectBall()){
+     ^
+..\src\Auto.cpp:57:10: error: 'targetAcquired' was not declared in this scope
+   while(!targetAcquired){
+          ^
+..\src\Auto.cpp:58:7: error: 'pos' was not declared in this scope
+    if(pos == AutonPos::LEFT){
+       ^
+..\src\Auto.cpp:58:14: error: 'AutonPos' has not been declared
+    if(pos == AutonPos::LEFT){
+              ^
+..\src\Auto.cpp:60:12: error: 'Vision' was not declared in this scope
+     Vision(); //dummy vision
+            ^
+..\src\Auto.cpp:62:20: error: 'AutonPos' has not been declared
+    }else if(pos == AutonPos::RIGHT){
+                    ^
+..\src\Auto.cpp:64:12: error: 'Vision' was not declared in this scope
+     Vision();
+            ^
+..\src\Auto.cpp:75:5: error: 'pos' was not declared in this scope
+  if(pos == AutonPos::NULL_){
+     ^
+..\src\Auto.cpp:75:12: error: 'AutonPos' has not been declared
+  if(pos == AutonPos::NULL_){
+            ^
+..\src\Auto.cpp:78:2: error: 'sho' was not declared in this scope
+  sho->Raise(0.25);
+  ^
+..\src\Auto.cpp: At global scope:
+..\src\Auto.cpp:82:6: error: 'Auto' has not been declared
+ void Auto::Shoot(){
+      ^
+..\src\Auto.cpp: In function 'void Shoot()':
+..\src\Auto.cpp:83:2: error: 'sho' was not declared in this scope
+  sho->Shoot(5000, 5000);
+  ^
+..\src\Auto.cpp: At global scope:
+..\src\Auto.cpp:87:6: error: 'Auto' has not been declared
+ bool Auto::Vision(){
+      ^
+..\src\Auto.cpp: In function 'bool Vision()':
+..\src\Auto.cpp:89:3: error: 'targetAcquired' was not declared in this scope
+   targetAcquired = true;
+   ^
+..\src\Auto.cpp:91:9: error: 'targetAcquired' was not declared in this scope
+  return targetAcquired;
+         ^
+..\src\Auto.cpp:92:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+20:51:18 **** Incremental Build of configuration Debug for project 2016Autonomous ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+In file included from ..\src\Auto.cpp:1:0:
+..\src\Auto.h:16:31: error: redeclaration of 'NONE'
+  enum AutonMode{TERRAIN, ARM, NONE};
+                               ^
+..\src\Auto.h:15:29: note: previous declaration 'Auto::AutonPos NONE'
+  enum AutonPos{LEFT, RIGHT, NONE};
+                             ^
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int)':
+..\src\Auto.cpp:18:7: error: invalid conversion from 'int' to 'Auto::AutonMode' [-fpermissive]
+  mode = mode_;
+       ^
+..\src\Auto.cpp:19:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
+..\src\Auto.cpp: In member function 'void Auto::SetUpToShoot()':
+..\src\Auto.cpp:77:12: error: 'NULL_' is not a member of 'Auto::AutonPos'
+  if(pos == AutonPos::NULL_){
+            ^
+20:52:33 **** Incremental Build of configuration Debug for project 2016Autonomous ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+In file included from ..\src\Auto.cpp:1:0:
+..\src\Auto.h:16:31: error: redeclaration of 'NONE'
+  enum AutonMode{TERRAIN, ARM, NONE};
+                               ^
+..\src\Auto.h:15:29: note: previous declaration 'Auto::AutonPos NONE'
+  enum AutonPos{LEFT, RIGHT, NONE};
+                             ^
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int)':
+..\src\Auto.cpp:18:31: error: expected '(' before 'mode_'
+  mode = static_cast<AutonMode>mode_;
+                               ^
+..\src\Auto.cpp:18:36: error: expected ')' before ';' token
+  mode = static_cast<AutonMode>mode_;
+                                    ^
+..\src\Auto.cpp:19:29: error: expected '(' before 'pos_'
+  pos = static_cast<AutonPos>pos_;
+                             ^
+..\src\Auto.cpp:19:33: error: expected ')' before ';' token
+  pos = static_cast<AutonPos>pos_;
+                                 ^
+20:52:47 **** Incremental Build of configuration Debug for project 2016Autonomous ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+In file included from ..\src\Auto.cpp:1:0:
+..\src\Auto.h:16:31: error: redeclaration of 'NONE'
+  enum AutonMode{TERRAIN, ARM, NONE};
+                               ^
+..\src\Auto.h:15:29: note: previous declaration 'Auto::AutonPos NONE'
+  enum AutonPos{LEFT, RIGHT, NONE};
+                             ^
+20:53:46 **** Incremental Build of configuration Debug for project 2016Autonomous ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\2016Autonomous\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::UltrasonicChecker()':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:51: undefined reference to `Ultrasonic::m_sensors'
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::Initialize()':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:80: undefined reference to `Ultrasonic::m_sensors'
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::~Ultrasonic()':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:184: undefined reference to `Ultrasonic::m_sensors'
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::SetAutomaticMode(bool)':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:229: undefined reference to `Ultrasonic::m_sensors'
+collect2.exe: error: ld returned 1 exit status
+20:58:16 **** Incremental Build of configuration Debug for project 2016Autonomous ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::UltrasonicChecker()':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:51: undefined reference to `Ultrasonic::m_sensors'
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::Initialize()':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:80: undefined reference to `Ultrasonic::m_sensors'
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::~Ultrasonic()':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:184: undefined reference to `Ultrasonic::m_sensors'
+C:\Users\1750800311/wpilib/cpp/current/lib\libwpilib_nonshared.a(Ultrasonic.o): In function `Ultrasonic::SetAutomaticMode(bool)':
+/var/lib/jenkins/workspace/wpilib/wpilibc/Athena/src/Ultrasonic.cpp:229: undefined reference to `Ultrasonic::m_sensors'
+collect2.exe: error: ld returned 1 exit status
