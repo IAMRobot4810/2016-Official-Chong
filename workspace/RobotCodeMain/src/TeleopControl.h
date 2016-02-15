@@ -28,20 +28,27 @@ private:
 
 	Joystick *cont1;
 	Joystick *cont2;
-	JoystickButton *aButton;
-	JoystickButton *bButton;
+	JoystickButton *a2Button;
+	JoystickButton *b2Button;
+	JoystickButton *r2Bumper;
+	JoystickButton *l2Bumper;
+	JoystickButton *x2Button;
+	JoystickButton *y2Button;
 
-	JoystickButton *lStickButton;
-	JoystickButton *rStickButton;
+	JoystickButton *l1StickButton;
+	JoystickButton *r1StickButton;
 
 	DriveSystem *drive;
 	Shooter *shoot;
 
-	float lStickIn;
-	float rStickIn;
+	float l1StickIn;
+	float r1StickIn;
 
-	float lStickScale;
-	float rStickScale;
+	float l1StickScale;
+	float r1StickScale;
+
+	float r2TrigIn;
+	float r2TrigScale;
 
 	SmartDashboard *dash;
 

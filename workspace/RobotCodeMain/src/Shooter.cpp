@@ -67,10 +67,10 @@ bool Shooter::DetectBall(){
 
 }
 
-void Shooter::Pickup(){
+void Shooter::Pickup(float speed){
 
 	if(raiseShoot->GetEncPosition() == shooterRestLimit && DetectBall() == false){
-		picker->Set(1.0);
+		picker->Set(speed);
 	}
 
 	else{
@@ -134,7 +134,7 @@ int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute){
 	Minute->Reset();
 	Minute->Start();
 
-	for(int x = 0; x < 3; ){
+	for(int x = 0; x < 9; ){
 
 		if(banner->Get()){
 			x = x + 1;
@@ -145,7 +145,7 @@ int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute){
 	Minute->Stop();
 	double seconds = Minute->Get();
 
-	rpmReading = (1/seconds) * 60;
+	rpmReading = (3/seconds) * 60;
 
 	return rpmReading;
 
