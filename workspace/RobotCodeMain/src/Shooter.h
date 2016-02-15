@@ -21,7 +21,7 @@ public:
 	~Shooter();
 
 	bool DetectBall();
-	void Pickup();
+	void Pickup(float speed);
 	void Raise(float speed);
 	void Lower(float speed);
 	void HighGoal(float speed, int encoVal);
