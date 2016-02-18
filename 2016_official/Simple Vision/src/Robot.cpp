@@ -19,7 +19,6 @@ public:
 	{
 		while (IsOperatorControl() && IsEnabled())
 		{
-			/** robot code here! **/
 			Wait(0.005);				// wait for a motor update time
 		}
 	}
