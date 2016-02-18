@@ -11,6 +11,7 @@ private:
 	DriveSystem* sys;
 	//Defense* def; when developed
 	Shooter* sho;
+	ImageProcess* imp;
 
 	bool targetAcquired;
 	enum AutonPos{LEFT, RIGHT, NONE};
