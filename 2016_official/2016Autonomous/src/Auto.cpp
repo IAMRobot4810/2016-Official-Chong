@@ -18,8 +18,6 @@ Auto::Auto(int mode_, int pos_){
 	mode = static_cast<AutonMode>(mode_);
 	pos = static_cast<AutonPos>(pos_);
 
-
-
 	targetAcquired = false;
 
 }
@@ -42,12 +40,18 @@ void Auto::InternalAutonChooser(){
 }
 
 void Auto::ArmWallCrosser(){
-
-
+	//AYYY LMAO NO ROBOT FOR THIS
 }
 
 void Auto::TerrainCrosser(){
-
+	sys->Drive(0.1, 0.1);
+	Wait(1.0);
+	sys->Drive(0.0, 0.0);
+	Wait(0.1);
+	sys->Drive(0.3, 0.3);
+	Wait(0.5);
+	sys->Drive(0.0, 0.0);
+	Wait(0.1);
 
 }
 
@@ -78,11 +82,15 @@ void Auto::SetUpToShoot(){
 		Wait(10.0); //you've done goofed up
 	}
 	sho->Raise(0.25);
+	Wait(0.3);
+	sho->Raise(0.0);
 
 }
 
 void Auto::Shoot(){
 	sho->Shoot(5000, 5000);
+	Wait(0.1);
+	sho->Shoot(0, 0);
 	sho->Lower(0.25);
 }
 

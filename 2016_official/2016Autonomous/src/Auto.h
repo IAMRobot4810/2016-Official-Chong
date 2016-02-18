@@ -4,6 +4,7 @@
 #include "Shooter.h"
 #include "DriveSystem.h"
 #include "Defense.h"
+#include "ImageProcess.h"
 
 class Auto{
 private:
@@ -13,7 +14,7 @@ private:
 
 	bool targetAcquired;
 	enum AutonPos{LEFT, RIGHT, NONE};
-	enum AutonMode{TERRAIN, ARM, NONE_};
+	enum AutonMode{TERRAIN, ARM, NONE};
 	AutonMode mode;
 	AutonPos pos;
 public:
