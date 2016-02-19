@@ -1,1 +1,346 @@
-Info: Nothing to build for Simple Vision
+16:30:32 **** Incremental Build of configuration Debug for project Simple Vision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\Simple Vision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\LCameraServer.o" "..\\src\\LCameraServer.cpp" 
+..\src\LCameraServer.cpp:31:19: error: 'LCameraServer' has not been declared
+ constexpr uint8_t LCameraServer::kMagicNumber[];
+                   ^
+..\src\LCameraServer.cpp:31:19: error: uninitialized const 'kMagicNumber' [-fpermissive]
+..\src\LCameraServer.cpp:31:47: error: storage size of 'kMagicNumber' isn't known
+ constexpr uint8_t LCameraServer::kMagicNumber[];
+                                               ^
+..\src\LCameraServer.cpp:33:6: error: 'LCameraServer' has not been declared
+ bool LCameraServer::errored = false;
+      ^
+..\src\LCameraServer.cpp:35:1: error: 'LCameraServer' does not name a type
+ LCameraServer* LCameraServer::GetInstance() {
+ ^
+..\src\LCameraServer.cpp:40:1: error: 'LCameraServer' does not name a type
+ LCameraServer::LCameraServer() :
+ ^
+..\src\LCameraServer.cpp:48:6: error: 'LCameraServer' has not been declared
+ void LCameraServer::FreeImageData(
+      ^
+..\src\LCameraServer.cpp: In function 'void FreeImageData(std::tuple<unsigned char*, unsigned int, unsigned int, bool>)':
+..\src\LCameraServer.cpp:53:50: error: 'm_imageMutex' was not declared in this scope
+   std::lock_guard<priority_recursive_mutex> lock(m_imageMutex);
+                                                  ^
+..\src\LCameraServer.cpp:54:3: error: 'm_dataPool' was not declared in this scope
+   m_dataPool.push_back(std::get<0>(imageData));
+   ^
+..\src\LCameraServer.cpp: At global scope:
+..\src\LCameraServer.cpp:58:6: error: 'LCameraServer' has not been declared
+ void LCameraServer::SetImageData(uint8_t* data, unsigned int size,
+      ^
+..\src\LCameraServer.cpp: In function 'void SetImageData(uint8_t*, unsigned int, unsigned int, bool)':
+..\src\LCameraServer.cpp:60:49: error: 'm_imageMutex' was not declared in this scope
+  std::lock_guard<priority_recursive_mutex> lock(m_imageMutex);
+                                                 ^
+..\src\LCameraServer.cpp:61:16: error: 'm_imageData' was not declared in this scope
+  FreeImageData(m_imageData);
+                ^
+..\src\LCameraServer.cpp:63:2: error: 'm_newImageVariable' was not declared in this scope
+  m_newImageVariable.notify_all();
+  ^
+..\src\LCameraServer.cpp: At global scope:
+..\src\LCameraServer.cpp:66:6: error: 'LCameraServer' has not been declared
+ void LCameraServer::SetImage(Image const* image) {
+      ^
+..\src\LCameraServer.cpp: In function 'void SetImage(const Image*)':
+..\src\LCameraServer.cpp:69:32: error: 'm_quality' was not declared in this scope
+    IMAQ_COMPRESSION_JPEG, 10 * m_quality, &dataSize);
+                                ^
+..\src\LCameraServer.cpp:75:50: error: 'm_imageMutex' was not declared in this scope
+   std::lock_guard<priority_recursive_mutex> lock(m_imageMutex);
+                                                  ^
+..\src\LCameraServer.cpp:76:14: error: 'm_hwClient' was not declared in this scope
+   hwClient = m_hwClient;
+              ^
+..\src\LCameraServer.cpp: At global scope:
+..\src\LCameraServer.cpp:93:6: error: 'LCameraServer' has not been declared
+ void LCameraServer::AutoCapture() {
+      ^
+..\src\LCameraServer.cpp: In function 'void AutoCapture()':
+..\src\LCameraServer.cpp:100:51: error: 'm_imageMutex' was not declared in this scope
+    std::lock_guard<priority_recursive_mutex> lock(m_imageMutex);
+                                                   ^
+..\src\LCameraServer.cpp:101:15: error: 'm_hwClient' was not declared in this scope
+    hwClient = m_hwClient;
+               ^
+..\src\LCameraServer.cpp:103:12: error: 'm_dataPool' was not declared in this scope
+     data = m_dataPool.back();
+            ^
+..\src\LCameraServer.cpp:109:24: error: 'm_camera' was not declared in this scope
+    unsigned int size = m_camera->GetImageData(data, kMaxImageSize);
+                        ^
+..\src\LCameraServer.cpp:109:53: error: 'kMaxImageSize' was not declared in this scope
+    unsigned int size = m_camera->GetImageData(data, kMaxImageSize);
+                                                     ^
+..\src\LCameraServer.cpp:110:27: error: too few arguments to function 'void SetImageData(uint8_t*, unsigned int, unsigned int, bool)'
+    SetImageData(data, size);
+                           ^
+..\src\LCameraServer.cpp:58:6: note: declared here
+ void LCameraServer::SetImageData(uint8_t* data, unsigned int size,
+      ^
+..\src\LCameraServer.cpp:112:4: error: 'm_camera' was not declared in this scope
+    m_camera->GetImage(frame);
+    ^
+..\src\LCameraServer.cpp: At global scope:
+..\src\LCameraServer.cpp:118:6: error: 'LCameraServer' has not been declared
+ void LCameraServer::StartAutomaticCapture(char const* cameraName) {
+      ^
+..\src\LCameraServer.cpp: In function 'void StartAutomaticCapture(const char*)':
+..\src\LCameraServer.cpp:122:30: error: cannot convert 'std::shared_ptr<USBCamera>' to 'const char*' for argument '1' to 'void StartAutomaticCapture(const char*)'
+  StartAutomaticCapture(camera);
+                              ^
+..\src\LCameraServer.cpp: At global scope:
+..\src\LCameraServer.cpp:125:6: error: 'LCameraServer' has not been declared
+ void LCameraServer::StartAutomaticCapture(std::shared_ptr<USBCamera> camera) {
+      ^
+..\src\LCameraServer.cpp: In function 'void StartAutomaticCapture(std::shared_ptr<USBCamera>)':
+..\src\LCameraServer.cpp:126:49: error: 'm_imageMutex' was not declared in this scope
+  std::lock_guard<priority_recursive_mutex> lock(m_imageMutex);
+                                                 ^
+..\src\LCameraServer.cpp:127:6: error: 'm_autoCaptureStarted' was not declared in this scope
+  if (m_autoCaptureStarted)
+      ^
+..\src\LCameraServer.cpp:130:2: error: 'm_camera' was not declared in this scope
+  m_camera = camera;
+  ^
+..\src\LCameraServer.cpp:133:2: error: 'm_captureThread' was not declared in this scope
+  m_captureThread = std::thread(&LCameraServer::AutoCapture, this);
+  ^
+..\src\LCameraServer.cpp:133:33: error: 'LCameraServer' was not declared in this scope
+  m_captureThread = std::thread(&LCameraServer::AutoCapture, this);
+                                 ^
+..\src\LCameraServer.cpp:133:61: error: invalid use of 'this' in non-member function
+  m_captureThread = std::thread(&LCameraServer::AutoCapture, this);
+                                                             ^
+..\src\LCameraServer.cpp:135:2: error: 'm_autoCaptureStarted' was not declared in this scope
+  m_autoCaptureStarted = true;
+  ^
+..\src\LCameraServer.cpp: At global scope:
+..\src\LCameraServer.cpp:138:6: error: 'LCameraServer' has not been declared
+ bool LCameraServer::IsAutoCaptureStarted() {
+      ^
+..\src\LCameraServer.cpp: In function 'bool IsAutoCaptureStarted()':
+..\src\LCameraServer.cpp:139:49: error: 'm_imageMutex' was not declared in this scope
+  std::lock_guard<priority_recursive_mutex> lock(m_imageMutex);
+                                                 ^
+..\src\LCameraServer.cpp:140:9: error: 'm_autoCaptureStarted' was not declared in this scope
+  return m_autoCaptureStarted;
+         ^
+..\src\LCameraServer.cpp: At global scope:
+..\src\LCameraServer.cpp:143:6: error: 'LCameraServer' has not been declared
+ void LCameraServer::SetSize(unsigned int size) {
+      ^
+..\src\LCameraServer.cpp: In function 'void SetSize(unsigned int)':
+..\src\LCameraServer.cpp:144:49: error: 'm_imageMutex' was not declared in this scope
+  std::lock_guard<priority_recursive_mutex> lock(m_imageMutex);
+                                                 ^
+..\src\LCameraServer.cpp:145:7: error: 'm_camera' was not declared in this scope
+  if (!m_camera)
+       ^
+..\src\LCameraServer.cpp:147:14: error: 'kSize160x120' was not declared in this scope
+  if (size == kSize160x120)
+              ^
+..\src\LCameraServer.cpp:148:3: error: 'm_camera' was not declared in this scope
+   m_camera->SetSize(160, 120);
+   ^
+..\src\LCameraServer.cpp:149:19: error: 'kSize320x240' was not declared in this scope
+  else if (size == kSize320x240)
+                   ^
+..\src\LCameraServer.cpp:150:3: error: 'm_camera' was not declared in this scope
+   m_camera->SetSize(320, 240);
+   ^
+..\src\LCameraServer.cpp:151:19: error: 'kSize640x480' was not declared in this scope
+  else if (size == kSize640x480)
+                   ^
+..\src\LCameraServer.cpp:152:3: error: 'm_camera' was not declared in this scope
+   m_camera->SetSize(640, 480);
+   ^
+..\src\LCameraServer.cpp: At global scope:
+..\src\LCameraServer.cpp:155:6: error: 'LCameraServer' has not been declared
+ void LCameraServer::SetQuality(unsigned int quality) {
+      ^
+..\src\LCameraServer.cpp: In function 'void SetQuality(unsigned int)':
+..\src\LCameraServer.cpp:156:49: error: 'm_imageMutex' was not declared in this scope
+  std::lock_guard<priority_recursive_mutex> lock(m_imageMutex);
+                                                 ^
+..\src\LCameraServer.cpp:157:2: error: 'm_quality' was not declared in this scope
+  m_quality = quality > 100 ? 100 : quality;
+  ^
+..\src\LCameraServer.cpp: At global scope:
+..\src\LCameraServer.cpp:160:14: error: 'LCameraServer' has not been declared
+ unsigned int LCameraServer::GetQuality() {
+              ^
+..\src\LCameraServer.cpp: In function 'unsigned int GetQuality()':
+..\src\LCameraServer.cpp:161:49: error: 'm_imageMutex' was not declared in this scope
+  std::lock_guard<priority_recursive_mutex> lock(m_imageMutex);
+                                                 ^
+..\src\LCameraServer.cpp:162:9: error: 'm_quality' was not declared in this scope
+  return m_quality;
+         ^
+..\src\LCameraServer.cpp: At global scope:
+..\src\LCameraServer.cpp:165:6: error: 'LCameraServer' has not been declared
+ void LCameraServer::Serve() {
+      ^
+In file included from C:\Users\1750800311/wpilib/cpp/current/include/SensorBase.h:10:0,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/I2C.h:10,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/ADXL345_I2C.h:11,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/WPILib.h:15,
+                 from ..\src\LCameraServer.cpp:1:
+..\src\LCameraServer.cpp: In function 'void Serve()':
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:17:3: error: invalid use of 'this' in non-member function
+   this->SetErrnoError((context), __FILE__, __FUNCTION__, __LINE__)
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:18:29: note: in expansion of macro 'wpi_setErrnoErrorWithContext'
+ #define wpi_setErrnoError() wpi_setErrnoErrorWithContext("")
+                             ^
+..\src\LCameraServer.cpp:170:3: note: in expansion of macro 'wpi_setErrnoError'
+   wpi_setErrnoError();
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:17:3: error: invalid use of 'this' in non-member function
+   this->SetErrnoError((context), __FILE__, __FUNCTION__, __LINE__)
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:18:29: note: in expansion of macro 'wpi_setErrnoErrorWithContext'
+ #define wpi_setErrnoError() wpi_setErrnoErrorWithContext("")
+                             ^
+..\src\LCameraServer.cpp:177:3: note: in expansion of macro 'wpi_setErrnoError'
+   wpi_setErrnoError();
+   ^
+..\src\LCameraServer.cpp:184:27: error: 'kPort' was not declared in this scope
+  address.sin_port = htons(kPort);
+                           ^
+In file included from C:\Users\1750800311/wpilib/cpp/current/include/SensorBase.h:10:0,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/I2C.h:10,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/ADXL345_I2C.h:11,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/WPILib.h:15,
+                 from ..\src\LCameraServer.cpp:1:
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:17:3: error: invalid use of 'this' in non-member function
+   this->SetErrnoError((context), __FILE__, __FUNCTION__, __LINE__)
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:18:29: note: in expansion of macro 'wpi_setErrnoErrorWithContext'
+ #define wpi_setErrnoError() wpi_setErrnoErrorWithContext("")
+                             ^
+..\src\LCameraServer.cpp:187:3: note: in expansion of macro 'wpi_setErrnoError'
+   wpi_setErrnoError();
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:17:3: error: invalid use of 'this' in non-member function
+   this->SetErrnoError((context), __FILE__, __FUNCTION__, __LINE__)
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:18:29: note: in expansion of macro 'wpi_setErrnoErrorWithContext'
+ #define wpi_setErrnoError() wpi_setErrnoErrorWithContext("")
+                             ^
+..\src\LCameraServer.cpp:190:3: note: in expansion of macro 'wpi_setErrnoError'
+   wpi_setErrnoError();
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:17:3: error: invalid use of 'this' in non-member function
+   this->SetErrnoError((context), __FILE__, __FUNCTION__, __LINE__)
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:18:29: note: in expansion of macro 'wpi_setErrnoErrorWithContext'
+ #define wpi_setErrnoError() wpi_setErrnoErrorWithContext("")
+                             ^
+..\src\LCameraServer.cpp:198:4: note: in expansion of macro 'wpi_setErrnoError'
+    wpi_setErrnoError();
+    ^
+..\src\LCameraServer.cpp:204:3: error: 'Request' was not declared in this scope
+   Request req;
+   ^
+In file included from C:\Users\1750800311/wpilib/cpp/current/include/SensorBase.h:10:0,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/I2C.h:10,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/ADXL345_I2C.h:11,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/WPILib.h:15,
+                 from ..\src\LCameraServer.cpp:1:
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:17:3: error: invalid use of 'this' in non-member function
+   this->SetErrnoError((context), __FILE__, __FUNCTION__, __LINE__)
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:18:29: note: in expansion of macro 'wpi_setErrnoErrorWithContext'
+ #define wpi_setErrnoError() wpi_setErrnoErrorWithContext("")
+                             ^
+..\src\LCameraServer.cpp:220:5: note: in expansion of macro 'wpi_setErrnoError'
+     wpi_setErrnoError();
+     ^
+..\src\LCameraServer.cpp:227:4: error: 'requestBuffer' was not declared in this scope
+    requestBuffer[index] = next;
+    ^
+..\src\LCameraServer.cpp:236:11: error: 'req' was not declared in this scope
+   memcpy(&req, &requestBuffer, sizeof(Request));
+           ^
+..\src\LCameraServer.cpp:236:17: error: 'requestBuffer' was not declared in this scope
+   memcpy(&req, &requestBuffer, sizeof(Request));
+                 ^
+..\src\LCameraServer.cpp:245:26: error: 'kHardwareCompression' was not declared in this scope
+   if (req.compression != kHardwareCompression) {
+                          ^
+In file included from C:\Users\1750800311/wpilib/cpp/current/include/SensorBase.h:10:0,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/I2C.h:10,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/ADXL345_I2C.h:11,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/WPILib.h:15,
+                 from ..\src\LCameraServer.cpp:1:
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:45:3: error: invalid use of 'this' in non-member function
+   this->SetWPIError((wpi_error_s_##error), (wpi_error_value_##error), \
+   ^
+..\src\LCameraServer.cpp:250:5: note: in expansion of macro 'wpi_setWPIErrorWithContext'
+     wpi_setWPIErrorWithContext(IncompatibleState,
+     ^
+..\src\LCameraServer.cpp:261:52: error: 'm_imageMutex' was not declared in this scope
+    std::unique_lock<priority_recursive_mutex> lock(m_imageMutex);
+                                                    ^
+..\src\LCameraServer.cpp:262:9: error: 'm_camera' was not declared in this scope
+    if (!m_camera) {
+         ^
+..\src\LCameraServer.cpp:265:5: error: 'm_newImageVariable' was not declared in this scope
+     m_newImageVariable.wait(lock);
+     ^
+..\src\LCameraServer.cpp:267:4: error: 'm_hwClient' was not declared in this scope
+    m_hwClient = req.compression == kHardwareCompression;
+    ^
+..\src\LCameraServer.cpp:267:36: error: 'kHardwareCompression' was not declared in this scope
+    m_hwClient = req.compression == kHardwareCompression;
+                                    ^
+..\src\LCameraServer.cpp:270:13: error: 'm_camera' was not declared in this scope
+    else if (m_camera)
+             ^
+..\src\LCameraServer.cpp:280:53: error: 'm_imageMutex' was not declared in this scope
+     std::unique_lock<priority_recursive_mutex> lock(m_imageMutex);
+                                                     ^
+..\src\LCameraServer.cpp:281:5: error: 'm_newImageVariable' was not declared in this scope
+     m_newImageVariable.wait(lock);
+     ^
+..\src\LCameraServer.cpp:282:17: error: 'm_imageData' was not declared in this scope
+     imageData = m_imageData;
+                 ^
+In file included from C:\Users\1750800311/wpilib/cpp/current/include/SensorBase.h:10:0,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/I2C.h:10,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/ADXL345_I2C.h:11,
+                 from C:\Users\1750800311/wpilib/cpp/current/include/WPILib.h:15,
+                 from ..\src\LCameraServer.cpp:1:
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:17:3: error: invalid use of 'this' in non-member function
+   this->SetErrnoError((context), __FILE__, __FUNCTION__, __LINE__)
+   ^
+..\src\LCameraServer.cpp:295:5: note: in expansion of macro 'wpi_setErrnoErrorWithContext'
+     wpi_setErrnoErrorWithContext(
+     ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:17:3: error: invalid use of 'this' in non-member function
+   this->SetErrnoError((context), __FILE__, __FUNCTION__, __LINE__)
+   ^
+..\src\LCameraServer.cpp:301:5: note: in expansion of macro 'wpi_setErrnoErrorWithContext'
+     wpi_setErrnoErrorWithContext(
+     ^
+C:\Users\1750800311/wpilib/cpp/current/include/ErrorBase.h:17:3: error: invalid use of 'this' in non-member function
+   this->SetErrnoError((context), __FILE__, __FUNCTION__, __LINE__)
+   ^
+..\src\LCameraServer.cpp:307:5: note: in expansion of macro 'wpi_setErrnoErrorWithContext'
+     wpi_setErrnoErrorWithContext(
+     ^
+..\src\LCameraServer.cpp: In function 'bool IsAutoCaptureStarted()':
+..\src\LCameraServer.cpp:141:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+..\src\LCameraServer.cpp: In function 'unsigned int GetQuality()':
+..\src\LCameraServer.cpp:163:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+
+16:30:35 Build Finished (took 2s.142ms)
+
