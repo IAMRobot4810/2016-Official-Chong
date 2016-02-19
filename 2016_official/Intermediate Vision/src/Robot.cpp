@@ -1,4 +1,5 @@
 #include "WPILib.h"
+#include "NIVision.h"
 
 /**
  * Uses IMAQdx to manually acquire a new image each frame, and annotate the image by drawing
@@ -33,10 +34,11 @@ public:
         // in turn send it to the dashboard.
 		while(IsOperatorControl() && IsEnabled()) {
 			IMAQdxGrab(session, frame, true, NULL);
+			imaqFlip(frame, frame, FlipAxis::IMAQ_VERTICAL_AXIS);
 			if(imaqError != IMAQdxErrorSuccess) {
 				DriverStation::ReportError("IMAQdxGrab error: " + std::to_string((long)imaqError) + "\n");
 			} else {
-				imaqDrawShapeOnImage(frame, frame, { 10, 10, 100, 100 }, DrawMode::IMAQ_DRAW_VALUE, ShapeMode::IMAQ_SHAPE_OVAL, 0.0f);
+				imaqDrawShapeOnImage(frame, frame, { 10, 10, 100, 100 }, DrawMode::IMAQ_DRAW_VALUE, ShapeMode::IMAQ_SHAPE_RECT, 0.0f);
 				CameraServer::GetInstance()->SetImage(frame);
 			}
 			Wait(0.005);				// wait for a motor update time
