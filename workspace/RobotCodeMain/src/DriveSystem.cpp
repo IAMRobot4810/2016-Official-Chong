@@ -16,6 +16,7 @@ DriveSystem::DriveSystem(){
 	//Ask about which Talons have to be reversed
 	roboDrive->SetInvertedMotor(RobotDrive::kFrontLeftMotor, true);
 	roboDrive->SetInvertedMotor(RobotDrive::kRearLeftMotor, true);
+	roboDrive->SetExpiration(0.1);
 
 	caster = new Solenoid(0, 0);
 }

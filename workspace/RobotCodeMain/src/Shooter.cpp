@@ -81,6 +81,10 @@ void Shooter::Pickup(float speed){
 
 }
 
+void Shooter::PickupNoSense(float speed){
+		picker->Set(speed);
+}
+
 void Shooter::Raise(float speed){
 
 	if(raiseShoot->GetEncPosition() < shooterTopLimit){
@@ -93,6 +97,10 @@ void Shooter::Raise(float speed){
 
 }
 
+void Shooter::RaiseNoSense(float speed){
+		raiseShoot->Set(speed);
+}
+
 void Shooter::Lower(float speed){
 
 	if(raiseShoot->GetEncPosition() > shooterRestLimit){
@@ -103,6 +111,10 @@ void Shooter::Lower(float speed){
 		raiseShoot->Set(0.0);
 	}
 
+}
+
+void Shooter::LowerNoSense(float speed){
+		raiseShoot->Set(-speed);
 }
 
 void Shooter::HighGoal(float speed, int encoVal){
@@ -181,5 +193,16 @@ void Shooter::Shoot(int leftRPM, int rightRPM){
 	shootSol->Set(true);
 	Wait(1.0);
 	shootSol->Set(false);*/
+
+}
+
+void Shooter::ShootNoSense(float leftPow, float rightPow){
+
+	lShooter->Set(leftPow);
+	rShooter->Set(rightPow);
+	Wait(0.5);
+	shootSol->Set(true);
+	Wait(1.0);
+	shootSol->Set(false);
 
 }

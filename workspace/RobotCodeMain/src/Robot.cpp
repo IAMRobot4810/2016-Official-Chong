@@ -1,4 +1,5 @@
 #include "WPILib.h"
+#include "TeleopControl.h"
 
 class Robot: public IterativeRobot
 {
@@ -8,6 +9,8 @@ private:
 	const std::string autoNameDefault = "Default";
 	const std::string autoNameCustom = "My Auto";
 	std::string autoSelected;
+
+	TeleopControl cont;
 
 	void RobotInit()
 	{
@@ -56,6 +59,9 @@ private:
 
 	void TeleopPeriodic()
 	{
+
+		cont.StickDrive();
+		cont.DashPlace();
 
 	}
 

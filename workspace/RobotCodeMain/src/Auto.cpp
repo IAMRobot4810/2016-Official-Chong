@@ -15,8 +15,8 @@ Auto::Auto(int mode_, int pos_){
 	sys = new DriveSystem();
 	sho = new Shooter();
 
-	mode = mode_;
-	pos = pos_;
+	//mode = mode_;
+	//pos = pos_;
 
 
 

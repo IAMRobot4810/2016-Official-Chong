@@ -13,6 +13,7 @@
 #include "SmartDashboard/SmartDashboard.h"
 #include "DriveSystem.h"
 #include "Shooter.h"
+#include "CameraServer.h"
 
 class TeleopControl{
 
@@ -22,7 +23,7 @@ public:
 
 	void StickDrive();
 	void ButtonControl();
-	void TriggerControl();
+	void DashPlace();
 
 private:
 
@@ -30,13 +31,15 @@ private:
 	Joystick *cont2;
 	JoystickButton *a2Button;
 	JoystickButton *b2Button;
-	JoystickButton *r2Bumper;
-	JoystickButton *l2Bumper;
+	JoystickButton *r1Bumper;
+	JoystickButton *l1Bumper;
 	JoystickButton *x2Button;
 	JoystickButton *y2Button;
 
 	JoystickButton *l1StickButton;
 	JoystickButton *r1StickButton;
+
+	JoystickButton *start1Button;
 
 	DriveSystem *drive;
 	Shooter *shoot;
@@ -49,6 +52,8 @@ private:
 
 	float r2TrigIn;
 	float r2TrigScale;
+
+	bool sensorOverride;
 
 	SmartDashboard *dash;
 

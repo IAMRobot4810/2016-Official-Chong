@@ -22,12 +22,16 @@ public:
 
 	bool DetectBall();
 	void Pickup(float speed);
+	void PickupNoSense(float speed);
 	void Raise(float speed);
+	void RaiseNoSense(float speed);
 	void Lower(float speed);
+	void LowerNoSense(float speed);
 	void HighGoal(float speed, int encoVal);
 	void LowGoal(float speed, int encoVal);
 	int ReadRPM(DigitalInput *banner, Timer *Minute);
 	void Shoot(int leftRPM, int rightRPM);
+	void ShootNoSense(float leftPow, float rightPow);
 
 
 private:
