@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Simple Vision/src/LCamera.h&apos; to &apos;LCameraServer.h&apos;" description="Rename resource &apos;LCamera.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/LCamera.h" name="LCameraServer.h" stamp="1455916732876" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Simple Vision/src/LCamera.cpp&apos; to &apos;LCameraServer.cpp&apos;" description="Rename resource &apos;LCamera.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/LCamera.cpp" name="LCameraServer.cpp" stamp="1455916758951" updateReferences="true"/>
+</session>
