@@ -10,9 +10,13 @@ class IntermediateVisionRobot : public SampleRobot
 	IMAQdxSession session;
 	Image *frame;
 	IMAQdxError imaqError;
+	Joystick* stick;
+	JoystickButton* a_button;
 
 public:
 	void RobotInit() override {
+		stick = new Joystick(0);
+		a_button = new JoystickButton(stick, 1);
 	    // create an image
 		frame = imaqCreateImage(IMAQ_IMAGE_RGB, 0);
 		//the camera name (ex "cam0") can be found through the roborio web interface
@@ -34,11 +38,14 @@ public:
         // in turn send it to the dashboard.
 		while(IsOperatorControl() && IsEnabled()) {
 			IMAQdxGrab(session, frame, true, NULL);
-			imaqFlip(frame, frame, FlipAxis::IMAQ_VERTICAL_AXIS);
+
+			if(a_button->Get()){
+				imaqFlip(frame, frame, FlipAxis::IMAQ_HORIZONTAL_AXIS);
+			}
 			if(imaqError != IMAQdxErrorSuccess) {
 				DriverStation::ReportError("IMAQdxGrab error: " + std::to_string((long)imaqError) + "\n");
 			} else {
-				imaqDrawShapeOnImage(frame, frame, { 10, 10, 100, 100 }, DrawMode::IMAQ_DRAW_VALUE, ShapeMode::IMAQ_SHAPE_RECT, 0.0f);
+				imaqDrawShapeOnImage(frame, frame, { 100, 100, 10, 50 }, DrawMode::IMAQ_DRAW_VALUE, ShapeMode::IMAQ_SHAPE_RECT, 0.0f);
 				CameraServer::GetInstance()->SetImage(frame);
 			}
 			Wait(0.005);				// wait for a motor update time
