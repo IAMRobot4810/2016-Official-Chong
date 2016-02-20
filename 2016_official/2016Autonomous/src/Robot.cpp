@@ -14,7 +14,7 @@ private:
 	const std::string rightSideTerrain = "Right Side | Terrain Defense";
 
 	std::string autoSelected;
-	Auto* auton;
+
 
 	void RobotInit()
 	{
@@ -45,21 +45,25 @@ private:
 		std::cout << "Auto selected: " << autoSelected << std::endl;
 
 		if(autoSelected == leftSideArm){
-			auton->Auto(0, 1);
+			Auto auton(0, 1);
+			auton.InternalAutonChooser();
 		} else if(autoSelected == leftSideTerrain){
-			auton->Auto(0, 0);
+			Auto auton(0, 0);
+			auton.InternalAutonChooser();
 		} else if(autoSelected == rightSideArm){
-			auton->Auto(1, 1);
+			Auto auton(1, 1);
+			auton.InternalAutonChooser();
 		} else if(autoSelected == rightSideTerrain){
-			auton->Auto(1, 0);
+			Auto auton(1, 0);
+			auton.InternalAutonChooser();
 		} else {
-			auton->Auto(2, 2);
+			Auto auton(2, 2);
+			auton.InternalAutonChooser();
 		}
 	}
 
 	void AutonomousPeriodic()
 	{
-		auton->InternalAutonChooser();
 	}
 
 	void TeleopInit()

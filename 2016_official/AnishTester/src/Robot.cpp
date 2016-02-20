@@ -1,5 +1,6 @@
 #include "WPILib.h"
 #include "NIVision.h"
+#include "ImageProcess.h"
 
 class Robot: public IterativeRobot
 {
@@ -13,6 +14,7 @@ private:
 	IMAQdxSession session;
 	IMAQdxError imaqError;
 	Image* frame;
+	//Image* snapShot;
 
 	void RobotInit()
 	{
@@ -23,6 +25,7 @@ private:
 		if(!CameraInit()){
 			SmartDashboard::PutString("Error message", genericErrorMessage);
 		}
+
 	}
 
 
@@ -71,6 +74,9 @@ private:
 			CameraServer::GetInstance()->SetImage(frame);
 		}
 
+
+
+
 		Wait(0.005); //refresh thingy i suppose
 	}
 
@@ -95,6 +101,8 @@ private:
 
 		return true;
 	}
+
+
 };
 
 START_ROBOT_CLASS(Robot)

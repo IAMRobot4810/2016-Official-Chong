@@ -5,12 +5,17 @@
  *      Author: NinjaPC
  */
 
-#include <ImageProcess.h>
+#include "ImageProcess.h"
 #include <vector>
 #include <cmath>
 ImageProcess::ImageProcess() {
 	// TODO Auto-generated constructor stub
 
+}
+
+ImageProcess::ImageProcess(Image* img_, Image* bin_img_){
+	frame = img_;
+	binaryFrame = bin_img_;
 }
 
 ImageProcess::~ImageProcess() {

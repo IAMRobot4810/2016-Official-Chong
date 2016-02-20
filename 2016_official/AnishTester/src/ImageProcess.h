@@ -8,9 +8,12 @@
 #ifndef SRC_IMAGEPROCESS_H_
 #define SRC_IMAGEPROCESS_H_
 
+#include "WPILib.h"
+
 class ImageProcess {
 public:
 	ImageProcess();
+	ImageProcess(Image* img_, Image* bin_img_);
 	virtual ~ImageProcess();
 public:
 	struct ParticleReport {

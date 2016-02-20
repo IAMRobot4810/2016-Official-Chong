@@ -8,6 +8,8 @@
 #ifndef SRC_IMAGEPROCESS_H_
 #define SRC_IMAGEPROCESS_H_
 
+#include "WPILib.h"
+
 class ImageProcess {
 public:
 	ImageProcess();

@@ -15,7 +15,7 @@ private:
 
 	bool targetAcquired;
 	enum AutonPos{LEFT, RIGHT, NONE};
-	enum AutonMode{TERRAIN, ARM, NONE};
+	enum AutonMode{TERRAIN, ARM, NONE_};
 	AutonMode mode;
 	AutonPos pos;
 public:
