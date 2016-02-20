@@ -45,7 +45,7 @@ public:
 			if(imaqError != IMAQdxErrorSuccess) {
 				DriverStation::ReportError("IMAQdxGrab error: " + std::to_string((long)imaqError) + "\n");
 			} else {
-				imaqDrawShapeOnImage(frame, frame, { 100, 100, 10, 50 }, DrawMode::IMAQ_DRAW_VALUE, ShapeMode::IMAQ_SHAPE_RECT, 0.0f);
+				//imaqDrawShapeOnImage(frame, frame, { 100, 100, 10, 50 }, DrawMode::IMAQ_DRAW_VALUE, ShapeMode::IMAQ_SHAPE_RECT, 0.0f);
 				CameraServer::GetInstance()->SetImage(frame);
 			}
 			Wait(0.005);				// wait for a motor update time
