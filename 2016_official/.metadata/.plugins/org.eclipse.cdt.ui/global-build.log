@@ -1,36 +1,14 @@
-19:19:56 **** Incremental Build of configuration Debug for project Intermediate Vision ****
+10:31:00 **** Clean-only build of configuration Debug for project AnishTester ****
+rm -rf src/Robot.d FRCUserProgram src/Robot.o 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[\usr\local\bin;C:/Program Files/Java/jre1.8.0_66/bin/client;C:/Program Files/Java/jre1.8.0_66/bin;C:/Program Files/Java/jre1.8.0_66/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\Windows Live\Shared;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\Intel\OpenCL SDK\2.0\bin\x86;C:\MinGW\bin;C:\Program Files\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_66\bin;C:\Program Files\Java\jre1.8.0_66\bin ;C:\frc\bin;C:\ProgramData\1750800311\atom\bin;C:\Program Files\Java\jdk1.8.0_60\bin;C:\Program Files\Java\jdk1.8.0_60\bin;C:\MinGW\bin;C:\Program Files\GnuWin32\bin;C:\Program Files\Java\jre1.8.0_66\bin;C:\Program Files\Java\jdk1.8.0_66;C:\frc\bin;;C:\Program Files\eclipse]
+
+10:31:01 **** Clean-only build of configuration Debug for project AnishTester ****
+10:31:10 **** Rebuild of configuration Debug for project AnishTester ****
 Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\Intermediate Vision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\AnishTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
 arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-Info: Nothing to build for Intermediate Vision
-Info: Nothing to build for Intermediate Vision
-19:31:14 **** Incremental Build of configuration Debug for project Intermediate Vision ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\Intermediate Vision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-Info: Nothing to build for Intermediate Vision
-Info: Nothing to build for Intermediate Vision
-19:32:55 **** Incremental Build of configuration Debug for project Intermediate Vision ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\Intermediate Vision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-Info: Nothing to build for Intermediate Vision
-Info: Nothing to build for Intermediate Vision
-19:33:56 **** Incremental Build of configuration Debug for project Intermediate Vision ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\Intermediate Vision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-Info: Nothing to build for Intermediate Vision
-Info: Nothing to build for Intermediate Vision
-19:35:42 **** Incremental Build of configuration Debug for project Intermediate Vision ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\Intermediate Vision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-Info: Nothing to build for Intermediate Vision
-Info: Nothing to build for Intermediate Vision
-09:32:30 **** Incremental Build of configuration Debug for project Intermediate Vision ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\Intermediate Vision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-Info: Nothing to build for Intermediate Vision
-Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for AnishTester
+Info: Nothing to build for AnishTester

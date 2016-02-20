@@ -7179,3 +7179,514 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 09:34:19.086
 !MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:17:34.718
+!MESSAGE Project: AnishTester Project Type: edu.wpi.first.wpilib.plugins.cpp.wizards.newproject.CPPProjectType$1@182a8ce
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-20 10:17:34.990
+!MESSAGE Indexed 'AnishTester' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 10:17:52.689
+!MESSAGE Internal error while trying to serialize language settings
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:121)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:879)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsManager.serializeLanguageSettings(LanguageSettingsManager.java:351)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsSerializableProvider.serializeLanguageSettings(LanguageSettingsSerializableProvider.java:257)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:491)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.689
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.core 4 4 2016-02-20 10:17:52.817
+!MESSAGE Error serializing language settings
+!STACK 1
+org.eclipse.core.runtime.CoreException: Internal error while trying to serialize language settings
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:909)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsManager.serializeLanguageSettings(LanguageSettingsManager.java:351)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsSerializableProvider.serializeLanguageSettings(LanguageSettingsSerializableProvider.java:257)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:491)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:121)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:879)
+	... 5 more
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2016-02-20 10:17:52.817
+!MESSAGE Internal error while trying to serialize language settings
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:121)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:879)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsManager.serializeLanguageSettings(LanguageSettingsManager.java:351)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsSerializableProvider.serializeLanguageSettings(LanguageSettingsSerializableProvider.java:257)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:491)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.818
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.876
+!MESSAGE Error deleting markers.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.findMarkers(Resource.java:1007)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$SDMarkerGenerator.deleteMarkers(AbstractBuiltinSpecsDetector.java:214)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:552)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.876
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.912
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:696)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	... 4 more
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.912
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.912
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.929
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:696)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	... 4 more
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.929
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.929
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 10:17:52.939
+!MESSAGE Internal error while trying to serialize language settings
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:121)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:879)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsManager.serializeLanguageSettings(LanguageSettingsManager.java:351)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsSerializableProvider.serializeLanguageSettings(LanguageSettingsSerializableProvider.java:257)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:491)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.939
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.core 4 4 2016-02-20 10:17:52.944
+!MESSAGE Error serializing language settings
+!STACK 1
+org.eclipse.core.runtime.CoreException: Internal error while trying to serialize language settings
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:909)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsManager.serializeLanguageSettings(LanguageSettingsManager.java:351)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsSerializableProvider.serializeLanguageSettings(LanguageSettingsSerializableProvider.java:257)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:491)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:121)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:879)
+	... 5 more
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2016-02-20 10:17:52.945
+!MESSAGE Internal error while trying to serialize language settings
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:121)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:879)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsManager.serializeLanguageSettings(LanguageSettingsManager.java:351)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsSerializableProvider.serializeLanguageSettings(LanguageSettingsSerializableProvider.java:257)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:491)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.945
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.957
+!MESSAGE Error deleting markers.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.findMarkers(Resource.java:1007)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$SDMarkerGenerator.deleteMarkers(AbstractBuiltinSpecsDetector.java:214)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:552)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.957
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.959
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:696)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	... 4 more
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.960
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.960
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.962
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:696)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	... 4 more
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.962
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.962
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 10:17:52.967
+!MESSAGE Internal error while trying to serialize language settings
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:121)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:879)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsManager.serializeLanguageSettings(LanguageSettingsManager.java:351)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsSerializableProvider.serializeLanguageSettings(LanguageSettingsSerializableProvider.java:257)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:491)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.967
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.core 4 4 2016-02-20 10:17:52.968
+!MESSAGE Error serializing language settings
+!STACK 1
+org.eclipse.core.runtime.CoreException: Internal error while trying to serialize language settings
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:909)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsManager.serializeLanguageSettings(LanguageSettingsManager.java:351)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsSerializableProvider.serializeLanguageSettings(LanguageSettingsSerializableProvider.java:257)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:491)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:121)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:879)
+	... 5 more
+!SUBENTRY 1 org.eclipse.cdt.core 4 0 2016-02-20 10:17:52.968
+!MESSAGE Internal error while trying to serialize language settings
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Folder.assertCreateRequirements(Folder.java:33)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:93)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:121)
+	at org.eclipse.cdt.internal.core.language.settings.providers.LanguageSettingsProvidersSerializer.serializeLanguageSettings(LanguageSettingsProvidersSerializer.java:879)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsManager.serializeLanguageSettings(LanguageSettingsManager.java:351)
+	at org.eclipse.cdt.core.language.settings.providers.LanguageSettingsSerializableProvider.serializeLanguageSettings(LanguageSettingsSerializableProvider.java:257)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:491)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.968
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.977
+!MESSAGE Error deleting markers.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.findMarkers(Resource.java:1007)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$SDMarkerGenerator.deleteMarkers(AbstractBuiltinSpecsDetector.java:214)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:552)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.977
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.984
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:696)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	... 4 more
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.984
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.984
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.990
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error running Builtin Specs Detector
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:696)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	... 4 more
+!SUBENTRY 1 org.eclipse.cdt.managedbuilder.core 4 0 2016-02-20 10:17:52.990
+!MESSAGE Error running Builtin Specs Detector
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Intermediate Vision' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:143)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:214)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1206)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:157)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:683)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 372 2016-02-20 10:17:52.990
+!MESSAGE Resource '/Intermediate Vision' is not open.
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 10:17:57.113
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 10:17:58.013
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 10:17:58.990
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:30:27.024
+!MESSAGE Running ant file: C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong\2016_official\AnishTester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:30:27.025
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:30:46.782
+!MESSAGE Running ant file: C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong\2016_official\AnishTester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:30:46.782
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-20 10:30:47.643
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 10:31:00.550
+!MESSAGE Error: Cannot run program "rm": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "rm": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.CommandBuilder.build(CommandBuilder.java:105)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.StepBuilder.build(StepBuilder.java:94)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.cleanWithInternalBuilder(CommonBuilder.java:1209)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1098)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.clean(CommonBuilder.java:1046)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:486)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:287)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-20 10:31:07.265
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:31:34.718
+!MESSAGE Running ant file: C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong\2016_official\AnishTester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:31:34.719
+!MESSAGE Targets: deploy, Mode: run
