@@ -13,6 +13,8 @@ Shooter::Shooter(){
 	raiseShoot->SetFeedbackDevice(CANTalon::CtreMagEncoder_Absolute);
 	//Needs to be checked, documentation has relative and absolute with opposite descriptions
 
+	shooterAngle = (raiseShoot->GetEncPosition()); // Use angle to create linear relation
+
 	lShooter = new CANTalon(5);
 	rShooter = new CANTalon (6);
 	lBanner = new DigitalInput(1);
@@ -71,10 +73,14 @@ void Shooter::Pickup(float speed){
 
 	if(raiseShoot->GetEncPosition() == shooterRestLimit && DetectBall() == false){
 		picker->Set(speed);
+		lShooter->Set(-(speed/2));
+		rShooter->Set(-(speed/2));
 	}
 
 	else{
 		picker->Set(0.0);
+		lShooter->Set(0.0);
+		rShooter->Set(0.0);
 	}
 
 	DetectBall();
@@ -83,6 +89,8 @@ void Shooter::Pickup(float speed){
 
 void Shooter::PickupNoSense(float speed){
 		picker->Set(speed);
+		lShooter->Set(-(speed/2));
+		rShooter->Set(-(speed/2));
 }
 
 void Shooter::Raise(float speed){
@@ -141,7 +149,7 @@ void Shooter::LowGoal(float speed, int encoVal){
 
 }
 
-int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute){
+int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute, int rpmReading){
 
 	Minute->Reset();
 	Minute->Start();
@@ -173,12 +181,12 @@ void Shooter::Shoot(int leftRPM, int rightRPM){
 		rightRPM = 5500;
 	}
 
-	while(ReadRPM(lBanner, rpmTimerL) < leftRPM){
+	while(ReadRPM(lBanner, rpmTimerL, lRPMReading) < leftRPM){
 		lShooter->Set(lPow);
 		lPow += 0.05;
 	}
 
-	while(ReadRPM(rBanner, rpmTimerR) < rightRPM){
+	while(ReadRPM(rBanner, rpmTimerR, rRPMReading) < rightRPM){
 		rShooter->Set(rPow);
 		rPow += 0.05;
 	}

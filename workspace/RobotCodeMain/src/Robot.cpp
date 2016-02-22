@@ -11,6 +11,7 @@ private:
 	std::string autoSelected;
 
 	TeleopControl cont;
+	Image *camImage;
 
 	void RobotInit()
 	{
@@ -18,6 +19,12 @@ private:
 		chooser->AddDefault(autoNameDefault, (void*)&autoNameDefault);
 		chooser->AddObject(autoNameCustom, (void*)&autoNameCustom);
 		SmartDashboard::PutData("Auto Modes", chooser);
+
+		CameraServer::GetInstance()->SetQuality(50);
+		//the camera name (ex "cam0") can be found through the roborio web interface
+		CameraServer::GetInstance()->StartAutomaticCapture("cam0");
+
+		camImage = imaqCreateImage(IMAQ_IMAGE_RGB, 0);
 	}
 
 
@@ -61,7 +68,14 @@ private:
 	{
 
 		cont.StickDrive();
+		cont.ButtonControl();
 		cont.DashPlace();
+
+		if(cont.cameraFlip == true){
+			imaqFlip(camImage, camImage, FlipAxis::IMAQ_HORIZONTAL_AXIS);
+		}
+
+		Wait(0.005);
 
 	}
 

@@ -9352,3 +9352,849 @@ java.net.SocketTimeoutException: Accept timed out
 
 !ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-18 19:16:54.954
 !MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-19 20:10:03.781
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-19 20:10:03.796
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-19 20:10:24.633
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-19 20:10:48.985
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-19 20:10:48.986
+!MESSAGE Targets: deploy, Mode: run
+!SESSION 2016-02-20 09:35:57.512 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-02-20 09:38:57.431
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-20 09:44:56.663
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-20 09:45:27.214
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-20 09:45:27.214
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-20 09:45:27.214
+!MESSAGE Installing cpp if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-20 09:45:27.214
+!MESSAGE Installedcpp
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 09:57:23.237
+!MESSAGE Project: Button Tester Project Type: edu.wpi.first.wpilib.plugins.cpp.wizards.newproject.CPPProjectType$1@189f463
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-20 09:57:37.383
+!MESSAGE Indexed 'Button Tester' (0 sources, 0 headers) in 0.01 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 09:58:07.080
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 09:58:35.402
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 09:58:35.902
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:20:18.903
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:20:18.931
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-20 10:21:34.868
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:23:44.625
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:23:44.626
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:25:34.898
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:25:34.899
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:26:57.692
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:26:57.693
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-20 10:29:56.938
+!MESSAGE [edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@13457b4, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@aed37a, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@103d598, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@9d4353, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1bd20c3, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1881e4d, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@84ac31, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@7ec29, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1273d2, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@16f762b, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@4bbe13, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1f26d97, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@a30858, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@4fe909, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1216335, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@17b25d3, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@108196c, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@c8b8a5, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@9654c2, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@b3affe, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@10b08bd, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@bf87a9, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@a7f638, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@11c658d]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-20 10:29:56.939
+!MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@9bc533, edu.wpi.first.wpilib.plugins.core.wizards.Tag@cd9f86, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1e4b2d1, edu.wpi.first.wpilib.plugins.core.wizards.Tag@14085ed, edu.wpi.first.wpilib.plugins.core.wizards.Tag@19272ab, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1a5f8b0, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1a7a4af, edu.wpi.first.wpilib.plugins.core.wizards.Tag@d3c5b, edu.wpi.first.wpilib.plugins.core.wizards.Tag@38139b, edu.wpi.first.wpilib.plugins.core.wizards.Tag@d00f54, edu.wpi.first.wpilib.plugins.core.wizards.Tag@b8443d, edu.wpi.first.wpilib.plugins.core.wizards.Tag@12c47d5, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1682fa0, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1ea3176, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1f31ada]
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-20 10:30:54.969
+!MESSAGE Indexed 'Simple Vision' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 10:31:02.356
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 10:31:05.138
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-20 10:31:06.039
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:46:19.598
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:46:19.599
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:47:50.886
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:47:50.887
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:52:08.508
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:52:08.509
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:54:08.623
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:54:08.624
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:56:55.361
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:56:55.362
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:59:59.218
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 10:59:59.219
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 11:00:19.150
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 11:00:19.151
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 11:01:24.453
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 11:01:24.453
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 11:03:06.648
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 11:03:06.649
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 12:13:53.226
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 12:13:53.226
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 12:16:16.516
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 12:16:16.516
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 12:18:34.457
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Button Tester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 12:18:34.457
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:15:10.645
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:15:10.646
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-20 14:15:31.253
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:17:53.800
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:17:53.801
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:19:48.620
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:19:48.621
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:46:09.212
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:46:09.225
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:52:02.913
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:52:02.914
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:52:35.317
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:52:35.318
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:55:45.177
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 14:55:45.177
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 15:00:35.368
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 15:00:35.369
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 15:01:32.881
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 15:01:32.881
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 15:04:26.864
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 15:04:26.865
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 15:05:43.823
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 15:05:43.824
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 15:10:11.199
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-20 15:10:11.200
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-21 12:28:22.997
+!MESSAGE [edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1df57d7, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@133e722, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1f2114c, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@99e2a2, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@14561c9, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@17b86f4, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@9a93a6, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1b3e2a5, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1049bb3, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@77f501, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@de528a, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@3828be, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1e6ec49, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@9ad009, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@909252, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1de35e6, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@19811b0, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1028fd2, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1928362, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@137e933, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@56934, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@10a0a39, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@e21e69, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@213b7]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-21 12:28:23.068
+!MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@163870a, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1d0a1d, edu.wpi.first.wpilib.plugins.core.wizards.Tag@85d61, edu.wpi.first.wpilib.plugins.core.wizards.Tag@d79bc, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1edf6e0, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1ca4de2, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1ede26f, edu.wpi.first.wpilib.plugins.core.wizards.Tag@5aba77, edu.wpi.first.wpilib.plugins.core.wizards.Tag@c819aa, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1f2f7cc, edu.wpi.first.wpilib.plugins.core.wizards.Tag@16a9607, edu.wpi.first.wpilib.plugins.core.wizards.Tag@48149f, edu.wpi.first.wpilib.plugins.core.wizards.Tag@bb44f5, edu.wpi.first.wpilib.plugins.core.wizards.Tag@499df9, edu.wpi.first.wpilib.plugins.core.wizards.Tag@188fcd9]
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-21 12:29:25.631
+!MESSAGE Indexed 'Simple Vision' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 12:29:46.060
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 12:29:47.481
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 12:29:49.141
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 12:33:35.070
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Simple Vision\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 12:33:35.080
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-21 12:34:00.606
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 12:39:38.815
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Simple Vision\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 12:39:38.825
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 12:49:20.450
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 12:49:20.451
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-21 12:49:41.000
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 12:52:52.851
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 12:52:52.852
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 13:04:03.059
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 13:04:03.060
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 13:25:31.529
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 13:25:31.530
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-21 14:07:15.634
+!MESSAGE [edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@15f6917, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@7cf443, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@130405, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@9525b, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@5c969c, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@115ae78, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@120a9f3, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1e1a046, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1bf2d90, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1b12071, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1187645, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@16f15b0, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@16a6920, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1166b94, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1fe9e2d, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@51c0f7, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@e28ef4, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1619f7, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1a2e1ae, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@158d9d5, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@16b6164, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@10e0e9f, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1013081, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@4ac305]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-21 14:07:15.635
+!MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@cceda9, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1c77299, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1ead258, edu.wpi.first.wpilib.plugins.core.wizards.Tag@19263cb, edu.wpi.first.wpilib.plugins.core.wizards.Tag@ce6af5, edu.wpi.first.wpilib.plugins.core.wizards.Tag@4d914f, edu.wpi.first.wpilib.plugins.core.wizards.Tag@120f38c, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1564e58, edu.wpi.first.wpilib.plugins.core.wizards.Tag@280005, edu.wpi.first.wpilib.plugins.core.wizards.Tag@c72726, edu.wpi.first.wpilib.plugins.core.wizards.Tag@2d04a1, edu.wpi.first.wpilib.plugins.core.wizards.Tag@110a832, edu.wpi.first.wpilib.plugins.core.wizards.Tag@134ad7d, edu.wpi.first.wpilib.plugins.core.wizards.Tag@9740aa, edu.wpi.first.wpilib.plugins.core.wizards.Tag@c54b55]
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-21 14:07:36.171
+!MESSAGE Indexed '2015 Vision Retro Sample' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 14:08:02.361
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 14:08:04.034
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 14:08:04.721
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:08:37.574
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\2015 Vision Retro Sample\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:08:37.576
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-21 14:09:04.049
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:11:50.322
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\2015 Vision Retro Sample\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:11:50.322
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:14:50.515
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\2015 Vision Retro Sample\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:14:50.516
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:21:27.748
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\2015 Vision Retro Sample\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:21:27.749
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:33:46.748
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\2015 Vision Retro Sample\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:33:46.760
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-21 14:34:07.469
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 14:35:44.379
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.CommandBuilder.build(CommandBuilder.java:105)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.StepBuilder.build(StepBuilder.java:94)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DescriptionBuilder$BuildStepVisitor.visit(DescriptionBuilder.java:92)
+	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:151)
+	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:159)
+	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.doAccept(BuildDescriptionManager.java:133)
+	at org.eclipse.cdt.managedbuilder.buildmodel.BuildDescriptionManager.accept(BuildDescriptionManager.java:127)
+	at org.eclipse.cdt.managedbuilder.internal.buildmodel.DescriptionBuilder.build(DescriptionBuilder.java:160)
+	at org.eclipse.cdt.managedbuilder.core.InternalBuildRunner.invokeBuild(InternalBuildRunner.java:128)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:329)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:404)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:556)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:534)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:119)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager$8.buildProject(ManagedBuildManager.java:4640)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager$8.run(ManagedBuildManager.java:4617)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2225)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.buildConfigurations(ManagedBuildManager.java:4649)
+	at org.eclipse.cdt.managedbuilder.core.ManagedBuildManager.buildConfigurations(ManagedBuildManager.java:4530)
+	at org.eclipse.cdt.managedbuilder.internal.ui.commands.BuildConfigurationsJob.run(BuildConfigurationsJob.java:79)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:36:03.908
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\2015 Vision Retro Sample\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:36:03.909
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:38:05.688
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\2015 Vision Retro Sample\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:38:05.689
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-21 14:43:02.067
+!MESSAGE [edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1a8d699, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@f6ef88, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@505317, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1e5f74e, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@62fdf5, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@18dc39e, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@12df793, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@11c35bf, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@5cfa3c, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@11c561a, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@135bc45, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1dcc391, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@c25c0c, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1296c48, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@14e3dbc, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@2db24f, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@cbbc3a, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@5ad387, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@a9be6d, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1f9d27d, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@c89054, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@44ba21, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@19f38d2, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1876e6]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-21 14:43:02.068
+!MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@2e0f41, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1ec2497, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1bfd350, edu.wpi.first.wpilib.plugins.core.wizards.Tag@cd3d07, edu.wpi.first.wpilib.plugins.core.wizards.Tag@8b7218, edu.wpi.first.wpilib.plugins.core.wizards.Tag@173802, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1f35a83, edu.wpi.first.wpilib.plugins.core.wizards.Tag@5d763f, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1edc25e, edu.wpi.first.wpilib.plugins.core.wizards.Tag@2735c9, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1ff5b0c, edu.wpi.first.wpilib.plugins.core.wizards.Tag@162d42, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1c2f46c, edu.wpi.first.wpilib.plugins.core.wizards.Tag@2a11e0, edu.wpi.first.wpilib.plugins.core.wizards.Tag@15010d2]
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-21 14:43:35.283
+!MESSAGE Indexed 'Intermediate Vision' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 14:43:48.134
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 14:43:48.903
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 14:43:49.681
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:45:06.775
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Intermediate Vision\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:45:06.775
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-21 14:47:53.010
+!MESSAGE [edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@f2a150, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@97ddaf, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@d3d045, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@b2f6a0, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@10b2547, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@10df8ec, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1565c70, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@92a14c, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@ff8904, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@33c6ef, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@157b205, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@faece2, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@5df390, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@2d4a0a, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@6c1ad0, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1286643, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@18d205, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@65ad96, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@539550, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@3ff867, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@b58d5f, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1559e42, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@17868ad, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@455425]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-21 14:47:53.011
+!MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@ae607, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1d4c5ca, edu.wpi.first.wpilib.plugins.core.wizards.Tag@12bfd5d, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1257861, edu.wpi.first.wpilib.plugins.core.wizards.Tag@189c9c, edu.wpi.first.wpilib.plugins.core.wizards.Tag@16df300, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1183665, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1d4a7d7, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1ea25cd, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1f93983, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1ae8a87, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1f666ba, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1b6e084, edu.wpi.first.wpilib.plugins.core.wizards.Tag@179eb10, edu.wpi.first.wpilib.plugins.core.wizards.Tag@38a34a]
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-21 14:48:03.408
+!MESSAGE Indexed '2015 Vision Color Sample' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 14:48:08.513
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 14:48:09.273
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-21 14:48:10.037
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:53:24.998
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Intermediate Vision\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 14:53:24.999
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-21 14:56:31.777
+!MESSAGE [edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@b8c337, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1784d81, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1400060, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@32da7d, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@470db7, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1b24b7b, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@50032d, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@4bcf68, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@e15023, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1c33a97, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1f211e9, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@19ea830, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1768de8, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1310453, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@ed3645, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@aac3c0, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1e20670, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@cc9203, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1eecf41, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@180abff, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@9cf4f9, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@443323, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@13b616d, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1a6f166]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-21 14:56:31.779
+!MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@f0e257, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1020d01, edu.wpi.first.wpilib.plugins.core.wizards.Tag@10c28c5, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1b1df03, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1e6e78, edu.wpi.first.wpilib.plugins.core.wizards.Tag@18101bf, edu.wpi.first.wpilib.plugins.core.wizards.Tag@171550a, edu.wpi.first.wpilib.plugins.core.wizards.Tag@fdd2e0, edu.wpi.first.wpilib.plugins.core.wizards.Tag@16500a9, edu.wpi.first.wpilib.plugins.core.wizards.Tag@127ac3, edu.wpi.first.wpilib.plugins.core.wizards.Tag@108b68e, edu.wpi.first.wpilib.plugins.core.wizards.Tag@100069d, edu.wpi.first.wpilib.plugins.core.wizards.Tag@312a1c, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1e482fb, edu.wpi.first.wpilib.plugins.core.wizards.Tag@15cf4cf]
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 15:20:56.070
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 15:20:56.071
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 15:24:44.877
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Simple Vision\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 15:24:44.878
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 15:25:42.052
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\Intermediate Vision\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 15:25:42.053
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 15:29:22.194
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\2015 Vision Color Sample\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-21 15:29:22.194
+!MESSAGE Targets: deploy, Mode: run
+!SESSION 2016-02-22 09:19:34.407 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -data file:/C:/Users/1750800404/Robotics/C++/workspace_C++/ -product org.eclipse.epp.package.cpp.product
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-22 09:20:39.834
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-22 09:20:39.854
+!MESSAGE Install necessary for tools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-22 09:20:41.866
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-22 09:20:41.876
+!MESSAGE Installing cpp if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-22 09:20:41.876
+!MESSAGE Install necessary for cpp
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-22 09:20:43.401
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-22 09:21:01.842
+!MESSAGE Installedcpp
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-22 15:16:42.539
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-22 15:16:42.639
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-22 15:17:51.653
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-22 18:10:37.759
+!MESSAGE [edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1c09ef3, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@ed5390, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@16158e3, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@ce9137, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@192b25b, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1cd0fea, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@a4f370, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@39eba, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@69eb4b, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1621473, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@645ddc, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@70e7a4, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1987992, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@6431de, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@d804b3, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1e48a0b, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@15e3d8c, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@8501b8, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@9e7187, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1591a8d, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1a3f6f7, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@18bb53a, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@4f045, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@15c02ba]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-22 18:10:37.979
+!MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@1024fa8, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1881617, edu.wpi.first.wpilib.plugins.core.wizards.Tag@41437b, edu.wpi.first.wpilib.plugins.core.wizards.Tag@155da1b, edu.wpi.first.wpilib.plugins.core.wizards.Tag@cfa316, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1e820b6, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1a8f7ab, edu.wpi.first.wpilib.plugins.core.wizards.Tag@ce6507, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1cca8db, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1d7c684, edu.wpi.first.wpilib.plugins.core.wizards.Tag@128713a, edu.wpi.first.wpilib.plugins.core.wizards.Tag@f3da85, edu.wpi.first.wpilib.plugins.core.wizards.Tag@873770, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1b73a82, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1d228ef]
