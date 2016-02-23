@@ -1,0 +1,109 @@
+#include "WPILib.h"
+#include "ImageProcess.h"
+
+class Robot: public IterativeRobot
+{
+private:
+	LiveWindow *lw = LiveWindow::GetInstance();
+	SendableChooser *chooser;
+	const std::string autoNameDefault = "Default";
+	const std::string autoNameCustom = "My Auto";
+	std::string autoSelected;
+	ImageProcess process;
+
+	IMAQdxSession session;
+	IMAQdxError error;
+
+	void RobotInit()
+	{
+		chooser = new SendableChooser();
+		chooser->AddDefault(autoNameDefault, (void*)&autoNameDefault);
+		chooser->AddObject(autoNameCustom, (void*)&autoNameCustom);
+		SmartDashboard::PutData("Auto Modes", chooser);
+		process.frame = imaqCreateImage(IMAQ_IMAGE_RGB, 0);
+		process.binaryFrame = imaqCreateImage(IMAQ_IMAGE_U8, 0);
+
+		error = IMAQdxOpenCamera("cam0", IMAQdxCameraControlModeController, &session);
+		if(error != IMAQdxErrorSuccess){
+			DriverStation::ReportError("IMAQdxOpenCamera error: " + std::to_string((long)error) + "\n");
+		}
+		error = IMAQdxConfigureGrab(session);
+		if(error != IMAQdxErrorSuccess){
+			DriverStation::ReportError("IMAQdxConfigureGram error: " + std::to_string((long)error) + "\n");
+		}
+
+		//Put default values to SmartDashboard so fields will appear
+		SmartDashboard::PutNumber("Tote hue min", process.RING_HUE_RANGE.minValue);
+		SmartDashboard::PutNumber("Tote hue max", process.RING_HUE_RANGE.maxValue);
+		SmartDashboard::PutNumber("Tote sat min", process.RING_SAT_RANGE.minValue);
+		SmartDashboard::PutNumber("Tote sat max", process.RING_SAT_RANGE.maxValue);
+		SmartDashboard::PutNumber("Tote val min", process.RING_VAL_RANGE.minValue);
+		SmartDashboard::PutNumber("Tote val max", process.RING_VAL_RANGE.maxValue);
+		SmartDashboard::PutNumber("Area min %", process.AREA_MINIMUM);
+	}
+
+
+	/**
+	 * This autonomous (along with the chooser code above) shows how to select between different autonomous modes
+	 * using the dashboard. The sendable chooser code works with the Java SmartDashboard. If you prefer the LabVIEW
+	 * Dashboard, remove all of the chooser code and uncomment the GetString line to get the auto name from the text box
+	 * below the Gyro
+	 *
+	 * You can add additional auto modes by adding additional comparisons to the if-else structure below with additional strings.
+	 * If using the SendableChooser make sure to add them to the chooser code above as well.
+	 */
+	void AutonomousInit()
+	{
+		autoSelected = *((std::string*)chooser->GetSelected());
+		//std::string autoSelected = SmartDashboard::GetString("Auto Selector", autoNameDefault);
+		std::cout << "Auto selected: " << autoSelected << std::endl;
+
+		if(autoSelected == autoNameCustom){
+			//Custom Auto goes here
+		} else {
+			//Default Auto goes here
+		}
+	}
+
+	void AutonomousPeriodic()
+	{
+		if(autoSelected == autoNameCustom){
+			//Custom Auto goes here
+		} else {
+			//Default Auto goes here
+		}
+	}
+
+	void TeleopInit()
+	{
+		IMAQdxStartAcquisition(session);
+	}
+
+	void TeleopPeriodic()
+	{
+		IMAQdxGrab(session, process.frame, true, NULL);
+
+		if(error != IMAQdxErrorSuccess){
+			DriverStation::ReportError("IMAQdxGram error: " + std::to_string((long)error) + "\n");
+		}else{
+			CameraServer::GetInstance()->SetImage(process.frame);
+		}
+
+		//update threshold values from SmartDashbaord
+		process.RING_HUE_RANGE.minValue = SmartDashboard::GetNumber("Tote hue min", process.RING_HUE_RANGE.minValue);
+		process.RING_HUE_RANGE.maxValue = SmartDashboard::GetNumber("Tote hue max", process.RING_HUE_RANGE.maxValue);
+		process.RING_SAT_RANGE.minValue = SmartDashboard::GetNumber("Tote sat min", process.RING_SAT_RANGE.minValue);
+		process.RING_SAT_RANGE.maxValue = SmartDashboard::GetNumber("Tote sat max", process.RING_SAT_RANGE.maxValue);
+		process.RING_VAL_RANGE.minValue = SmartDashboard::GetNumber("Tote val min", process.RING_VAL_RANGE.minValue);
+		process.RING_VAL_RANGE.maxValue = SmartDashboard::GetNumber("Tote val max", process.RING_VAL_RANGE.maxValue);
+
+		process.imaqError = imaqColorThreshold(process.binaryFrame, process.frame, 255, IMAQ_HSV, &process.RING_HUE_RANGE, &process.RING_SAT_RANGE, &process.RING_VAL_RANGE);
+	}
+
+	void TestPeriodic()
+	{
+		lw->Run();
+	}
+};
+
+START_ROBOT_CLASS(Robot)
