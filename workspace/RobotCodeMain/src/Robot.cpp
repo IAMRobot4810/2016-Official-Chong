@@ -68,7 +68,7 @@ private:
 	{
 
 		cont.StickDrive();
-		cont.ButtonControl();
+		//cont.ButtonControl();
 		cont.DashPlace();
 
 		if(cont.cameraFlip == true){

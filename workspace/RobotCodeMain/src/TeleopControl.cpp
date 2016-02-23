@@ -85,22 +85,22 @@ void TeleopControl::StickDrive(){
 
 	l1StickIn = cont1->GetRawAxis(1);
 	r1StickIn = cont1->GetRawAxis(5);
-	l1StickScale = pow(l1StickIn, 5);
-	r1StickScale = pow(r1StickIn, 5);
+	l1StickScale = pow(l1StickIn, 3);
+	r1StickScale = pow(r1StickIn, 3);
 
-	if (l1StickIn <= 0.5 && l1StickIn >= -0.5){
+	if (l1StickIn <= 0.25 && l1StickIn >= -0.25){
 
 		drive->Drive(0, r1StickScale);
 
 	}
 
-	if (r1StickIn <= 0.5 && r1StickIn >= -0.5){
+	if (r1StickIn <= 0.25 && r1StickIn >= -0.25){
 
 		drive->Drive(l1StickScale, 0);
 
 	}
 
-	if ((l1StickIn > 0.5 || l1StickIn < -0.5) && (r1StickIn > 0.5 || r1StickIn < -0.5)) {
+	if ((l1StickIn > 0.25 || l1StickIn < -0.25) && (r1StickIn > 0.25 || r1StickIn < -0.25)) {
 
 		drive->Drive(l1StickScale, r1StickScale);
 

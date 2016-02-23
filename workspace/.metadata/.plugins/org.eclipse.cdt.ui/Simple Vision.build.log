@@ -1,6 +1,1 @@
-15:17:22 **** Incremental Build of configuration Debug for project Simple Vision ****
-Info: Internal Builder is used for build
-arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
-
-15:17:25 Build Finished (took 2s.553ms)
-
+Info: Nothing to build for Simple Vision

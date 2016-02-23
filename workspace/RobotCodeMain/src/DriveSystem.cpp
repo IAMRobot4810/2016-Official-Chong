@@ -8,14 +8,16 @@
 #include "DriveSystem.h"
 
 DriveSystem::DriveSystem(){
-	flTal = new CANTalon(0);
-	rlTal = new CANTalon(1);
-	frTal = new CANTalon(2);
-	rrTal = new CANTalon(3);
+	flTal = new CANTalon(7);
+	rlTal = new CANTalon(8);
+	frTal = new CANTalon(5);
+	rrTal = new CANTalon(6);
 	roboDrive = new RobotDrive(flTal, rlTal, frTal, rrTal);
 	//Ask about which Talons have to be reversed
 	roboDrive->SetInvertedMotor(RobotDrive::kFrontLeftMotor, true);
 	roboDrive->SetInvertedMotor(RobotDrive::kRearLeftMotor, true);
+	roboDrive->SetInvertedMotor(RobotDrive::kFrontRightMotor, true);
+	roboDrive->SetInvertedMotor(RobotDrive::kRearRightMotor, true);
 	roboDrive->SetExpiration(0.1);
 
 	caster = new Solenoid(0, 0);
