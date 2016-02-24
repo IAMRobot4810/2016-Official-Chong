@@ -86,6 +86,13 @@ private:
 	{
 		error = IMAQdxGrab(session, process.frame, true, NULL);
 
+
+		if(error != IMAQdxErrorSuccess){
+			DriverStation::ReportError("IMAQdxGram error: " + std::to_string((long)error) + "\n");
+		}else{
+			CameraServer::GetInstance()->SetImage(process.frame);
+		}
+		process.binaryFrame = process.frame;
 		//update threshold values from SmartDashbaord
 		process.RING_HUE_RANGE.minValue = SmartDashboard::GetNumber("Tote hue min", process.RING_HUE_RANGE.minValue);
 		process.RING_HUE_RANGE.maxValue = SmartDashboard::GetNumber("Tote hue max", process.RING_HUE_RANGE.maxValue);
@@ -99,12 +106,6 @@ private:
 		int numParticles = 0;
 		process.imaqError = imaqCountParticles(process.binaryFrame, 1, &numParticles);
 		SmartDashboard::PutNumber("Masked paricles", numParticles);
-
-		if(error != IMAQdxErrorSuccess){
-			DriverStation::ReportError("IMAQdxGram error: " + std::to_string((long)error) + "\n");
-		}else{
-			CameraServer::GetInstance()->SetImage(process.binaryFrame);
-		}
 
 		float areaMin = SmartDashboard::GetNumber("Area min %", process.AREA_MINIMUM);
 		process.criteria[0] = {IMAQ_MT_AREA_BY_IMAGE_AREA, areaMin, 100, false, false};
@@ -144,8 +145,6 @@ private:
 		} else {
 			SmartDashboard::PutBoolean("IsTarget", false);
 		}
-
-
 
 		Wait(0.005);
 	}
