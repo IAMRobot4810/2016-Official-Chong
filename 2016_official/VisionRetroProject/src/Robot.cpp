@@ -37,14 +37,14 @@ class VisionRetro2015Sample : public SampleRobot
 	int imaqError;
 
 	//Constants
-	Range RING_HUE_RANGE = {101, 64};	//Default hue range for ring light
-	Range RING_SAT_RANGE = {88, 255};	//Default saturation range for ring light
-	Range RING_VAL_RANGE = {134, 255};	//Default value range for ring light
+	Range RING_HUE_RANGE = {120, 100};	//Default hue range for ring light
+	Range RING_SAT_RANGE = {242, 255};	//Default saturation range for ring light
+	Range RING_VAL_RANGE = {242, 255};	//Default value range for ring light
 	double AREA_MINIMUM = 0.5; //Default Area minimum for particle as a percentage of total image area
 	double LONG_RATIO = 2.22; //Tote long side = 26.9 / Tote height = 12.1 = 2.22
 	double SHORT_RATIO = 1.4; //Tote short side = 16.9 / Tote height = 12.1 = 1.4
 	double SCORE_MIN = 75.0;  //Minimum score to be considered a tote
-	double VIEW_ANGLE = 49.4; //View angle fo camera, set to Axis m1011 by default, 64 for m1013, 51.7 for 206, 52 for HD3000 square, 60 for HD3000 640x480
+	double VIEW_ANGLE = 60; //View angle fo camera, set to Axis m1011 by default, 64 for m1013, 51.7 for 206, 52 for HD3000 square, 60 for HD3000 640x480
 	ParticleFilterCriteria2 criteria[1];
 	ParticleFilterOptions2 filterOptions = {0,0,1,1};
 	Scores scores;
@@ -71,7 +71,7 @@ public:
 		{
 			//read file in from disk. For this example to run you need to copy image.jpg from the SampleImages folder to the
 			//directory shown below using FTP or SFTP: http://wpilib.screenstepslive.com/s/4485/m/24166/l/282299-roborio-ftp
-			imaqError = imaqReadFile(frame, "//home//lvuser//SampleImages//image2.jpg", NULL, NULL);
+			imaqError = imaqReadFile(frame, "//home//lvuser//SampleImages//image23.jpg", NULL, NULL);
 
 			//Update threshold values from SmartDashboard. For performance reasons it is recommended to remove this after calibration is finished.
 			RING_HUE_RANGE.minValue = SmartDashboard::GetNumber("Tote hue min", RING_HUE_RANGE.minValue);

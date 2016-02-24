@@ -41,9 +41,9 @@ public:
 	double AreaScore(ParticleReport_ report);
 	double AspectScore(ParticleReport_ report);
 	double computeDistance (Image *image, ParticleReport_ report);
-	Range RING_HUE_RANGE = {101, 64};
-	Range RING_SAT_RANGE = {88, 255};
-	Range RING_VAL_RANGE = {134, 255};
+	Range RING_HUE_RANGE = {120, 100};
+	Range RING_SAT_RANGE = {242, 255};
+	Range RING_VAL_RANGE = {242, 255};
 	double AREA_MINIMUM = 0.5;
 	double LONG_RATIO = 2.22;
 	double SHORT_RATIO = 1.4;
