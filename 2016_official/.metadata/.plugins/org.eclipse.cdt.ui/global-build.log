@@ -6,3 +6,174 @@ arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-
 Info: Nothing to build for AnishTesterv2
 Info: Nothing to build for AnishTesterv2
 Info: Nothing to build for VisionRetroProject
+20:34:59 **** Rebuild of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
+Info: Nothing to build for AnishTesterv2
+20:35:24 **** Rebuild of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
+Info: Nothing to build for AnishTesterv2
+20:56:21 **** Incremental Build of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:11:2: error: 'ImageProcess' does not name a type
+  ImageProcess process;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
+..\src\Robot.cpp:27:3: error: 'process' was not declared in this scope
+   process.frame = imaqCreateImage(IMAQ_IMAGE_RGB, 0);
+   ^
+..\src\Robot.cpp:49:32: error: no matching function for call to 'JoystickButton::JoystickButton(int)'
+   button = new JoystickButton(1);
+                                ^
+..\src\Robot.cpp:49:32: note: candidates are:
+In file included from C:\Users\1750800311/wpilib/cpp/current/include/WPILib.h:28:0,
+                 from ..\src\Robot.cpp:1:
+C:\Users\1750800311/wpilib/cpp/current/include/Buttons/JoystickButton.h:16:3: note: JoystickButton::JoystickButton(GenericHID*, int)
+   JoystickButton(GenericHID *joystick, int buttonNumber);
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/Buttons/JoystickButton.h:16:3: note:   candidate expects 2 arguments, 1 provided
+C:\Users\1750800311/wpilib/cpp/current/include/Buttons/JoystickButton.h:14:7: note: JoystickButton::JoystickButton(const JoystickButton&)
+ class JoystickButton : public Button {
+       ^
+C:\Users\1750800311/wpilib/cpp/current/include/Buttons/JoystickButton.h:14:7: note:   no known conversion for argument 1 from 'int' to 'const JoystickButton&'
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:100:44: error: 'process' was not declared in this scope
+      CameraServer::GetInstance()->SetImage(process.frame);
+                                            ^
+..\src\Robot.cpp: In member function 'void Robot::VisionRunner()':
+..\src\Robot.cpp:116:31: error: 'process' was not declared in this scope
+   error = IMAQdxGrab(session, process.frame, true, NULL);
+                               ^
+..\src\Robot.cpp:147:16: error: 'ImageProcess' was not declared in this scope
+    std::vector<ImageProcess::ParticleReport_> particles;
+                ^
+..\src\Robot.cpp:147:45: error: template argument 1 is invalid
+    std::vector<ImageProcess::ParticleReport_> particles;
+                                             ^
+..\src\Robot.cpp:147:45: error: template argument 2 is invalid
+..\src\Robot.cpp:147:56: error: invalid type in declaration before ';' token
+    std::vector<ImageProcess::ParticleReport_> particles;
+                                                        ^
+..\src\Robot.cpp:149:5: error: 'ImageProcess' is not a class, namespace, or enumeration
+     ImageProcess::ParticleReport_ par;
+     ^
+..\src\Robot.cpp:150:94: error: 'par' was not declared in this scope
+     imaqMeasureParticle(process.binaryFrame, particleIndex, 0, IMAQ_MT_AREA_BY_IMAGE_AREA, &(par.PercentAreaToImageArea));
+                                                                                              ^
+..\src\Robot.cpp:156:15: error: request for member 'push_back' in 'particles', which is of non-class type 'int'
+     particles.push_back(par);
+               ^
+..\src\Robot.cpp:159:24: error: request for member 'begin' in 'particles', which is of non-class type 'int'
+    std::sort(particles.begin(), particles.end(), process.CompareParticleSizes);
+                        ^
+..\src\Robot.cpp:159:43: error: request for member 'end' in 'particles', which is of non-class type 'int'
+    std::sort(particles.begin(), particles.end(), process.CompareParticleSizes);
+                                           ^
+..\src\Robot.cpp:163:58: error: request for member 'at' in 'particles', which is of non-class type 'int'
+    process.scores.Aspect = process.AspectScore(particles.at(0));
+                                                          ^
+..\src\Robot.cpp:165:54: error: request for member 'at' in 'particles', which is of non-class type 'int'
+    process.scores.Area = process.AreaScore(particles.at(0));
+                                                      ^
+..\src\Robot.cpp:171:97: error: request for member 'at' in 'particles', which is of non-class type 'int'
+    SmartDashboard::PutNumber("Distance", process.computeDistance(process.binaryFrame, particles.at(0)));
+                                                                                                 ^
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for AnishTesterv2
+20:56:45 **** Incremental Build of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ImageProcess.o" "..\\src\\ImageProcess.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::RobotInit()':
+..\src\Robot.cpp:50:32: error: no matching function for call to 'JoystickButton::JoystickButton(int)'
+   button = new JoystickButton(1);
+                                ^
+..\src\Robot.cpp:50:32: note: candidates are:
+In file included from C:\Users\1750800311/wpilib/cpp/current/include/WPILib.h:28:0,
+                 from ..\src\Robot.cpp:1:
+C:\Users\1750800311/wpilib/cpp/current/include/Buttons/JoystickButton.h:16:3: note: JoystickButton::JoystickButton(GenericHID*, int)
+   JoystickButton(GenericHID *joystick, int buttonNumber);
+   ^
+C:\Users\1750800311/wpilib/cpp/current/include/Buttons/JoystickButton.h:16:3: note:   candidate expects 2 arguments, 1 provided
+C:\Users\1750800311/wpilib/cpp/current/include/Buttons/JoystickButton.h:14:7: note: JoystickButton::JoystickButton(const JoystickButton&)
+ class JoystickButton : public Button {
+       ^
+C:\Users\1750800311/wpilib/cpp/current/include/Buttons/JoystickButton.h:14:7: note:   no known conversion for argument 1 from 'int' to 'const JoystickButton&'
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for AnishTesterv2
+20:58:09 **** Incremental Build of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\ImageProcess.o" "src\\Robot.o" -lwpi 
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for AnishTesterv2
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for AnishTesterv2
+21:00:58 **** Incremental Build of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\ImageProcess.o" "src\\Robot.o" -lwpi 
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for AnishTesterv2
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for AnishTesterv2
+21:03:19 **** Incremental Build of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\ImageProcess.o" "src\\Robot.o" -lwpi 
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for AnishTesterv2
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for AnishTesterv2
+21:09:53 **** Incremental Build of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\ImageProcess.o" "src\\Robot.o" -lwpi 
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for AnishTesterv2
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for AnishTesterv2
+21:14:28 **** Incremental Build of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+..\src\Robot.cpp:107:3: error: expected '}' before 'else'
+   else if(!button->Get()){
+   ^
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for AnishTesterv2
+21:14:53 **** Incremental Build of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\ImageProcess.o" "src\\Robot.o" -lwpi 
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for AnishTesterv2
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for AnishTesterv2
+21:20:48 **** Incremental Build of configuration Debug for project CombinedVisionTester ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong\\2016_official\\CombinedVisionTester\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\ImageProcess.o" "src\\Robot.o" -lwpi 
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for AnishTesterv2
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for AnishTesterv2
+Info: Nothing to build for AnishTesterv2
+Info: Nothing to build for CombinedVisionTester
+Info: Nothing to build for Intermediate Vision

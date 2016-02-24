@@ -635,3 +635,99 @@ java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual
 
 !ENTRY org.eclipse.cdt.core 1 0 2016-02-23 20:26:44.070
 !MESSAGE Indexed '2016Autonomous' (6 sources, 378 headers) in 17.2 sec: 39,942 declarations; 50,949 references; 189 unresolved inclusions; 65 syntax errors; 2,551 unresolved names (2.7%)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 20:34:58.773
+!MESSAGE Project: CombinedVisionTester Project Type: edu.wpi.first.wpilib.plugins.cpp.wizards.newproject.CPPProjectType$1@182a8ce
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-23 20:34:59.096
+!MESSAGE Indexed 'CombinedVisionTester' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-23 20:35:04.689
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-23 20:35:05.440
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-23 20:35:06.263
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 20:58:27.988
+!MESSAGE Running ant file: C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong\2016_official\CombinedVisionTester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 20:58:27.989
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:01:11.025
+!MESSAGE Running ant file: C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong\2016_official\CombinedVisionTester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:01:11.026
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:03:28.349
+!MESSAGE Running ant file: C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong\2016_official\CombinedVisionTester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:03:28.350
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:10:06.176
+!MESSAGE Running ant file: C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong\2016_official\CombinedVisionTester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:10:06.176
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:15:08.240
+!MESSAGE Running ant file: C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong\2016_official\CombinedVisionTester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:15:08.241
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:21:04.834
+!MESSAGE Running ant file: C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong\2016_official\CombinedVisionTester\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:21:04.835
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:25:45.067
+!MESSAGE Running ant file: C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong\2016_official\AnishTesterv2\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-23 21:25:45.068
+!MESSAGE Targets: deploy, Mode: run
