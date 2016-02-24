@@ -1,7 +1,0 @@
-#include "RobotDrive.h"
-
-RobotDrive::RobotDrive(){
-	talon1 = NULL;
-	talon2 = NULL;
-
-}
