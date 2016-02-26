@@ -10,3 +10,7 @@ Info: Nothing to build for Intermediate Vision
 Info: Nothing to build for AnishTesterv2
 Info: Nothing to build for AnishTesterv2
 Info: Nothing to build for Intermediate Vision
+14:25:26 **** Rebuild of configuration Debug for project ChinnyBoiii ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\ChinnyBoiii\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Robot.o" -lwpi 
