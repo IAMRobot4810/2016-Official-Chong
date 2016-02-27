@@ -49,11 +49,15 @@ TeleopControl::TeleopControl(){
 	back1Button = new JoystickButton(cont1, 1);
 	back1Toggle = true;
 
+	//BUTTON MAPPINGS NEED TO BE DOUBLE CHECKED, LABELLED ON SMARTDASHBOARD
+
 	drive = new DriveSystem();
 	shoot = new Shooter();
 
 	sensorOverride = false;
 	cameraFlip = false;
+
+	//CAMERA STILL NEEDS TO BE CHECKED
 
 	shooting = false;
 	shooterLow = false;
@@ -77,7 +81,6 @@ TeleopControl::~TeleopControl(){
 	delete back1Button;
 	delete drive;
 	delete shoot;
-	//delete dash;
 
 }
 
@@ -94,17 +97,25 @@ void TeleopControl::StickDrive(){
 
 	}
 
-	if (r1StickIn <= 0.25 && r1StickIn >= -0.25){
+	else if (r1StickIn <= 0.25 && r1StickIn >= -0.25){
 
 		drive->Drive(l1StickScale, 0);
 
 	}
 
-	if ((l1StickIn > 0.25 || l1StickIn < -0.25) && (r1StickIn > 0.25 || r1StickIn < -0.25)) {
+	else if ((l1StickIn > 0.25 || l1StickIn < -0.25) && (r1StickIn > 0.25 || r1StickIn < -0.25)) {
 
 		drive->Drive(l1StickScale, r1StickScale);
 
 	}
+
+	else{
+
+		drive->Drive(0, 0);
+
+	}
+
+	//DOUBLE CHECK JOYSTICK INPUT
 
 }
 
@@ -129,15 +140,7 @@ void TeleopControl::ButtonControl(){
 		start1Toggle = true;
 	}
 
-	/*if(start1Button->Get() && sensorOverride == true){
-		sensorOverride = false;
-	}
-
-	else if (start1Button->Get() && sensorOverride == false){
-		sensorOverride = true;
-	}*/
-
-	if(r1StickButton->Get() && r1SToggle){
+	/*if(r1StickButton->Get() && r1SToggle){
 		r1SToggle = false;
 		if(drive->casterLow){
 			drive->RaiseCasters();
@@ -167,32 +170,16 @@ void TeleopControl::ButtonControl(){
 
 	else if(l1StickButton->Get() == false){
 		l1SToggle = true;
-	}
-
-	/*if((l1StickButton->Get() || r1StickButton->Get()) && drive->casterLow == false){
-
-		drive->LowerCasters();
-
-	}
-
-	else if((l1StickButton->Get() || r1StickButton->Get()) && drive->casterLow == true){
-
-		drive->RaiseCasters();
-
 	}*/
 
 	if(sensorOverride == false){
-
-			/*if(a2Button->Get()){
-				shoot->LowGoal(0.25, 100);
-			}*/
 
 		if(shoot->shooterAngle > 90 && sensorOverride == false){
 			cameraFlip = true;
 		}
 		else{
 			cameraFlip = false;
-		}
+		} //CHECK THIS WITH ENCODER VALUES
 
 			if(a2Button->Get() && a2Toggle){
 				a2Toggle = false;
@@ -211,10 +198,6 @@ void TeleopControl::ButtonControl(){
 				a2Toggle = true;
 			} //Test this
 
-			/*if(b2Button->Get()){
-				shoot->HighGoal(0.25, 1000);
-			}*/
-
 			if(b2Button->Get() && b2Toggle){
 				b2Toggle = false;
 				if(shooterHigh){
@@ -232,21 +215,27 @@ void TeleopControl::ButtonControl(){
 				b2Toggle = true;
 			} //Test this
 
-			if(x1Button->Get()){
+			if(x1Button->Get() && !y1Button->Get()){
 				shoot->Lower(0.25);
 			}
 
-			if(y1Button->Get()){
+			else if(y1Button->Get() && !x1Button->Get()){
 				shoot->Raise(0.25);
+			}
+
+			else{
+
+				shoot->Lower(0.0);
+
 			}
 
 			if(r2TrigIn > 0.25){
 				shoot->Pickup(r2TrigScale);
 			}
 
-			/*if(r1Bumper->Get()){
-				shoot->Shoot(5200, 5200);
-			}*/
+			else{
+				shoot->Pickup(0.0);
+			}
 
 			if(r1Bumper->Get() && r1Toggle){
 				r1Toggle = false;
@@ -265,10 +254,6 @@ void TeleopControl::ButtonControl(){
 			else if(r1Bumper->Get() == false){
 				r1Toggle = true;
 			} //Test this
-
-			/*if(l1Bumper->Get()){
-				shoot->Shoot(4000, 4000);
-			}*/
 
 			if(l1Bumper->Get() && l1Toggle){
 				l1Toggle = false;
@@ -291,45 +276,27 @@ void TeleopControl::ButtonControl(){
 
 	else if(sensorOverride == true){
 
-		if(a2Button->Get()){
-			shoot->LowerNoSense(0.25);
+		if(a2Button->Get() && !b2Button->Get()){
+			shoot->LowerNoSense(0.5);
 		}
 
-		if(b2Button->Get()){
-			shoot->RaiseNoSense(0.25);
+		else if(b2Button->Get() && !a2Button->Get()){
+			shoot->RaiseNoSense(0.5);
+		}
+
+		else{
+			shoot->LowerNoSense(0.0);
 		}
 
 		if(r2TrigIn > 0.25){
 			shoot->PickupNoSense(r2TrigScale);
 		}
 
-		/*if(r1Bumper->Get()){
-			shoot->ShootNoSense(1.0, 1.0);
-		}*/
-
-		if(r1Bumper->Get() && r1Toggle){
-			r1Toggle = false;
-			if(shooting){
-				shooting = false;
-				shoot->ShootNoSense(1.0, 1.0);
-			}
-
-			else{
-				shooting = true;
-				shoot->ShootNoSense(1.0, 1.0);
-			}
-
+		else{
+			shoot->PickupNoSense(0.0);
 		}
 
-		else if(r1Bumper->Get() == false){
-			r1Toggle = true;
-		} //Test this
-
-		/*if(l1Bumper->Get()){
-			shoot->ShootNoSense(0.75, 0.75);
-		}*/
-
-		if(l1Bumper->Get() && l1Toggle){
+		if(l1Bumper->Get() && r1Toggle){
 			l1Toggle = false;
 			if(shooting){
 				shooting = false;
@@ -345,6 +312,24 @@ void TeleopControl::ButtonControl(){
 
 		else if(l1Bumper->Get() == false){
 			l1Toggle = true;
+		} //Test this
+
+		if(l1Bumper->Get() && r1Toggle){
+			r1Toggle = false;
+			if(shooting){
+				shooting = false;
+				shoot->ShootNoSense(1.0, 1.0);
+			}
+
+			else{
+				shooting = true;
+				shoot->ShootNoSense(1.0, 1.0);
+			}
+
+		}
+
+		else if(r1Bumper->Get() == false){
+			r1Toggle = true;
 		} //Test this
 
 		if(back1Button->Get() && back1Toggle){
@@ -371,12 +356,13 @@ void TeleopControl::DashPlace(){
 	SmartDashboard::PutNumber("Left Stick Y Scaled", l1StickScale);
 	SmartDashboard::PutNumber("Right Stick Y Raw", r1StickIn);
 	SmartDashboard::PutNumber("Right Stick Y Scaled", r1StickScale);
-	SmartDashboard::PutBoolean("Casters Lowered:", drive->casterLow);
+	//SmartDashboard::PutBoolean("Casters Lowered:", drive->casterLow);
 	SmartDashboard::PutBoolean("Sensor Override On:", sensorOverride);
 	SmartDashboard::PutNumber("Pickup Trigger Raw", r2TrigIn);
 	SmartDashboard::PutNumber("Pickup Trigger Scale", r2TrigScale);
 	SmartDashboard::PutNumber("Shooter Angle", shoot->shooterAngle);
 	SmartDashboard::PutNumber("Left Rotor", shoot->lRPMReading);
 	SmartDashboard::PutNumber("Right Rotor", shoot->rRPMReading);
+	SmartDashboard::PutBoolean("Ball?", shoot->DetectBall());
 
 }
