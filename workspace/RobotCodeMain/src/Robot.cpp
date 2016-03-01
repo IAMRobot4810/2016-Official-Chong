@@ -1,7 +1,11 @@
 #include "WPILib.h"
+#include "TeleopControl.h"
+
+
 
 class Robot: public IterativeRobot
 {
+
 private:
 	LiveWindow *lw = LiveWindow::GetInstance();
 	SendableChooser *chooser;
@@ -9,12 +13,24 @@ private:
 	const std::string autoNameCustom = "My Auto";
 	std::string autoSelected;
 
+	TeleopControl cont;
+	Image *camImage;
+	//DigitalInput *banner;
+
 	void RobotInit()
 	{
 		chooser = new SendableChooser();
 		chooser->AddDefault(autoNameDefault, (void*)&autoNameDefault);
 		chooser->AddObject(autoNameCustom, (void*)&autoNameCustom);
 		SmartDashboard::PutData("Auto Modes", chooser);
+
+		CameraServer::GetInstance()->SetQuality(50);
+		//the camera name (ex "cam0") can be found through the roborio web interface
+		CameraServer::GetInstance()->StartAutomaticCapture("cam0");
+
+		//banner = new DigitalInput(1);
+
+		camImage = imaqCreateImage(IMAQ_IMAGE_RGB, 0);
 	}
 
 
@@ -56,6 +72,19 @@ private:
 
 	void TeleopPeriodic()
 	{
+
+		//banner.Get();
+		//SmartDashboard::PutBoolean("Banner", banner->Get());
+
+		cont.StickDrive();
+		cont.ButtonControl();
+		cont.DashPlace();
+
+		if(cont.cameraFlip == true){
+			imaqFlip(camImage, camImage, FlipAxis::IMAQ_HORIZONTAL_AXIS);
+		}
+
+		Wait(0.005);
 
 	}
 
