@@ -20,19 +20,27 @@ public:
 	Shooter();
 	~Shooter();
 
+	CANTalon *raiseShoot;
+
 	bool DetectBall();
 	void Pickup(float speed);
+	void PickupNoSense(float speed);
 	void Raise(float speed);
+	void RaiseNoSense(float speed);
 	void Lower(float speed);
+	void LowerNoSense(float speed);
 	void HighGoal(float speed, int encoVal);
 	void LowGoal(float speed, int encoVal);
-	int ReadRPM(DigitalInput *banner, Timer *Minute);
-	void Shoot(int leftRPM, int rightRPM);
+	int ReadRPM(DigitalInput *banner, Timer *Minute, int rpmReading);
+	void Shoot(int leftRPM, int rightRPM, float rollPow);
+	void ShootNoSense(float leftPow, float rightPow, float rollPow);
 
+	int lRPMReading;
+	int rRPMReading;
 
+	friend class Robot;
 private:
 
-	CANTalon *raiseShoot;
 	CANTalon *lShooter;
 	CANTalon *rShooter;
 	CANTalon *picker;
@@ -47,10 +55,9 @@ private:
 	Timer *rpmTimerL;
 	Timer *rpmTimerR;
 
+	int shooterOffset;
 	int shooterRestLimit;
 	int shooterTopLimit;
-
-	int rpmReading;
 
 protected:
 

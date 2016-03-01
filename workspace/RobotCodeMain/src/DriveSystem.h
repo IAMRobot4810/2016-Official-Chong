@@ -10,7 +10,7 @@
 
 #include "CANTalon.h"
 #include "RobotDrive.h"
-#include "Solenoid.h"
+//#include "Solenoid.h"
 
 class DriveSystem{
 
@@ -19,10 +19,10 @@ public:
 	~DriveSystem();
 
 	void Drive(float left, float right);
-	void LowerCasters();
-	void RaiseCasters();
 
-	bool casterLow;
+	//void LowerCasters();
+	//void RaiseCasters();
+	//bool casterLow;
 
 
 private:
@@ -33,7 +33,7 @@ private:
 	CANTalon *rrTal;
 	RobotDrive *roboDrive;
 
-	Solenoid *caster;
+	//Solenoid *caster;
 
 protected:
 
