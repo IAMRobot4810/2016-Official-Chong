@@ -15,7 +15,17 @@ private:
 
 	TeleopControl cont;
 	Image *camImage;
-	//DigitalInput *banner;
+	int x;
+	//double speed;
+	DigitalInput *banner;
+	CANTalon *tal;
+
+	~Robot(){
+
+		delete banner;
+		delete tal;
+
+	}
 
 	void RobotInit()
 	{
@@ -24,13 +34,16 @@ private:
 		chooser->AddObject(autoNameCustom, (void*)&autoNameCustom);
 		SmartDashboard::PutData("Auto Modes", chooser);
 
-		CameraServer::GetInstance()->SetQuality(50);
+		/*CameraServer::GetInstance()->SetQuality(50);
 		//the camera name (ex "cam0") can be found through the roborio web interface
 		CameraServer::GetInstance()->StartAutomaticCapture("cam0");
 
-		//banner = new DigitalInput(1);
+		camImage = imaqCreateImage(IMAQ_IMAGE_RGB, 0);*/
 
-		camImage = imaqCreateImage(IMAQ_IMAGE_RGB, 0);
+		tal = new CANTalon(1);
+		banner = new DigitalInput(1);
+		//tal->SetFeedbackDevice(CANTalon::CtreMagEncoder_Absolute);
+		x = 0;
 	}
 
 
@@ -73,9 +86,6 @@ private:
 	void TeleopPeriodic()
 	{
 
-		//banner.Get();
-		//SmartDashboard::PutBoolean("Banner", banner->Get());
-
 		cont.StickDrive();
 		cont.ButtonControl();
 		cont.DashPlace();
@@ -84,7 +94,40 @@ private:
 			imaqFlip(camImage, camImage, FlipAxis::IMAQ_HORIZONTAL_AXIS);
 		}
 
-		Wait(0.005);
+		/*for(double i = 0.1; i <= 0.5; i+=0.05){
+			tal->Set(i);
+			SmartDashboard::PutNumber("RPM", cont.shoot->ReadRPM(banner, cont.shoot->rpmTimerL, x));
+			Wait(0.1);
+		}
+
+		for(double i = 0.5; i >= 0.1; i-=0.05){
+			tal->Set(i);
+			SmartDashboard::PutNumber("RPM", cont.shoot->ReadRPM(banner, cont.shoot->rpmTimerL, x));
+			Wait(0.1);
+		}
+
+		while(speed <= 1.0){
+			tal->Set(speed);
+			SmartDashboard::PutNumber("RPM", cont.shoot->ReadRPM(banner, cont.shoot->rpmTimerL, x));
+			Wait(0.25);
+			speed += 0.05;
+		}
+
+		while(speed >= 0.0){
+			tal->Set(speed);
+			SmartDashboard::PutNumber("RPM", cont.shoot->ReadRPM(banner, cont.shoot->rpmTimerL, x));
+			Wait(0.25);
+			speed -= 0.05;
+		}
+
+		tal->Set(1.0);
+
+		SmartDashboard::PutNumber("RPM", cont.shoot->ReadRPM(banner, cont.shoot->rpmTimerL, x));*/
+
+		//SmartDashboard::PutNumber("encoder", tal->GetEncPosition());
+		//SmartDashboard::PutBoolean("Banner", banner->Get());
+
+		Wait(0.001);
 
 	}
 

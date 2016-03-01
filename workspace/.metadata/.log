@@ -11097,3 +11097,760 @@ java.net.SocketTimeoutException: Accept timed out
 
 !ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-26 20:52:34.349
 !MESSAGE Targets: deploy, Mode: run
+!SESSION 2016-02-27 09:33:29.475 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2016-02-27 09:42:11.823
+!MESSAGE Connection to http://download.eclipse.org/releases/mars/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2016-02-27 09:42:12.284
+!MESSAGE Unknown Host: http://download.eclipse.org/releases/mars/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:259)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2016-02-27 09:42:12.335
+!MESSAGE Connection to http://download.eclipse.org/eclipse/updates/4.5/p2.index failed on download.eclipse.org. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2016-02-27 09:42:12.631
+!MESSAGE Unknown Host: http://download.eclipse.org/eclipse/updates/4.5/compositeContent.xml
+!STACK 0
+java.net.UnknownHostException: download.eclipse.org
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:259)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2016-02-27 09:42:14.949
+!MESSAGE Connection to http://first.wpi.edu/FRC/roborio/release/eclipse/p2.index failed on first.wpi.edu. Retry attempt 0 started
+!STACK 0
+java.net.UnknownHostException: first.wpi.edu
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:131)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1077)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1068)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:1064)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2016-02-27 09:42:15.279
+!MESSAGE Unknown Host: http://first.wpi.edu/FRC/roborio/release/eclipse/content.xml
+!STACK 0
+java.net.UnknownHostException: first.wpi.edu
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:259)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-27 09:43:14.186
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-27 09:43:14.204
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-27 09:43:14.206
+!MESSAGE Installing cpp if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-27 09:43:14.208
+!MESSAGE Installedcpp
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-27 09:43:20.177
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 09:58:01.680
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 09:58:01.683
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-27 09:58:53.831
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:00:04.164
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:00:04.165
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:02:03.314
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:02:03.314
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:08:16.720
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:08:16.721
+!MESSAGE Targets: kill-program, Mode: debug
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:08:28.875
+!MESSAGE Profiles: [74-KATTEMALAVAD, 74-KATTEMALAVAD]
+
+!ENTRY org.eclipse.rse.core 1 0 2016-02-27 10:08:30.579
+!MESSAGE Saved passwords are not available for migration to secure storage. Deprecated authorization classes (org.eclipse.core.runtime.compatibility.auth) are not installed.
+
+!ENTRY org.eclipse.equinox.security 1 0 2016-02-27 10:08:31.544
+!MESSAGE New keyring password generated. 
+
+!ENTRY org.eclipse.jsch.core 4 0 2016-02-27 10:08:38.360
+!MESSAGE An error occurred while loading the know hosts file C:\Users\1750800404\.ssh\known_hosts
+!STACK 0
+com.jcraft.jsch.JSchException: java.io.FileNotFoundException: C:\Users\1750800404\.ssh\known_hosts (The system cannot find the file specified)
+	at com.jcraft.jsch.KnownHosts.setKnownHosts(KnownHosts.java:57)
+	at com.jcraft.jsch.JSch.setKnownHosts(JSch.java:317)
+	at org.eclipse.jsch.internal.core.JSchCorePlugin.loadKnownHosts(JSchCorePlugin.java:196)
+	at org.eclipse.jsch.internal.core.JSchProvider.createSession(JSchProvider.java:41)
+	at org.eclipse.rse.internal.connectorservice.ssh.SshConnectorService.createSession(SshConnectorService.java:110)
+	at org.eclipse.rse.internal.connectorservice.ssh.SshConnectorService.internalConnect(SshConnectorService.java:180)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$1.run(AbstractConnectorService.java:502)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$SafeRunner.run(AbstractConnectorService.java:445)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService.connect(AbstractConnectorService.java:509)
+	at org.eclipse.rse.core.subsystems.SubSystem.connect(SubSystem.java:2547)
+	at org.eclipse.cdt.launch.remote.RSEHelper.getConnectedRemoteFileService(RSEHelper.java:72)
+	at org.eclipse.cdt.launch.remote.RSEHelper.remoteFileDownload(RSEHelper.java:193)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:74)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\1750800404\.ssh\known_hosts (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.jcraft.jsch.KnownHosts.setKnownHosts(KnownHosts.java:53)
+	... 17 more
+
+!ENTRY org.eclipse.cdt.launch.remote 4 150 2016-02-27 10:08:47.217
+!MESSAGE Error during file upload.
+!STACK 0
+org.eclipse.rse.services.clientserver.messages.SystemOperationFailedException: Failed to connect sshd on "ROBORIO-4810-FRC.LOCAL:22": java.net.UnknownHostException: ROBORIO-4810-FRC.LOCAL
+	at org.eclipse.rse.internal.connectorservice.ssh.SshConnectorService.internalConnect(SshConnectorService.java:198)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$1.run(AbstractConnectorService.java:502)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$SafeRunner.run(AbstractConnectorService.java:445)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService.connect(AbstractConnectorService.java:509)
+	at org.eclipse.rse.core.subsystems.SubSystem.connect(SubSystem.java:2547)
+	at org.eclipse.cdt.launch.remote.RSEHelper.getConnectedRemoteFileService(RSEHelper.java:72)
+	at org.eclipse.cdt.launch.remote.RSEHelper.remoteFileDownload(RSEHelper.java:193)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:74)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch.remote 4 150 2016-02-27 10:08:47.218
+!MESSAGE Failed to connect sshd on "ROBORIO-4810-FRC.LOCAL:22": java.net.UnknownHostException: ROBORIO-4810-FRC.LOCAL
+!STACK 0
+org.eclipse.rse.services.clientserver.messages.SystemOperationFailedException: Failed to connect sshd on "ROBORIO-4810-FRC.LOCAL:22": java.net.UnknownHostException: ROBORIO-4810-FRC.LOCAL
+	at org.eclipse.rse.internal.connectorservice.ssh.SshConnectorService.internalConnect(SshConnectorService.java:198)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$1.run(AbstractConnectorService.java:502)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService$SafeRunner.run(AbstractConnectorService.java:445)
+	at org.eclipse.rse.core.subsystems.AbstractConnectorService.connect(AbstractConnectorService.java:509)
+	at org.eclipse.rse.core.subsystems.SubSystem.connect(SubSystem.java:2547)
+	at org.eclipse.cdt.launch.remote.RSEHelper.getConnectedRemoteFileService(RSEHelper.java:72)
+	at org.eclipse.cdt.launch.remote.RSEHelper.remoteFileDownload(RSEHelper.java:193)
+	at org.eclipse.cdt.launch.remote.launching.RemoteGdbLaunchDelegate.launch(RemoteGdbLaunchDelegate.java:74)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:09:05.868
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:09:05.869
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:17:15.894
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 10:17:15.895
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 11:23:53.368
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 11:23:53.369
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 11:47:45.111
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 11:47:45.112
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 12:00:47.557
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 12:00:47.558
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 12:12:06.037
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 12:12:06.038
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 12:17:14.217
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 12:17:14.218
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 12:25:52.294
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 12:25:52.294
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 12:52:30.188
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 12:52:30.189
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 13:01:19.138
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 13:01:19.139
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 13:29:52.920
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 13:29:52.921
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 13:52:52.286
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 13:52:52.286
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 13:55:02.704
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-27 13:55:02.705
+!MESSAGE Targets: deploy, Mode: run
+!SESSION 2016-02-29 14:46:27.567 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.equinox.ds 2 0 2016-02-29 14:54:29.199
+!MESSAGE Getting a lock required more than 10000 ms. There might be a synchronization problem in this callstack or just the build/dispose process of some components took too long! 
+!STACK 0
+java.lang.Exception: Debug stacktrace
+	at org.eclipse.equinox.internal.ds.InstanceProcess.getLock(InstanceProcess.java:120)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:560)
+	at org.eclipse.equinox.internal.ds.ServiceReg.getService(ServiceReg.java:53)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:212)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:210)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:496)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:461)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:619)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.addingService(ProvisioningAgent.java:159)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:941)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:183)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:318)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:261)
+	at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:66)
+	at org.eclipse.oomph.setup.internal.core.util.SetupCoreUtil.<clinit>(SetupCoreUtil.java:96)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:382)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$3(SetupUIPlugin.java:323)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:223)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-29 14:54:58.785
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-29 14:55:28.966
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-29 14:55:28.969
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-29 14:55:28.982
+!MESSAGE Installing cpp if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-29 14:55:29.003
+!MESSAGE Installedcpp
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 15:12:51.252
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 15:12:51.255
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY org.eclipse.ant.launching 4 120 2016-02-29 15:14:07.274
+!MESSAGE Error logged from Ant UI: 
+!STACK 0
+java.net.SocketTimeoutException: Accept timed out
+	at java.net.DualStackPlainSocketImpl.waitForNewConnection(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+	at java.net.PlainSocketImpl.accept(Unknown Source)
+	at java.net.ServerSocket.implAccept(Unknown Source)
+	at java.net.ServerSocket.accept(Unknown Source)
+	at org.eclipse.ant.internal.launching.launchConfigurations.RemoteAntBuildListener$ServerConnection.run(RemoteAntBuildListener.java:89)
+
+!ENTRY org.eclipse.cdt.launch.remote 4 150 2016-02-29 15:15:29.352
+!MESSAGE Error during file upload.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not find the remote connection.
+	at org.eclipse.cdt.launch.remote.RSEHelper.abort(RSEHelper.java:350)
+	at org.eclipse.cdt.launch.remote.RSEHelper.getCurrentConnection(RSEHelper.java:231)
+	at org.eclipse.cdt.launch.remote.RSEHelper.remoteFileDownload(RSEHelper.java:194)
+	at org.eclipse.cdt.launch.remote.launching.RemoteRunLaunchDelegate.launch(RemoteRunLaunchDelegate.java:299)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch.remote 4 150 2016-02-29 15:15:29.354
+!MESSAGE Could not find the remote connection.
+!SUBENTRY 1 org.eclipse.cdt.launch.remote 4 150 2016-02-29 15:15:29.354
+!MESSAGE Could not find the remote connection.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not find the remote connection.
+	at org.eclipse.cdt.launch.remote.RSEHelper.abort(RSEHelper.java:350)
+	at org.eclipse.cdt.launch.remote.RSEHelper.getCurrentConnection(RSEHelper.java:231)
+	at org.eclipse.cdt.launch.remote.RSEHelper.remoteFileDownload(RSEHelper.java:194)
+	at org.eclipse.cdt.launch.remote.launching.RemoteRunLaunchDelegate.launch(RemoteRunLaunchDelegate.java:299)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.cdt.launch.remote 4 150 2016-02-29 15:15:29.355
+!MESSAGE Could not find the remote connection.
+
+!ENTRY org.eclipse.cdt.launch.remote 4 150 2016-02-29 15:15:40.444
+!MESSAGE Error during file upload.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not find the remote connection.
+	at org.eclipse.cdt.launch.remote.RSEHelper.abort(RSEHelper.java:350)
+	at org.eclipse.cdt.launch.remote.RSEHelper.getCurrentConnection(RSEHelper.java:231)
+	at org.eclipse.cdt.launch.remote.RSEHelper.remoteFileDownload(RSEHelper.java:194)
+	at org.eclipse.cdt.launch.remote.launching.RemoteRunLaunchDelegate.launch(RemoteRunLaunchDelegate.java:299)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.cdt.launch.remote 4 150 2016-02-29 15:15:40.444
+!MESSAGE Could not find the remote connection.
+!SUBENTRY 1 org.eclipse.cdt.launch.remote 4 150 2016-02-29 15:15:40.444
+!MESSAGE Could not find the remote connection.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not find the remote connection.
+	at org.eclipse.cdt.launch.remote.RSEHelper.abort(RSEHelper.java:350)
+	at org.eclipse.cdt.launch.remote.RSEHelper.getCurrentConnection(RSEHelper.java:231)
+	at org.eclipse.cdt.launch.remote.RSEHelper.remoteFileDownload(RSEHelper.java:194)
+	at org.eclipse.cdt.launch.remote.launching.RemoteRunLaunchDelegate.launch(RemoteRunLaunchDelegate.java:299)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.cdt.launch.remote 4 150 2016-02-29 15:15:40.445
+!MESSAGE Could not find the remote connection.
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 15:16:41.341
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 15:16:41.344
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 15:22:23.107
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 15:22:23.110
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 15:27:13.565
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 15:27:13.568
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:41:29.776
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:41:29.779
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:44:00.848
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:44:00.851
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:45:40.026
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:45:40.028
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:47:04.690
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:47:04.692
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:52:19.328
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:52:19.331
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:56:52.966
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:56:52.968
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:59:16.356
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 17:59:16.359
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:01:27.476
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:01:27.479
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:03:09.170
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:03:09.173
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:05:54.249
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:05:54.252
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:09:13.370
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:09:13.374
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:12:10.020
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:12:10.022
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:13:40.683
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:13:40.686
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:15:24.660
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:15:24.664
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:19:52.133
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:19:52.137
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:23:30.695
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:23:30.699
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:27:35.372
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:27:35.375
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:30:13.054
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:30:13.056
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:31:29.216
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:31:29.219
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:32:30.907
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:32:30.910
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:34:57.438
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:34:57.441
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:42:01.697
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:42:01.699
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:43:40.781
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:43:40.783
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:46:40.578
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:46:40.581
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:47:46.205
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:47:46.209
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:50:47.618
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:50:47.622
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:53:02.816
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:53:02.873
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:55:59.567
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 18:55:59.570
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 19:00:26.199
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 19:00:26.201
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-29 19:45:47.333
+!MESSAGE [edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@18dbad4, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@15ad185, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@db78e6, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@741d5, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@3a1fdb, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1d123a0, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@e663b4, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@2b9254, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@a7980d, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@4777da, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1014a65, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1aed363, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1f7542b, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1b1d28, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1d038ec, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@16c0be, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@141821b, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1c535c6, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1646c0a, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@1054f28, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@9d4a89, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@6c3399, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@4e0f22, edu.wpi.first.wpilib.plugins.cpp.wizards.examples.ExampleCPPProject@16f7c4c]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-29 19:45:47.334
+!MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@1f2bc2a, edu.wpi.first.wpilib.plugins.core.wizards.Tag@47b636, edu.wpi.first.wpilib.plugins.core.wizards.Tag@297c3, edu.wpi.first.wpilib.plugins.core.wizards.Tag@ab0113, edu.wpi.first.wpilib.plugins.core.wizards.Tag@26fdc0, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1a31d34, edu.wpi.first.wpilib.plugins.core.wizards.Tag@13730cc, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1d411e0, edu.wpi.first.wpilib.plugins.core.wizards.Tag@ad3767, edu.wpi.first.wpilib.plugins.core.wizards.Tag@10ac57b, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1df3cc6, edu.wpi.first.wpilib.plugins.core.wizards.Tag@b9628c, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1ea68f3, edu.wpi.first.wpilib.plugins.core.wizards.Tag@5c4f28, edu.wpi.first.wpilib.plugins.core.wizards.Tag@3973a9]
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-02-29 19:45:55.330
+!MESSAGE Indexed 'CAN Talon SRX' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-29 19:46:04.543
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-29 19:46:08.933
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2016-02-29 19:46:12.134
+!MESSAGE Error: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\amd64\cl": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:349)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:91)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:91)
+	at org.eclipse.cdt.core.CommandLauncher.execute(CommandLauncher.java:194)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:263)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runProgramForLanguage(AbstractBuiltinSpecsDetector.java:759)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForLanguage(AbstractBuiltinSpecsDetector.java:689)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector.runForEachLanguage(AbstractBuiltinSpecsDetector.java:562)
+	at org.eclipse.cdt.managedbuilder.language.settings.providers.AbstractBuiltinSpecsDetector$1.runInWorkspace(AbstractBuiltinSpecsDetector.java:496)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 19:56:12.547
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 19:56:12.547
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 19:59:51.121
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 19:59:51.121
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 20:02:19.978
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 20:02:19.979
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 20:21:21.112
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 20:21:21.113
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 20:23:16.819
+!MESSAGE Running ant file: C:\Users\1750800404\Robotics\C++\workspace_C++\RobotCodeMain\build.xml
+
+!ENTRY WPILib_CPP_Robot_Development 1 0 2016-02-29 20:23:16.820
+!MESSAGE Targets: deploy, Mode: run

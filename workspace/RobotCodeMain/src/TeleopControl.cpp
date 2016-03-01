@@ -32,13 +32,13 @@ TeleopControl::TeleopControl(){
 	l1SToggle = true;
 	r1StickButton = new JoystickButton(cont1, 10);
 	r1SToggle = true;
-	a2Button = new JoystickButton(cont2, 1);
+	a2Button = new JoystickButton(cont1, 1); //cont2
 	a2Toggle = true;
 	x1Button = new JoystickButton(cont1, 3);
 	x1Toggle = true;
 	y1Button = new JoystickButton(cont1, 4);
 	y1Toggle = true;
-	b2Button = new JoystickButton(cont2, 2);
+	b2Button = new JoystickButton(cont1, 2); //cont2
 	b2Toggle = true;
 	r1Bumper = new JoystickButton(cont1, 6);
 	r1Toggle = true;
@@ -56,6 +56,8 @@ TeleopControl::TeleopControl(){
 
 	sensorOverride = false;
 	cameraFlip = false;
+
+	shootOffset = 0;
 
 	//CAMERA STILL NEEDS TO BE CHECKED
 
@@ -121,7 +123,7 @@ void TeleopControl::StickDrive(){
 
 void TeleopControl::ButtonControl(){
 
-	r2TrigIn = cont2->GetRawAxis(3);
+	r2TrigIn = cont1->GetRawAxis(3); //cont2
 	r2TrigScale = (r2TrigIn - 0.25) * 1.33;
 
 	if(start1Button->Get() && start1Toggle){
@@ -174,7 +176,7 @@ void TeleopControl::ButtonControl(){
 
 	if(sensorOverride == false){
 
-		if(shoot->shooterAngle > 90 && sensorOverride == false){
+		if(shoot->raiseShoot->GetEncPosition() < (-1900 + shootOffset) && sensorOverride == false){
 			cameraFlip = true;
 		}
 		else{
@@ -202,11 +204,11 @@ void TeleopControl::ButtonControl(){
 				b2Toggle = false;
 				if(shooterHigh){
 					shooterHigh = false;
-					shoot->HighGoal(0.25, 1000);
+					shoot->HighGoal(0.25, -2000);
 				}
 
 				else{
-					shoot->HighGoal(0.25, 1000);
+					shoot->HighGoal(0.25, -2000);
 				}
 
 			}
@@ -241,12 +243,12 @@ void TeleopControl::ButtonControl(){
 				r1Toggle = false;
 				if(shooting){
 					shooting = false;
-					shoot->ShootNoSense(5200, 5200);
+					shoot->Shoot(3800, 3800, 1.0);
 				}
 
 				else{
 					shooting = true;
-					shoot->ShootNoSense(5200, 5200);
+					shoot->Shoot(3800, 3800, 1.0);
 				}
 
 			}
@@ -259,12 +261,12 @@ void TeleopControl::ButtonControl(){
 				l1Toggle = false;
 				if(shooting){
 					shooting = false;
-					shoot->Shoot(4000, 4000);
+					shoot->Shoot(2800, 2800, 1.0);
 				}
 
 				else{
 					shooting = true;
-					shoot->Shoot(4000, 4000);
+					shoot->Shoot(2800, 2800, 1.0);
 				}
 
 			}
@@ -296,17 +298,17 @@ void TeleopControl::ButtonControl(){
 			shoot->PickupNoSense(0.0);
 		}
 
-		if(l1Bumper->Get() && r1Toggle){
+		if(l1Bumper->Get() && l1Toggle){
 			l1Toggle = false;
-			if(shooting){
-				shooting = false;
-				shoot->ShootNoSense(0.75, 0.75);
-			}
+			//if(shooting){
+				//shooting = false;
+				shoot->ShootNoSense(0.75, 0.75, 1.0);
+			//}
 
-			else{
-				shooting = true;
-				shoot->ShootNoSense(0.75, 0.75);
-			}
+			//else{
+				//shooting = true;
+				//shoot->ShootNoSense(0.75, 0.75, 0.75);
+			//}
 
 		}
 
@@ -314,16 +316,16 @@ void TeleopControl::ButtonControl(){
 			l1Toggle = true;
 		} //Test this
 
-		if(l1Bumper->Get() && r1Toggle){
+		if(r1Bumper->Get() && r1Toggle){
 			r1Toggle = false;
 			if(shooting){
 				shooting = false;
-				shoot->ShootNoSense(1.0, 1.0);
+				shoot->ShootNoSense(1.0, 1.0, 1.0);
 			}
 
 			else{
 				shooting = true;
-				shoot->ShootNoSense(1.0, 1.0);
+				shoot->ShootNoSense(1.0, 1.0, 1.0);
 			}
 
 		}
@@ -360,9 +362,10 @@ void TeleopControl::DashPlace(){
 	SmartDashboard::PutBoolean("Sensor Override On:", sensorOverride);
 	SmartDashboard::PutNumber("Pickup Trigger Raw", r2TrigIn);
 	SmartDashboard::PutNumber("Pickup Trigger Scale", r2TrigScale);
-	SmartDashboard::PutNumber("Shooter Angle", shoot->shooterAngle);
+	SmartDashboard::PutNumber("Shooter Angle", shoot->raiseShoot->GetEncPosition());
 	SmartDashboard::PutNumber("Left Rotor", shoot->lRPMReading);
 	SmartDashboard::PutNumber("Right Rotor", shoot->rRPMReading);
 	SmartDashboard::PutBoolean("Ball?", shoot->DetectBall());
+	SmartDashboard::PutBoolean("Camera Flipped?", cameraFlip);
 
 }

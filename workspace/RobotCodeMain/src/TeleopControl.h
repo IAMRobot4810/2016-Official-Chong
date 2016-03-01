@@ -26,6 +26,8 @@ public:
 
 	bool cameraFlip;
 
+	friend class Robot;
+
 private:
 
 	Joystick *cont1;
@@ -65,6 +67,8 @@ private:
 
 	float r2TrigIn;
 	float r2TrigScale;
+
+	int shootOffset;
 
 	bool sensorOverride;
 
