@@ -8,7 +8,10 @@ class Robot: public IterativeRobot
 
 private:
 	LiveWindow *lw = LiveWindow::GetInstance();
-
+	SendableChooser *chooser;
+	const std::string autoNameDefault = "Default";
+	const std::string autoNameCustom = "My Auto";
+	std::string autoSelected;
 
 	TeleopControl cont;
 	Image *camImage;

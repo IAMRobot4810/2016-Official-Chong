@@ -1,7 +1,6 @@
 #ifndef AUTO_H
 #define AUTO_H
 
-#include <WPILib.h>
 #include "Shooter.h"
 #include "DriveSystem.h"
 #include "Defense.h"

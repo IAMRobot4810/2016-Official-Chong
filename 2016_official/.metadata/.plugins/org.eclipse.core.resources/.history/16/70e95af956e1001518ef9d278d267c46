@@ -33,11 +33,6 @@ void Auto::AutonNoVision(){
 	Wait(1.0);
 	//shoot
 	sys->Drive(0.0, 0.0);
-	if(sho->DetectBall()){
-		sho->ShootNoSense(1.0, 1.0, 0.5);
-	}else{
-		Wait(15.0); //you've done goofed up
-	}
-
+	sho->ShootNoSense(1.0, 1.0, 0.5);
 }
 
