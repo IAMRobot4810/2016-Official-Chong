@@ -35,25 +35,22 @@ public:
 	void Shoot(int leftRPM, int rightRPM, float rollPow);
 	void ShootNoSense(float leftPow, float rightPow, float rollPow);
 
-	int lRPMReading;
-	int rRPMReading;
+	unsigned int lRPMReading;
+	unsigned int rRPMReading;
+	DigitalInput *lBanner;
+	DigitalInput *rBanner;
+	Timer *rpmTimerL;
+	Timer *rpmTimerR;
 
-	friend class Robot;
 private:
 
 	CANTalon *lShooter;
 	CANTalon *rShooter;
 	CANTalon *picker;
 
-	DigitalInput *lBanner;
-	DigitalInput *rBanner;
-
 	Solenoid *shootSol;
 
 	DigitalInput *ballSense;
-
-	Timer *rpmTimerL;
-	Timer *rpmTimerR;
 
 	int shooterOffset;
 	int shooterRestLimit;

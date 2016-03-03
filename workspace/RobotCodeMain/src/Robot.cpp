@@ -17,13 +17,13 @@ private:
 	Image *camImage;
 	int x;
 	//double speed;
-	DigitalInput *banner;
-	CANTalon *tal;
+	//DigitalInput *banner;
+	//CANTalon *tal;
 
 	~Robot(){
 
-		delete banner;
-		delete tal;
+		//delete banner;
+		//delete tal;
 
 	}
 
@@ -34,14 +34,14 @@ private:
 		chooser->AddObject(autoNameCustom, (void*)&autoNameCustom);
 		SmartDashboard::PutData("Auto Modes", chooser);
 
-		/*CameraServer::GetInstance()->SetQuality(50);
+		//CameraServer::GetInstance()->SetQuality(50);
 		//the camera name (ex "cam0") can be found through the roborio web interface
-		CameraServer::GetInstance()->StartAutomaticCapture("cam0");
+		//CameraServer::GetInstance()->StartAutomaticCapture("cam0");
 
-		camImage = imaqCreateImage(IMAQ_IMAGE_RGB, 0);*/
+		//camImage = imaqCreateImage(IMAQ_IMAGE_RGB, 0);
 
-		tal = new CANTalon(1);
-		banner = new DigitalInput(1);
+		//tal = new CANTalon(1);
+		//banner = new DigitalInput(3);
 		//tal->SetFeedbackDevice(CANTalon::CtreMagEncoder_Absolute);
 		x = 0;
 	}
@@ -90,11 +90,11 @@ private:
 		cont.ButtonControl();
 		cont.DashPlace();
 
-		if(cont.cameraFlip == true){
+		/*if(cont.cameraFlip == true){
 			imaqFlip(camImage, camImage, FlipAxis::IMAQ_HORIZONTAL_AXIS);
 		}
 
-		/*for(double i = 0.1; i <= 0.5; i+=0.05){
+		for(double i = 0.1; i <= 0.5; i+=0.05){
 			tal->Set(i);
 			SmartDashboard::PutNumber("RPM", cont.shoot->ReadRPM(banner, cont.shoot->rpmTimerL, x));
 			Wait(0.1);

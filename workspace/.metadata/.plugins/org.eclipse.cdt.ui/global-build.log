@@ -1989,3 +1989,228 @@ Info: Nothing to build for 2015 Vision Color Sample
 Info: Nothing to build for Intermediate Vision
 Info: Nothing to build for RobotCodeMain
 Info: Nothing to build for Simple Vision
+15:23:19 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+18:40:17 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\DriveSystem.o" "..\\src\\DriveSystem.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+..\src\Shooter.cpp: In member function 'int Shooter::ReadRPM(DigitalInput*, Timer*, int)':
+..\src\Shooter.cpp:186:9: warning: unused variable 'seconds' [-Wunused-variable]
+  double seconds = Minute->Get();
+         ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+20:29:18 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+..\src\Shooter.cpp: In member function 'int Shooter::ReadRPM(DigitalInput*, Timer*, int)':
+..\src\Shooter.cpp:186:9: warning: unused variable 'seconds' [-Wunused-variable]
+  double seconds = Minute->Get();
+         ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+15:06:11 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+15:13:00 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+15:17:21 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\DriveSystem.o" "..\\src\\DriveSystem.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+..\src\Shooter.cpp: In member function 'int Shooter::ReadRPM(DigitalInput*, Timer*, int)':
+..\src\Shooter.cpp:186:9: warning: unused variable 'seconds' [-Wunused-variable]
+  double seconds = Minute->Get();
+         ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+15:23:21 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+..\src\Shooter.cpp: In member function 'int Shooter::ReadRPM(DigitalInput*, Timer*, int)':
+..\src\Shooter.cpp:186:9: warning: unused variable 'seconds' [-Wunused-variable]
+  double seconds = Minute->Get();
+         ^
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+15:36:07 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+15:41:56 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+15:46:50 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+15:56:08 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+..\src\Shooter.cpp: In member function 'int Shooter::ReadRPM(DigitalInput*, Timer*, int)':
+..\src\Shooter.cpp:176:9: warning: unused variable 'seconds' [-Wunused-variable]
+  double seconds = Minute->Get();
+         ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+16:01:10 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+16:17:53 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+16:25:18 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+16:25:54 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+16:44:47 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+16:49:52 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+16:51:19 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+18:38:38 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+18:47:29 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\DriveSystem.o" "..\\src\\DriveSystem.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+19:07:45 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\TeleopControl.o" "..\\src\\TeleopControl.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+19:19:20 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision
+19:40:18 **** Incremental Build of configuration Debug for project RobotCodeMain ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800404/wpilib/cpp/current/include" "-IC:\\Users\\1750800404\\Robotics\\C++\\workspace_C++\\RobotCodeMain\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Shooter.o" "..\\src\\Shooter.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800404/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for 2015 Vision Color Sample
+Info: Nothing to build for Intermediate Vision
+Info: Nothing to build for RobotCodeMain
+Info: Nothing to build for Simple Vision

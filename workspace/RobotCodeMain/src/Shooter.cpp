@@ -9,16 +9,16 @@
 
 Shooter::Shooter(){
 
-	raiseShoot = new CANTalon(4); //7 (CHECK)
+	raiseShoot = new CANTalon(7); //4
 	raiseShoot->SetFeedbackDevice(CANTalon::CtreMagEncoder_Absolute); //FINISH
 	//Needs to be checked, documentation has relative and absolute with opposite descriptions
 
-	lShooter = new CANTalon(1); //5 (CHECK)
-	rShooter = new CANTalon (2); //6 (CHECK)
-	lBanner = new DigitalInput(0);
+	lShooter = new CANTalon(5); //1
+	rShooter = new CANTalon (6); //2
+	lBanner = new DigitalInput(1);
 	rBanner = new DigitalInput(2);
 
-	picker = new CANTalon(3);
+	picker = new CANTalon(8); //3
 
 	shootSol = new Solenoid(1, 0);
 
@@ -30,6 +30,9 @@ Shooter::Shooter(){
 	shooterRestLimit = 100; //CHECK
 	shooterTopLimit = -3600; //CHECK
 	shooterOffset = 0;
+
+	lRPMReading = 0;
+	rRPMReading = 0;
 
 }
 
@@ -156,7 +159,7 @@ int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute, int rpmReading){
 	Minute->Reset();
 	Minute->Start();
 
-	while(Minute->Get() <= 1.0){
+	while(Minute->Get() <= 0.075){
 
 		if(banner->Get() == false && bannerToggle){
 			bannerToggle = false;
@@ -169,23 +172,9 @@ int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute, int rpmReading){
 
 	}
 
-	/*for(int x = 0; x < 3; ){
-
-		if(banner->Get() == false && bannerToggle){
-			bannerToggle = false;
-			x += 1;
-		}
-
-		else if(banner->Get()){
-			bannerToggle = true;
-		} //Test this
-
-	}*/
-
 	Minute->Stop();
-	double seconds = Minute->Get();
 
-	rpmReading = reads * 60;
+	rpmReading = reads * 800;
 
 	return rpmReading;
 
@@ -193,27 +182,30 @@ int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute, int rpmReading){
 
 void Shooter::Shoot(int leftRPM, int rightRPM, float rollPow){
 
-	int lPow = 0.1;
-	int rPow = 0.1;
+	lShooter->Set(0.1);
+	rShooter->Set(-0.1);
+	picker->Set(rollPow);
 
 	if(leftRPM > 3800 && rightRPM > 3800){
 		leftRPM = 3800;
 		rightRPM = 3800;
 	}
 
-	while(ReadRPM(lBanner, rpmTimerL, lRPMReading) < (leftRPM - 200)){
+	for(int lPow = 0.1; ReadRPM(lBanner, rpmTimerL, lRPMReading) < (leftRPM - 200) || lPow <= 1.0; lPow += 0.1){
 		lShooter->Set(lPow);
-		lPow += 0.05;
 	}
 
-	while(ReadRPM(rBanner, rpmTimerR, rRPMReading) < (rightRPM - 200)){
-		rShooter->Set(rPow);
-		rPow += 0.05;
+	for(int rPow = 0.1; ReadRPM(rBanner, rpmTimerR, rRPMReading) < (rightRPM - 200) || rPow <= 1.0; rPow -= 0.1){
+		rShooter->Set(-rPow);
 	}
 
 	shootSol->Set(true);
 	Wait(1.0);
 	shootSol->Set(false);
+
+	lShooter->Set(0.0);
+	rShooter->Set(0.0);
+	picker->Set(0.0);
 
 }
 
