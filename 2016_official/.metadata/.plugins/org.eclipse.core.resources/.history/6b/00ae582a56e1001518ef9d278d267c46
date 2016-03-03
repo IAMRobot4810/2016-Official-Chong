@@ -1,0 +1,29 @@
+#include "Auto.h"
+
+Auto::Auto(){
+	sys = new DriveSystem();
+	sho = new Shooter();
+
+	pos = AutonPos::MID;
+	mode = AutonMode::NONE;
+
+	targetAcquired = false;
+
+}
+
+Auto::Auto(int mode_, int pos_){
+	sys = new DriveSystem();
+	sho = new Shooter();
+
+	//mode = mode_;
+	//pos = pos_;
+
+	targetAcquired = false;
+
+}
+
+void Auton::AutonNoVision(){
+
+
+}
+
