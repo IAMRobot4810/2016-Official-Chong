@@ -71,3 +71,242 @@ arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current
 arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\DriveSystem.o" "..\\src\\DriveSystem.cpp" 
 arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Defense.o" "..\\src\\Defense.cpp" 
 arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+17:56:29 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int, bool)':
+..\src\Auto.cpp:19:7: error: invalid conversion from 'int' to 'Auto::AutonMode' [-fpermissive]
+  mode = mode_;
+       ^
+..\src\Auto.cpp:20:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
+..\src\Auto.cpp: In member function 'void Auto::CustomAutonChooser()':
+..\src\Auto.cpp:30:22: error: 'autoNameDefault' was not declared in this scope
+  chooser->AddDefault(autoNameDefault, (void*)&autoNameDefault);
+                      ^
+..\src\Auto.cpp:31:21: error: 'autoNameCustom' was not declared in this scope
+  chooser->AddObject(autoNameCustom, (void*)&autoNameCustom);
+                     ^
+17:57:11 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int, bool)':
+..\src\Auto.cpp:19:7: error: invalid conversion from 'int' to 'Auto::AutonMode' [-fpermissive]
+  mode = mode_;
+       ^
+..\src\Auto.cpp:20:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
+..\src\Auto.cpp: In member function 'void Auto::CustomAutonChooser()':
+..\src\Auto.cpp:31:21: error: 'autoNameCustom' was not declared in this scope
+  chooser->AddObject(autoNameCustom, (void*)&autoNameCustom);
+                     ^
+18:01:08 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int, bool)':
+..\src\Auto.cpp:19:7: error: invalid conversion from 'int' to 'Auto::AutonMode' [-fpermissive]
+  mode = mode_;
+       ^
+..\src\Auto.cpp:20:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
+..\src\Auto.cpp: In member function 'void Auto::CustomAutonChooser()':
+..\src\Auto.cpp:31:21: error: 'autoVision1' was not declared in this scope
+  chooser->AddObject(autoVision1, (void*)&autoVision1);
+                     ^
+18:02:44 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int, bool)':
+..\src\Auto.cpp:19:7: error: invalid conversion from 'int' to 'Auto::AutonMode' [-fpermissive]
+  mode = mode_;
+       ^
+..\src\Auto.cpp:20:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
+..\src\Auto.cpp: In member function 'void Auto::CustomAutonChooser()':
+..\src\Auto.cpp:33:21: error: 'auto_vision3' was not declared in this scope
+  chooser->AddObject(auto_vision3, (void*)&auto_Vision3);
+                     ^
+..\src\Auto.cpp:33:43: error: 'auto_Vision3' was not declared in this scope
+  chooser->AddObject(auto_vision3, (void*)&auto_Vision3);
+                                           ^
+18:02:51 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int, bool)':
+..\src\Auto.cpp:19:7: error: invalid conversion from 'int' to 'Auto::AutonMode' [-fpermissive]
+  mode = mode_;
+       ^
+..\src\Auto.cpp:20:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
+..\src\Auto.cpp: In member function 'void Auto::CustomAutonChooser()':
+..\src\Auto.cpp:33:21: error: 'auto_Vision3' was not declared in this scope
+  chooser->AddObject(auto_Vision3, (void*)&auto_Vision3);
+                     ^
+18:03:53 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int, bool)':
+..\src\Auto.cpp:19:37: error: expected '(' before 'mode_'
+  mode = static_cast<Auto::AutonMode>mode_;
+                                     ^
+..\src\Auto.cpp:19:42: error: expected ')' before ';' token
+  mode = static_cast<Auto::AutonMode>mode_;
+                                          ^
+..\src\Auto.cpp:20:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
+..\src\Auto.cpp: In member function 'void Auto::CustomAutonChooser()':
+..\src\Auto.cpp:33:21: error: 'auto_Vision3' was not declared in this scope
+  chooser->AddObject(auto_Vision3, (void*)&auto_Vision3);
+                     ^
+18:05:14 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int, bool)':
+..\src\Auto.cpp:19:37: error: expected '(' before 'mode_'
+  mode = static_cast<Auto::AutonMode>mode_;
+                                     ^
+..\src\Auto.cpp:19:42: error: expected ')' before ';' token
+  mode = static_cast<Auto::AutonMode>mode_;
+                                          ^
+..\src\Auto.cpp:20:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
+18:05:35 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int, bool)':
+..\src\Auto.cpp:19:37: error: expected '(' before 'mode_'
+  mode = static_cast<Auto::AutonMode>mode_;
+                                     ^
+..\src\Auto.cpp:19:42: error: expected ')' before ';' token
+  mode = static_cast<Auto::AutonMode>mode_;
+                                          ^
+..\src\Auto.cpp:20:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
+18:06:02 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+..\src\Auto.cpp: In constructor 'Auto::Auto(int, int, bool)':
+..\src\Auto.cpp:20:6: error: invalid conversion from 'int' to 'Auto::AutonPos' [-fpermissive]
+  pos = pos_;
+      ^
+18:06:32 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+18:12:23 **** Rebuild of configuration Debug for project AutonChooser ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonChooser\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonChooser\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Robot.o" -lwpi 
+18:12:30 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:29:14: error: redeclaration of 'std::string Robot::autoSelected'
+  std::string autoSelected;
+              ^
+..\src\Robot.cpp:22:14: note: previous declaration 'std::string Robot::autoSelected'
+  std::string autoSelected;
+              ^
+In file included from ..\src\Robot.cpp:4:0:
+..\src\Auto.h: In member function 'virtual void Robot::AutonomousInit()':
+..\src\Auto.h:15:19: error: 'SendableChooser* Auto::chooser' is private
+  SendableChooser *chooser;
+                   ^
+..\src\Robot.cpp:76:36: error: within this context
+   autoSelected = *((std::string*)a.chooser->GetSelected());
+                                    ^
+..\src\Robot.cpp:80:22: error: 'autoNameCustom' was not declared in this scope
+   if(autoSelected == autoNameCustom){
+                      ^
+Info: Nothing to build for AutonChooser
+18:13:01 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:29:14: error: redeclaration of 'std::string Robot::autoSelected'
+  std::string autoSelected;
+              ^
+..\src\Robot.cpp:22:14: note: previous declaration 'std::string Robot::autoSelected'
+  std::string autoSelected;
+              ^
+..\src\Robot.cpp: In member function 'virtual void Robot::AutonomousInit()':
+..\src\Robot.cpp:76:36: error: 'class Auto' has no member named 'chooser'
+   autoSelected = *((std::string*)a.chooser->GetSelected());
+                                    ^
+..\src\Robot.cpp:80:22: error: 'autoNameCustom' was not declared in this scope
+   if(autoSelected == autoNameCustom){
+                      ^
+Info: Nothing to build for AutonChooser
+18:13:49 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:29:14: error: redeclaration of 'std::string Robot::autoSelected'
+  std::string autoSelected;
+              ^
+..\src\Robot.cpp:22:14: note: previous declaration 'std::string Robot::autoSelected'
+  std::string autoSelected;
+              ^
+..\src\Robot.cpp: In member function 'virtual void Robot::AutonomousInit()':
+..\src\Robot.cpp:74:22: error: 'autoNameCustom' was not declared in this scope
+   if(autoSelected == autoNameCustom){
+                      ^
+Info: Nothing to build for AutonChooser
+18:14:17 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::AutonomousInit()':
+..\src\Robot.cpp:70:22: error: 'autoNameCustom' was not declared in this scope
+   if(autoSelected == autoNameCustom){
+                      ^
+Info: Nothing to build for AutonChooser
+18:15:38 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::AutonomousInit()':
+..\src\Robot.cpp:75:30: error: 'auto_vision2' was not declared in this scope
+   } else if (autoSelected == auto_vision2) {
+                              ^
+Info: Nothing to build for AutonChooser
+18:15:40 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::AutonomousInit()':
+..\src\Robot.cpp:75:30: error: 'auto_vision2' was not declared in this scope
+   } else if (autoSelected == auto_vision2) {
+                              ^
+Info: Nothing to build for AutonChooser
+18:15:53 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+src\Robot.o: In function `Robot::~Robot()':
+C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong-2\2016-Official-Chong\2016_official\AutonNoVision\Debug/..\src/Robot.cpp:31: undefined reference to `Auto::~Auto()'
+src\Robot.o: In function `Robot::AutonomousInit()':
+C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong-2\2016-Official-Chong\2016_official\AutonNoVision\Debug/..\src/Robot.cpp:77: undefined reference to `Auto::~Auto()'
+C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong-2\2016-Official-Chong\2016_official\AutonNoVision\Debug/..\src/Robot.cpp:77: undefined reference to `Auto::~Auto()'
+src\Robot.o: In function `Robot::Robot()':
+C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong-2\2016-Official-Chong\2016_official\AutonNoVision\Debug/..\src/Robot.cpp:8: undefined reference to `Auto::~Auto()'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AutonChooser
+18:27:42 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
+src\Robot.o: In function `Robot::~Robot()':
+C:\Users\1750800311\Documents\FRC Robotics Code\2016-Official-Chong-2\2016-Official-Chong\2016_official\AutonNoVision\Debug/..\src/Robot.cpp:35: undefined reference to `Auto::~Auto()'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AutonChooser
+18:28:23 **** Incremental Build of configuration Debug for project AutonNoVision ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 

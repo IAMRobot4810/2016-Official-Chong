@@ -12,19 +12,16 @@ private:
 	//Defense* def; when developed
 	Shooter* sho;
 
-	SendableChooser *chooser;
-	const std::string autoNameDefault = "Default";
-	const std::string autoNameCustom = "My Auto";
-	std::string autoSelected;
 
 	bool targetAcquired;
 	enum AutonPos{LEFT, RIGHT, MID};
 	enum AutonMode{TERRAIN, ARM, NONE}; //Can't have two enum values as NONE
+	bool isVision;
 	AutonMode mode;
 	AutonPos pos;
 public:
 	Auto();
-	Auto(int mode, int pos);
+	Auto(int mode, int pos, bool vis_check);
 	~Auto();
 
 	void CustomAutonChooser();

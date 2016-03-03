@@ -1,9 +1,7 @@
-17:40:01 **** Incremental Build of configuration Debug for project AutonNoVision ****
+18:28:23 **** Incremental Build of configuration Debug for project AutonNoVision ****
 Info: Internal Builder is used for build
 arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Auto.o" "..\\src\\Auto.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\DriveSystem.o" "..\\src\\DriveSystem.cpp" 
-arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\AutonNoVision\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Defense.o" "..\\src\\Defense.cpp" 
 arm-frc-linux-gnueabi-g++ "-LC:\\Users\\1750800311/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a,-rpath,/usr/local/frc/rpath-lib -o FRCUserProgram "src\\Auto.o" "src\\Defense.o" "src\\DriveSystem.o" "src\\Robot.o" "src\\Shooter.o" "src\\TeleopControl.o" -lwpi 
 
-17:40:29 Build Finished (took 27s.659ms)
+18:28:31 Build Finished (took 8s.250ms)
 

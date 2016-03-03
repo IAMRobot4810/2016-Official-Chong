@@ -1,0 +1,58 @@
+#include "Auto.h"
+
+Auto::Auto(){
+	sys = new DriveSystem();
+	sho = new Shooter();
+
+	pos = AutonPos::MID;
+	mode = AutonMode::NONE;
+
+	targetAcquired = false;
+
+}
+
+Auto::Auto(int mode_, int pos_, bool vis_check){
+	sys = new DriveSystem();
+	sho = new Shooter();
+
+	isVision = vis_check;
+	mode = mode_;
+	pos = pos_;
+
+
+
+	targetAcquired = false;
+
+}
+
+void Auto::CustomAutonChooser(){
+	chooser = new SendableChooser();
+	chooser->AddDefault(default_, (void*)&default_);
+	chooser->AddObject(auto_Vision1, (void*)&auto_Vision1);
+	chooser->AddObject(auto_Vision2, (void*)&auto_Vision2);
+	chooser->AddObject(auto_Vision3, (void*)&auto_Vision3);
+	SmartDashboard::PutData("Auto Modes", chooser);
+
+}
+
+void Auto::AutonNoVision(){
+	//move past the low bar
+	sys->Drive(0.5, 0.5);
+	Wait(1.0);
+	//line up to shoot
+	sys->Drive(0.0, 0.0);
+	Wait(0.005);
+	sys->Drive(0.0, 0.25);
+	Wait(1.0);
+	//shoot
+	sys->Drive(0.0, 0.0);
+	Wait(0.005);
+	if(sho->DetectBall()){
+		sho->ShootNoSense(1.0, 1.0, 0.5);
+		//ahhh
+	}else{
+		Wait(15.0); //you've done goofed up
+	}
+
+}
+

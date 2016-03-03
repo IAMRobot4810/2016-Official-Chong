@@ -1,6 +1,8 @@
 #include "WPILib.h"
 #include "TeleopControl.h"
 
+#include "Auto.h"
+
 
 
 class Robot: public IterativeRobot
@@ -11,25 +13,31 @@ private:
 
 
 	TeleopControl cont;
+	Auto* auton;
 	Image *camImage;
 	int x;
 	//double speed;
 	DigitalInput *banner;
 	CANTalon *tal;
 
+	std::string autoSelected;
+
+	SendableChooser *chooser;
+	const std::string auto_noVision = "No Vision - Auton";
+	const std::string auto_Vision1 = "Vision; left side terrain - Auton";
+	const std::string auto_Vision2 = "Vision; right side terrain - Auton";
+	const std::string default_ = "Default - Do Nothing";
+
 	~Robot(){
 
 		delete banner;
 		delete tal;
+		delete auton;
 
 	}
 
 	void RobotInit()
 	{
-		chooser = new SendableChooser();
-		chooser->AddDefault(autoNameDefault, (void*)&autoNameDefault);
-		chooser->AddObject(autoNameCustom, (void*)&autoNameCustom);
-		SmartDashboard::PutData("Auto Modes", chooser);
 
 		/*CameraServer::GetInstance()->SetQuality(50);
 		//the camera name (ex "cam0") can be found through the roborio web interface
@@ -59,20 +67,27 @@ private:
 		//std::string autoSelected = SmartDashboard::GetString("Auto Selector", autoNameDefault);
 		std::cout << "Auto selected: " << autoSelected << std::endl;
 
-		if(autoSelected == autoNameCustom){
-			//Custom Auto goes here
-		} else {
-			//Default Auto goes here
+		if(autoSelected == auto_noVision){
+			auton = new Auto();
+		} else if (autoSelected == auto_Vision1){
+			auton = new Auto(0, 0, true);
+		} else if (autoSelected == auto_Vision2) {
+			auton = new Auto(0, 1, true);
 		}
+
 	}
 
 	void AutonomousPeriodic()
 	{
-		if(autoSelected == autoNameCustom){
-			//Custom Auto goes here
+
+		if(autoSelected == auto_noVision){
+			Wait(0.005);
+			auton->AutonNoVision();
 		} else {
-			//Default Auto goes here
+			Wait(15.00); //we have nothing
 		}
+		Wait(15.00); //when algorithm finishes early
+
 	}
 
 	void TeleopInit()
