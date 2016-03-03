@@ -22,21 +22,39 @@ public:
 
 	void StickDrive();
 	void ButtonControl();
-	void TriggerControl();
+	void DashPlace();
+
+	bool cameraFlip;
+
+	friend class Robot;
 
 private:
 
 	Joystick *cont1;
 	Joystick *cont2;
 	JoystickButton *a2Button;
+	bool a2Toggle;
 	JoystickButton *b2Button;
-	JoystickButton *r2Bumper;
-	JoystickButton *l2Bumper;
-	JoystickButton *x2Button;
-	JoystickButton *y2Button;
+	bool b2Toggle;
+	JoystickButton *r1Bumper;
+	bool r1Toggle;
+	JoystickButton *l1Bumper;
+	bool l1Toggle;
+	JoystickButton *x1Button;
+	bool x1Toggle;
+	JoystickButton *y1Button;
+	bool y1Toggle;
 
 	JoystickButton *l1StickButton;
+	bool l1SToggle;
 	JoystickButton *r1StickButton;
+	bool r1SToggle;
+
+	JoystickButton *start1Button;
+	bool start1Toggle;
+
+	JoystickButton *back1Button;
+	bool back1Toggle;
 
 	DriveSystem *drive;
 	Shooter *shoot;
@@ -50,7 +68,13 @@ private:
 	float r2TrigIn;
 	float r2TrigScale;
 
-	SmartDashboard *dash;
+	int shootOffset;
+
+	bool sensorOverride;
+
+	bool shooting;
+	bool shooterLow;
+	bool shooterHigh;
 
 protected:
 
