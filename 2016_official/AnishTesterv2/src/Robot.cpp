@@ -15,7 +15,7 @@ private:
 	ImageProcess process;
 
 	IMAQdxSession session;
-	IMAQdxError error;
+	//IMAQdxError error;
 
 	void RobotInit()
 	{
@@ -26,13 +26,13 @@ private:
 		process.frame = imaqCreateImage(IMAQ_IMAGE_RGB, 0);
 		process.binaryFrame = imaqCreateImage(IMAQ_IMAGE_U8, 0);
 
-		error = IMAQdxOpenCamera("cam0", IMAQdxCameraControlModeController, &session);
-		if(error != IMAQdxErrorSuccess){
-			DriverStation::ReportError("IMAQdxOpenCamera error: " + std::to_string((long)error) + "\n");
+		process.imaqError = IMAQdxOpenCamera("cam0", IMAQdxCameraControlModeController, &session);
+		if(process.imaqError != IMAQdxErrorSuccess){
+			DriverStation::ReportError("IMAQdxOpenCamera error: " + std::to_string((long)process.imaqError) + "\n");
 		}
-		error = IMAQdxConfigureGrab(session);
-		if(error != IMAQdxErrorSuccess){
-			DriverStation::ReportError("IMAQdxConfigureGram error: " + std::to_string((long)error) + "\n");
+		process.imaqError = IMAQdxConfigureGrab(session);
+		if(process.imaqError != IMAQdxErrorSuccess){
+			DriverStation::ReportError("IMAQdxConfigureGram error: " + std::to_string((long)process.imaqError) + "\n");
 		}
 
 		//Put default values to SmartDashboard so fields will appear
@@ -84,7 +84,7 @@ private:
 
 	void TeleopPeriodic()
 	{
-		error = IMAQdxGrab(session, process.frame, true, NULL);
+		process.imaqError = IMAQdxGrab(session, process.frame, true, NULL);
 
 		//update threshold values from SmartDashbaord
 		process.RING_HUE_RANGE.minValue = SmartDashboard::GetNumber("Tote hue min", process.RING_HUE_RANGE.minValue);
@@ -100,15 +100,16 @@ private:
 		process.imaqError = imaqCountParticles(process.binaryFrame, 1, &numParticles);
 		SmartDashboard::PutNumber("Masked paricles", numParticles);
 
-		if(error != IMAQdxErrorSuccess){
-			DriverStation::ReportError("IMAQdxGram error: " + std::to_string((long)error) + "\n");
+
+		if(process.imaqError < IMAQdxErrorSuccess){
+			DriverStation::ReportError("IMAQdxGram error: " + std::to_string((long)process.imaqError) + "\n");
 		}else{
 			CameraServer::GetInstance()->SetImage(process.binaryFrame);
 		}
 
 		float areaMin = SmartDashboard::GetNumber("Area min %", process.AREA_MINIMUM);
 		process.criteria[0] = {IMAQ_MT_AREA_BY_IMAGE_AREA, areaMin, 100, false, false};
-		process.imaqError = imaqParticleFilter4(process.binaryFrame, process.frame, process.criteria, 1, &process.filterOptions, NULL, NULL);
+		process.imaqError = imaqParticleFilter4(process.binaryFrame, process.binaryFrame, process.criteria, 1, &process.filterOptions, NULL, NULL);
 
 
 		process.imaqError = imaqCountParticles(process.binaryFrame, 1, &numParticles);

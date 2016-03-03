@@ -31,11 +31,13 @@ double ImageProcess :: AreaScore(ParticleReport_ report)
 {
 	double boundingArea = (report.BoundingRectBottom - report.BoundingRectTop) * (report.BoundingRectRight - report.BoundingRectLeft);
 
-	return ratioToScore((49/24)*report.Area/boundingArea);
+	return ratioToScore((3/1)*report.Area/boundingArea);
 }
 double ImageProcess :: AspectScore(ParticleReport_ report)
 {
-	return ratioToScore(((report.BoundingRectRight-report.BoundingRectLeft)/(report.BoundingRectBottom-report.BoundingRectTop)));
+	double score = ratioToScore(((report.BoundingRectRight-report.BoundingRectLeft)/(report.BoundingRectBottom-report.BoundingRectTop)));
+	score = score * 1.6;
+	return score;
 }
 double ImageProcess::computeDistance (Image *image, ParticleReport_ report) {
 		double normalizedWidth, targetWidth;

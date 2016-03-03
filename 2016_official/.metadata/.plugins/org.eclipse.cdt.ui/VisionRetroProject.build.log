@@ -1,1 +1,9 @@
-Info: Nothing to build for VisionRetroProject
+19:25:59 **** Incremental Build of configuration Debug for project VisionRetroProject ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\1750800311/wpilib/cpp/current/include" "-IC:\\Users\\1750800311\\Documents\\FRC Robotics Code\\2016-Official-Chong-2\\2016-Official-Chong\\2016_official\\VisionRetroProject\\src" -O0 -g3 -Wall -c -fmessage-length=0 -std=c++14 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++: error: ..\src\Robot.cpp: No such file or directory
+arm-frc-linux-gnueabi-g++: fatal error: no input files
+compilation terminated.
+
+19:25:59 Build Finished (took 148ms)
+

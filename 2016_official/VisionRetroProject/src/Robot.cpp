@@ -175,15 +175,17 @@ public:
 	{
 		double boundingArea = (report.BoundingRectBottom - report.BoundingRectTop) * (report.BoundingRectRight - report.BoundingRectLeft);
 		//Tape is 7" edge so 49" bounding rect. With 2" wide tape it covers 24" of the rect.
-		return ratioToScore((49/24)*report.Area/boundingArea);
+		return ratioToScore((3/1)*report.Area/boundingArea);
 	}
 
 	/**
-	 * Method to score if the aspect ratio of the particle appears to match the retro-reflective target. Target is 7"x7" so aspect should be 1
+	 * Method to score if the aspect ratio of the particle appears to match the retro-reflective target. Target is 20" x12", so aspect = 1.6
 	 */
 	double AspectScore(ParticleReport report)
 	{
-		return ratioToScore(((report.BoundingRectRight-report.BoundingRectLeft)/(report.BoundingRectBottom-report.BoundingRectTop)));
+		double score = ratioToScore(((report.BoundingRectRight-report.BoundingRectLeft)/(report.BoundingRectBottom-report.BoundingRectTop)));
+		score = score * 1.6;
+		return score;
 	}
 
 

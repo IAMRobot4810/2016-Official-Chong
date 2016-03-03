@@ -29,7 +29,7 @@ public:
 		double Area;
 		double Aspect;
 	};
-	double VIEW_ANGLE = 49.4;
+	double VIEW_ANGLE = 60.0;
 	Image *frame;
 	Image *binaryFrame;
 	int imaqError;
@@ -45,9 +45,9 @@ public:
 	Range RING_SAT_RANGE = {242, 255};
 	Range RING_VAL_RANGE = {242, 255};
 	double AREA_MINIMUM = 0.5;
-	double LONG_RATIO = 2.22;
-	double SHORT_RATIO = 1.4;
-	double SCORE_MIN = 75.0;
+	double LONG_RATIO = 1.5;
+	double SHORT_RATIO = 1.00;
+	double SCORE_MIN = 62.5d;
 
 };
 
