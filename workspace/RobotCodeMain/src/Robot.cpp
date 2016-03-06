@@ -14,16 +14,19 @@ private:
 	std::string autoSelected;
 
 	TeleopControl cont;
-	Image *camImage;
 	int x;
+	//Image *camImage;
 	//double speed;
-	DigitalInput *banner;
-	CANTalon *tal;
+	//DigitalInput *limit;
+	//DigitalInput *limit2;
+	//CANTalon *tal;
 
 	~Robot(){
 
-		delete banner;
-		delete tal;
+		//delete limit;
+		//delete limit2;
+		//delete tal;
+		//delete camImage;
 
 	}
 
@@ -34,14 +37,16 @@ private:
 		chooser->AddObject(autoNameCustom, (void*)&autoNameCustom);
 		SmartDashboard::PutData("Auto Modes", chooser);
 
-		/*CameraServer::GetInstance()->SetQuality(50);
+		CameraServer::GetInstance()->SetQuality(50);
 		//the camera name (ex "cam0") can be found through the roborio web interface
 		CameraServer::GetInstance()->StartAutomaticCapture("cam0");
 
-		camImage = imaqCreateImage(IMAQ_IMAGE_RGB, 0);*/
+		//camImage = imaqCreateImage(IMAQ_IMAGE_RGB, 0);
+		//imaqFlip(camImage, camImage, FlipAxis::IMAQ_HORIZONTAL_AXIS);
 
-		tal = new CANTalon(1);
-		banner = new DigitalInput(1);
+		//tal = new CANTalon(1);
+		//limit = new DigitalInput(4);
+		//limit2 = new DigitalInput(5);
 		//tal->SetFeedbackDevice(CANTalon::CtreMagEncoder_Absolute);
 		x = 0;
 	}
@@ -59,22 +64,54 @@ private:
 	void AutonomousInit()
 	{
 		autoSelected = *((std::string*)chooser->GetSelected());
-		//std::string autoSelected = SmartDashboard::GetString("Auto Selector", autoNameDefault);
+		std::string autoSelected = SmartDashboard::GetString("Auto Selector", autoNameDefault);
 		std::cout << "Auto selected: " << autoSelected << std::endl;
 
 		if(autoSelected == autoNameCustom){
 			//Custom Auto goes here
+			/*cont.shoot->LowerNoSense(0.75);
+			Wait(1.5);
+			cont.shoot->LowerNoSense(0.0);
+			Wait(1.0);
+			cont.drive->Drive(-0.5, -0.5);
+			Wait(5.0);
+			cont.drive->Drive(0.0, 0.0);
+			Wait(10.0);*/
 		} else {
 			//Default Auto goes here
+			/*cont.shoot->LowerNoSense(0.75);
+			Wait(1.5);
+			cont.shoot->LowerNoSense(0.0);
+			Wait(1.0);
+			cont.drive->Drive(-0.5, -0.5);
+			Wait(5.0);
+			cont.drive->Drive(0.0, 0.0);
+			Wait(10.0);*/
 		}
 	}
 
 	void AutonomousPeriodic()
 	{
 		if(autoSelected == autoNameCustom){
-			//Custom Auto goes here
+			cont.shoot->LowerNoSense(0.75);
+			Wait(1.5);
+			cont.shoot->LowerNoSense(0.0);
+			Wait(1.0);
+			cont.drive->Drive(-0.75, -0.75);
+			Wait(3.0);
+			cont.drive->Drive(0.0, 0.0);
+			Wait(10.0);
+
 		} else {
 			//Default Auto goes here
+			cont.shoot->LowerNoSense(0.75);
+			Wait(1.5);
+			cont.shoot->LowerNoSense(0.0);
+			Wait(1.0);
+			cont.drive->Drive(-0.75, -0.75);
+			Wait(3.0);
+			cont.drive->Drive(0.0, 0.0);
+			Wait(10.0);
 		}
 	}
 
@@ -90,9 +127,9 @@ private:
 		cont.ButtonControl();
 		cont.DashPlace();
 
-		if(cont.cameraFlip == true){
+		/*if(cont.cameraFlip == true){
 			imaqFlip(camImage, camImage, FlipAxis::IMAQ_HORIZONTAL_AXIS);
-		}
+		}*/
 
 		/*for(double i = 0.1; i <= 0.5; i+=0.05){
 			tal->Set(i);
@@ -125,7 +162,8 @@ private:
 		SmartDashboard::PutNumber("RPM", cont.shoot->ReadRPM(banner, cont.shoot->rpmTimerL, x));*/
 
 		//SmartDashboard::PutNumber("encoder", tal->GetEncPosition());
-		//SmartDashboard::PutBoolean("Banner", banner->Get());
+		//SmartDashboard::PutBoolean("Limit", limit->Get());
+		//SmartDashboard::PutBoolean("Limit2", limit2->Get());
 
 		Wait(0.001);
 

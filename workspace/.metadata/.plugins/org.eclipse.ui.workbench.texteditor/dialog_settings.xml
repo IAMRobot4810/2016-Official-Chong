@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="camera" key="selection"/>
+		<item value="rotate" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="rotate"/>
+			<item value="watchdog"/>
+			<item value="watch"/>
+			<item value="imaq"/>
 			<item value="camera"/>
 			<item value="lrpm"/>
 			<item value="offs"/>
 			<item value="angle"/>
-			<item value="mask"/>
-			<item value="SmartDashboard"/>
-			<item value="smart"/>
-			<item value="read"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -31,29 +31,31 @@ public:
 	void LowerNoSense(float speed);
 	void HighGoal(float speed, int encoVal);
 	void LowGoal(float speed, int encoVal);
-	int ReadRPM(DigitalInput *banner, Timer *Minute, int rpmReading);
+	float ReadRPM(DigitalInput *banner, Timer *Minute, float rpmReading);
 	void Shoot(int leftRPM, int rightRPM, float rollPow);
 	void ShootNoSense(float leftPow, float rightPow, float rollPow);
 
-	int lRPMReading;
-	int rRPMReading;
+	float lRPMReading;
+	float rRPMReading;
+	DigitalInput *lBanner;
+	DigitalInput *rBanner;
+	Timer *rpmTimerL;
+	Timer *rpmTimerR;
 
-	friend class Robot;
+	DigitalInput *UpLimit;
+	DigitalInput *DownLimit;
+
+	int shootOffset;
+
 private:
 
 	CANTalon *lShooter;
 	CANTalon *rShooter;
 	CANTalon *picker;
 
-	DigitalInput *lBanner;
-	DigitalInput *rBanner;
-
 	Solenoid *shootSol;
 
 	DigitalInput *ballSense;
-
-	Timer *rpmTimerL;
-	Timer *rpmTimerR;
 
 	int shooterOffset;
 	int shooterRestLimit;
