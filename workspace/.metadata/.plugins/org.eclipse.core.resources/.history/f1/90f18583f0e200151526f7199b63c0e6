@@ -1,0 +1,26 @@
+#include "ImageMask.h"
+
+ImageMask::ImageMask(){
+	image = 0;
+	binaryImage = 0;
+	error = 0;
+}
+
+ImageMask::ImageMask(Image* img){
+	image = img;
+	binaryImage = 0;
+	error = 0;
+}
+
+bool ImageMask::maskImage(){
+	error = imaqColorThreshold(image, binaryImage, 255, IMAQ_HSV, &RING_HUE_RANGE, &RING_SAT_RANGE, &RING_VAL_RANGE);
+	if(error < IMAQdxErrorSuccess){
+		DriverStation::ReportError("IMAQdxGram error: " + std::to_string((long)error));
+		return false;
+	}
+	return true;
+}
+
+Image* ImageMask::getbinImage(){
+	return binaryImage;
+}

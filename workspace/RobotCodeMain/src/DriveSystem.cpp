@@ -17,7 +17,7 @@ DriveSystem::DriveSystem(){
 	roboDrive->SetInvertedMotor(RobotDrive::kRearLeftMotor, true);
 	roboDrive->SetInvertedMotor(RobotDrive::kFrontRightMotor, true);
 	roboDrive->SetInvertedMotor(RobotDrive::kRearRightMotor, true);
-	roboDrive->SetExpiration(0.1);
+	//roboDrive->SetExpiration(0.1);
 
 	//caster = new Solenoid(1, 1);
 }
@@ -36,6 +36,7 @@ DriveSystem::~DriveSystem(){
 
 void DriveSystem::Drive(float left, float right){
 
+	//roboDrive->ArcadeDrive(y, turn, false);
 	roboDrive->TankDrive(left, right, false);
 
 }

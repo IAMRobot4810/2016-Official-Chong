@@ -22,17 +22,22 @@ Shooter::Shooter(){
 
 	shootSol = new Solenoid(1, 0);
 
-	ballSense = new DigitalInput(0);
+	ballSense = new DigitalInput(3); //0
 
 	rpmTimerL = new Timer();
 	rpmTimerR = new Timer();
 
-	shooterRestLimit = 100; //CHECK
-	shooterTopLimit = -3600; //CHECK
+	shooterRestLimit = 3650; //CHECK
+	shooterTopLimit = -3800; //CHECK
 	shooterOffset = 0;
 
 	lRPMReading = 0;
 	rRPMReading = 0;
+
+	UpLimit = new DigitalInput(9);
+	DownLimit = new DigitalInput(5);
+
+	shootOffset = 0;
 
 }
 
@@ -52,6 +57,9 @@ Shooter::~Shooter(){
 
 	delete rpmTimerL;
 	delete rpmTimerR;
+
+	delete UpLimit;
+	delete DownLimit;
 
 }
 
@@ -97,7 +105,7 @@ void Shooter::PickupNoSense(float speed){
 
 void Shooter::Raise(float speed){
 
-	if(raiseShoot->GetEncPosition() > shooterTopLimit){
+	if(UpLimit->Get() == true){ //raiseShoot->GetEncPosition() < (shooterTopLimit + shootOffset)
 		raiseShoot->Set(-speed);
 	}
 
@@ -113,7 +121,7 @@ void Shooter::RaiseNoSense(float speed){
 
 void Shooter::Lower(float speed){
 
-	if(raiseShoot->GetEncPosition() < shooterRestLimit){
+	if(raiseShoot->GetEncPosition() > (shooterRestLimit + shootOffset)){ //DownLimit->Get() == true
 		raiseShoot->Set(speed);
 	}
 
@@ -137,6 +145,12 @@ void Shooter::HighGoal(float speed, int encoVal){
 		raiseShoot->Set(-speed);
 	}
 
+	else{
+
+		raiseShoot->Set(0.0);
+
+	}
+
 }
 
 void Shooter::LowGoal(float speed, int encoVal){
@@ -148,10 +162,13 @@ void Shooter::LowGoal(float speed, int encoVal){
 	else if (raiseShoot->GetEncPosition() > encoVal){
 		raiseShoot->Set(-speed);
 	}
+	else{
+		raiseShoot->Set(0.0);
+	}
 
 }
 
-int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute, int rpmReading){
+float Shooter::ReadRPM(DigitalInput *banner, Timer *Minute, float rpmReading){
 
 	bool bannerToggle = true;
 	int reads = 0;
@@ -159,7 +176,7 @@ int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute, int rpmReading){
 	Minute->Reset();
 	Minute->Start();
 
-	while(Minute->Get() <= 0.075){
+	while(Minute->Get() <= 0.05){
 
 		if(banner->Get() == false && bannerToggle){
 			bannerToggle = false;
@@ -174,7 +191,7 @@ int Shooter::ReadRPM(DigitalInput *banner, Timer *Minute, int rpmReading){
 
 	Minute->Stop();
 
-	rpmReading = reads * 800;
+	rpmReading = reads * 400; //1200
 
 	return rpmReading;
 
@@ -186,9 +203,12 @@ void Shooter::Shoot(int leftRPM, int rightRPM, float rollPow){
 	rShooter->Set(-0.1);
 	picker->Set(rollPow);
 
-	if(leftRPM > 3800 && rightRPM > 3800){
-		leftRPM = 3800;
-		rightRPM = 3800;
+	if(leftRPM > 2400){
+		leftRPM = 2400;
+	}
+
+	if(rightRPM > 2400){
+		rightRPM = 2400;
 	}
 
 	for(int lPow = 0.1; ReadRPM(lBanner, rpmTimerL, lRPMReading) < (leftRPM - 200) || lPow <= 1.0; lPow += 0.1){
